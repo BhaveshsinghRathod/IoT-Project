@@ -1,0 +1,15 @@
+2025-01-27 21:56:52,458 INFO [Grading.java:35] testCase00 of GradeP1: success
+2025-01-27 21:56:52,462 INFO [Grading.java:35] testCase01 of GradeP1: success
+2025-01-27 21:56:52,462 INFO [Grading.java:35] testCase02 of GradeP1: success
+2025-01-27 21:56:52,463 INFO [Grading.java:42] testCase03 of GradeP1: failed
+2025-01-27 21:56:52,463 INFO [Grading.java:35] testCase04 of GradeP1: success
+2025-01-27 21:56:52,464 INFO [Grading.java:42] testCase05 of GradeP1: failed
+2025-01-27 21:56:52,465 INFO [Grading.java:35] testCase06 of GradeP1: success
+2025-01-27 21:56:52,465 DEBUG [PlugSim.java:79] Plug b.200: power 200.0
+2025-01-27 21:56:52,468 INFO [Grading.java:35] testCase07 of GradeP1: success
+2025-01-27 21:56:52,468 DEBUG [PlugSim.java:79] Plug b.200: power 200.0
+2025-01-27 21:56:52,470 DEBUG [PlugSim.java:79] Plug b.200: power 200.0
+2025-01-27 21:56:52,470 INFO [Grading.java:42] testCase08 of GradeP1: failed
+2025-01-27 21:56:52,471 DEBUG [PlugSim.java:79] Plug cccccccc.1000: power 1000.0
+2025-01-27 21:56:52,471 DEBUG [PlugSim.java:79] Plug cccccccc.1000: power 1000.0
+2025-01-27 21:56:52,471 INFO [Grading.java:42] testCase09 of GradeP1: failed
