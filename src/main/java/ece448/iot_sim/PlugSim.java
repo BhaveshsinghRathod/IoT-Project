@@ -36,6 +36,7 @@ public class PlugSim {
 	 */
 	synchronized public void switchOff() {
 		// P1: add your code here
+		on = false;
 	}
 
 	/**

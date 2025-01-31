@@ -21,4 +21,12 @@ public class PlugSimTests {
 
 		assertTrue(plug.isOn());
 	}
+	@Test
+	public void testSwitchOff() {
+		PlugSim plug = new PlugSim("a");
+
+		plug.switchOff();
+
+		assertFalse(plug.isOn());
+	}
 }

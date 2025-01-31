@@ -36,63 +36,64 @@ public class PlugSim {
 	 */
 	synchronized public void switchOff() {
 		// P1: add your code here
-<span class="nc" id="L39">	}</span>
+<span class="fc" id="L39">		on = false;</span>
+<span class="fc" id="L40">	}</span>
 
 	/**
 	 * Toggle the plug.
 	 */
 	synchronized public void toggle() {
 		// P1: add your code here
-<span class="nc" id="L46">	}</span>
+<span class="nc" id="L47">	}</span>
 
 	/**
 	 * Measure power.
 	 */
 	synchronized public void measurePower() {
-<span class="nc bnc" id="L52" title="All 2 branches missed.">		if (!on) {</span>
-<span class="nc" id="L53">			updatePower(0);</span>
-<span class="nc" id="L54">			return;</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">		if (!on) {</span>
+<span class="nc" id="L54">			updatePower(0);</span>
+<span class="nc" id="L55">			return;</span>
 		}
 
 		// a trick to help testing
-<span class="nc bnc" id="L58" title="All 2 branches missed.">		if (name.indexOf(&quot;.&quot;) != -1)</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">		if (name.indexOf(&quot;.&quot;) != -1)</span>
 		{
-<span class="nc" id="L60">			updatePower(Integer.parseInt(name.split(&quot;\\.&quot;)[1]));</span>
+<span class="nc" id="L61">			updatePower(Integer.parseInt(name.split(&quot;\\.&quot;)[1]));</span>
 		}
 		// do some random walk
-<span class="nc bnc" id="L63" title="All 2 branches missed.">		else if (power &lt; 100)</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">		else if (power &lt; 100)</span>
 		{
-<span class="nc" id="L65">			updatePower(power + Math.random() * 100);</span>
+<span class="nc" id="L66">			updatePower(power + Math.random() * 100);</span>
 		}
-<span class="nc bnc" id="L67" title="All 2 branches missed.">		else if (power &gt; 300)</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">		else if (power &gt; 300)</span>
 		{
-<span class="nc" id="L69">			updatePower(power - Math.random() * 100);</span>
+<span class="nc" id="L70">			updatePower(power - Math.random() * 100);</span>
 		}
 		else
 		{
-<span class="nc" id="L73">			updatePower(power + Math.random() * 40 - 20);</span>
+<span class="nc" id="L74">			updatePower(power + Math.random() * 40 - 20);</span>
 		}
-<span class="nc" id="L75">	}</span>
+<span class="nc" id="L76">	}</span>
 
 	protected void updatePower(double p) {
-<span class="nc" id="L78">		power = p;</span>
-<span class="nc" id="L79">		logger.debug(&quot;Plug {}: power {}&quot;, name, power);</span>
-<span class="nc" id="L80">	}</span>
+<span class="nc" id="L79">		power = p;</span>
+<span class="nc" id="L80">		logger.debug(&quot;Plug {}: power {}&quot;, name, power);</span>
+<span class="nc" id="L81">	}</span>
 
 	/**
 	 * Getter: current state
 	 */
 	synchronized public boolean isOn() {
-<span class="fc" id="L86">		return on;</span>
+<span class="fc" id="L87">		return on;</span>
 	}
 
 	/**
 	 * Getter: last power reading
 	 */
 	synchronized public double getPower() {
-<span class="nc" id="L93">		return power;</span>
+<span class="nc" id="L94">		return power;</span>
 	}
 
-<span class="fc" id="L96">	private static final Logger logger = LoggerFactory.getLogger(PlugSim.class);</span>
+<span class="fc" id="L97">	private static final Logger logger = LoggerFactory.getLogger(PlugSim.class);</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
