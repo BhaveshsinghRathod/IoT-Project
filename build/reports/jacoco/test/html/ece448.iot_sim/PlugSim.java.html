@@ -20,7 +20,7 @@ public class PlugSim {
 	 * No need to synchronize if read a final field.
 	 */
 	public String getName() {
-<span class="nc" id="L23">		return name;</span>
+<span class="fc" id="L23">		return name;</span>
 	}
 
 	/**
@@ -44,56 +44,64 @@ public class PlugSim {
 	 */
 	synchronized public void toggle() {
 		// P1: add your code here
-<span class="nc" id="L47">	}</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">		on = !on;</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">		if (!on) {</span>
+<span class="fc" id="L49">			power = 0;</span>
+		}
+<span class="fc" id="L51">	}</span>
 
 	/**
 	 * Measure power.
 	 */
 	synchronized public void measurePower() {
-<span class="nc bnc" id="L53" title="All 2 branches missed.">		if (!on) {</span>
-<span class="nc" id="L54">			updatePower(0);</span>
-<span class="nc" id="L55">			return;</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">		if (!on) {</span>
+<span class="fc" id="L58">			updatePower(0);</span>
+<span class="fc" id="L59">			return;</span>
 		}
 
+
 		// a trick to help testing
-<span class="nc bnc" id="L59" title="All 2 branches missed.">		if (name.indexOf(&quot;.&quot;) != -1)</span>
-		{
-<span class="nc" id="L61">			updatePower(Integer.parseInt(name.split(&quot;\\.&quot;)[1]));</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">		if (name.indexOf(&quot;.&quot;) != -1){</span>
+			try {
+<span class="fc" id="L66">				updatePower(Integer.parseInt(name.split(&quot;\\.&quot;)[1]));</span>
+<span class="fc" id="L67">			} catch (NumberFormatException e) {</span>
+<span class="fc" id="L68">				logger.warn(&quot;Invalid power value in plug name: {}&quot;, name);</span>
+<span class="fc" id="L69">			}</span>
 		}
 		// do some random walk
-<span class="nc bnc" id="L64" title="All 2 branches missed.">		else if (power &lt; 100)</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">		else if (power &lt; 100)</span>
 		{
-<span class="nc" id="L66">			updatePower(power + Math.random() * 100);</span>
+<span class="fc" id="L74">			updatePower(power + Math.random() * 100);</span>
 		}
-<span class="nc bnc" id="L68" title="All 2 branches missed.">		else if (power &gt; 300)</span>
+<span class="fc bfc" id="L76" title="All 2 branches covered.">		else if (power &gt; 300)</span>
 		{
-<span class="nc" id="L70">			updatePower(power - Math.random() * 100);</span>
+<span class="fc" id="L78">			updatePower(power - Math.random() * 100);</span>
 		}
 		else
 		{
-<span class="nc" id="L74">			updatePower(power + Math.random() * 40 - 20);</span>
+<span class="fc" id="L82">			updatePower(power + Math.random() * 40 - 20);</span>
 		}
-<span class="nc" id="L76">	}</span>
+<span class="fc" id="L84">	}</span>
 
 	protected void updatePower(double p) {
-<span class="nc" id="L79">		power = p;</span>
-<span class="nc" id="L80">		logger.debug(&quot;Plug {}: power {}&quot;, name, power);</span>
-<span class="nc" id="L81">	}</span>
+<span class="fc" id="L87">		power = p;</span>
+<span class="fc" id="L88">		logger.debug(&quot;Plug {}: power {}&quot;, name, power);</span>
+<span class="fc" id="L89">	}</span>
 
 	/**
 	 * Getter: current state
 	 */
 	synchronized public boolean isOn() {
-<span class="fc" id="L87">		return on;</span>
+<span class="fc" id="L95">		return on;</span>
 	}
 
 	/**
 	 * Getter: last power reading
 	 */
 	synchronized public double getPower() {
-<span class="nc" id="L94">		return power;</span>
+<span class="fc" id="L102">		return power;</span>
 	}
 
-<span class="fc" id="L97">	private static final Logger logger = LoggerFactory.getLogger(PlugSim.class);</span>
+<span class="fc" id="L105">	private static final Logger logger = LoggerFactory.getLogger(PlugSim.class);</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

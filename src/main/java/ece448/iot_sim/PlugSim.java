@@ -44,6 +44,10 @@ public class PlugSim {
 	 */
 	synchronized public void toggle() {
 		// P1: add your code here
+		on = !on;
+		if (!on) {
+			power = 0;
+		}
 	}
 
 	/**
@@ -55,10 +59,14 @@ public class PlugSim {
 			return;
 		}
 
+
 		// a trick to help testing
-		if (name.indexOf(".") != -1)
-		{
-			updatePower(Integer.parseInt(name.split("\\.")[1]));
+		if (name.indexOf(".") != -1){
+			try {
+				updatePower(Integer.parseInt(name.split("\\.")[1]));
+			} catch (NumberFormatException e) {
+				logger.warn("Invalid power value in plug name: {}", name);
+			}
 		}
 		// do some random walk
 		else if (power < 100)
