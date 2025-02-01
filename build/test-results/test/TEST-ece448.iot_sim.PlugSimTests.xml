@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_sim.PlugSimTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-01T01:47:16" hostname="iit" time="0.241">
+<testsuite name="ece448.iot_sim.PlugSimTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-01T19:04:45" hostname="iit" time="0.296">
   <properties/>
-  <testcase name="testSwitchOff" classname="ece448.iot_sim.PlugSimTests" time="0.209"/>
-  <testcase name="testPowerRemainsZeroWhenOff" classname="ece448.iot_sim.PlugSimTests" time="0.019"/>
-  <testcase name="testInvalidPowerValueInName" classname="ece448.iot_sim.PlugSimTests" time="0.007"/>
-  <testcase name="testPowerUpdateBasedOnName" classname="ece448.iot_sim.PlugSimTests" time="0.002"/>
+  <testcase name="testSwitchOff" classname="ece448.iot_sim.PlugSimTests" time="0.266"/>
+  <testcase name="testPowerRemainsZeroWhenOff" classname="ece448.iot_sim.PlugSimTests" time="0.017"/>
+  <testcase name="testInvalidPowerValueInName" classname="ece448.iot_sim.PlugSimTests" time="0.006"/>
+  <testcase name="testPowerUpdateBasedOnName" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
   <testcase name="testInit" classname="ece448.iot_sim.PlugSimTests" time="0.0"/>
   <testcase name="testGetName" classname="ece448.iot_sim.PlugSimTests" time="0.0"/>
   <testcase name="testSwitchOn" classname="ece448.iot_sim.PlugSimTests" time="0.0"/>
   <testcase name="testPowerDecreasesWhenAbove300" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
   <testcase name="testMeasurePowerWhenOff" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
   <testcase name="testToggle" classname="ece448.iot_sim.PlugSimTests" time="0.0"/>
-  <testcase name="testPowerFLuctuationRange" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
-  <system-out><![CDATA[2025-01-31 19:47:17,172 WARN Invalid power value in plug name: plug.invalid
+  <testcase name="testPowerFLuctuationRange" classname="ece448.iot_sim.PlugSimTests" time="0.002"/>
+  <system-out><![CDATA[2025-02-01 13:04:46,074 WARN Invalid power value in plug name: plug.invalid
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
