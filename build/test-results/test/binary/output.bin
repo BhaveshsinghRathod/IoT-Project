@@ -1,1 +1,5 @@
-L2025-02-01 13:07:07,548 WARN Invalid power value in plug name: plug.invalid
+L2025-02-24 13:49:45,521 WARN Invalid power value in plug name: plug.invalid
+<2025-02-24 13:49:45,539 INFO HTTPCmd /testPlug: {action=on}
++2025-02-24 13:49:45,541 INFO HTTPCmd /: {}
+32025-02-24 13:49:45,543 INFO HTTPCmd /testPlug: {}
+=2025-02-24 13:49:45,544 INFO HTTPCmd /testPlug: {action=off}

@@ -1,2 +1,4 @@
 ece448/iot_sim/PlugSimTests.java
  ece448.iot_sim.PlugSimTests
+ece448/iot_sim/HTTPCommandsTests.java
+ ece448.iot_sim.HTTPCommandsTests

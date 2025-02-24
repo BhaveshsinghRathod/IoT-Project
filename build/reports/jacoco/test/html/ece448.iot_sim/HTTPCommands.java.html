@@ -12,14 +12,14 @@ import ece448.iot_sim.http_server.RequestHandler;
 public class HTTPCommands implements RequestHandler {
 
 	// Use a map so we can search plugs by name.
-<span class="nc" id="L15">	private final TreeMap&lt;String, PlugSim&gt; plugs = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L15">	private final TreeMap&lt;String, PlugSim&gt; plugs = new TreeMap&lt;&gt;();</span>
 
-<span class="nc" id="L17">	public HTTPCommands(List&lt;PlugSim&gt; plugs) {</span>
-<span class="nc bnc" id="L18" title="All 2 branches missed.">		for (PlugSim plug: plugs)</span>
+<span class="fc" id="L17">	public HTTPCommands(List&lt;PlugSim&gt; plugs) {</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">		for (PlugSim plug: plugs)</span>
 		{
-<span class="nc" id="L20">			this.plugs.put(plug.getName(), plug);</span>
-<span class="nc" id="L21">		}</span>
-<span class="nc" id="L22">	}</span>
+<span class="fc" id="L20">			this.plugs.put(plug.getName(), plug);</span>
+<span class="fc" id="L21">		}</span>
+<span class="fc" id="L22">	}</span>
 
 	@Override
 	public String handleGet(String path, Map&lt;String, String&gt; params) {
@@ -27,42 +27,52 @@ public class HTTPCommands implements RequestHandler {
 		// do switch: /plugName?action=on|off|toggle
 		// just report: /plugName
 
-<span class="nc" id="L30">		logger.info(&quot;HTTPCmd {}: {}&quot;, path, params);</span>
+<span class="fc" id="L30">		logger.info(&quot;HTTPCmd {}: {}&quot;, path, params);</span>
 
-<span class="nc bnc" id="L32" title="All 2 branches missed.">		if (path.equals(&quot;/&quot;))</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">		if (path.equals(&quot;/&quot;))</span>
 		{
-<span class="nc" id="L34">			return listPlugs();</span>
+<span class="fc" id="L34">			return listPlugs();</span>
 		}
 
-<span class="nc" id="L37">		PlugSim plug = plugs.get(path.substring(1));</span>
-<span class="nc bnc" id="L38" title="All 2 branches missed.">		if (plug == null)</span>
+<span class="fc" id="L37">		PlugSim plug = plugs.get(path.substring(1));</span>
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">		if (plug == null)</span>
 <span class="nc" id="L39">			return null; // no such plug</span>
 
-<span class="nc" id="L41">		String action = params.get(&quot;action&quot;);</span>
-<span class="nc bnc" id="L42" title="All 2 branches missed.">		if (action == null)</span>
-<span class="nc" id="L43">			return report(plug);</span>
+<span class="fc" id="L41">		String action = params.get(&quot;action&quot;);</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">		if (action == null)</span>
+<span class="fc" id="L43">			return report(plug);</span>
 
 		// P2: add your code here, modify the next line if necessary
-<span class="nc" id="L46">		return &quot;&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;&quot;;</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">		if (&quot;on&quot;.equals(action)){</span>
+<span class="fc" id="L47">			plug.switchOn();</span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">		} else if (&quot;off&quot;.equals(action)) {</span>
+<span class="fc" id="L49">			plug.switchOff();</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">		} else if (&quot;toggle&quot;.equals(action)) {</span>
+<span class="nc" id="L51">			plug.toggle();</span>
+		} else {
+<span class="nc" id="L53">			return &quot;&lt;html&gt;&lt;body&gt;&lt;p&gt;Invalid action&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;;</span>
+		}
+<span class="fc" id="L55">		return report(plug);</span>
+		//return &quot;&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;&quot;;
 	}
 
 	protected String listPlugs() {
-<span class="nc" id="L50">		StringBuilder sb = new StringBuilder();</span>
+<span class="fc" id="L60">		StringBuilder sb = new StringBuilder();</span>
 
-<span class="nc" id="L52">		sb.append(&quot;&lt;html&gt;&lt;body&gt;&quot;);</span>
-<span class="nc bnc" id="L53" title="All 2 branches missed.">		for (String plugName: plugs.keySet())</span>
+<span class="fc" id="L62">		sb.append(&quot;&lt;html&gt;&lt;body&gt;&quot;);</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">		for (String plugName: plugs.keySet())</span>
 		{
-<span class="nc" id="L55">			sb.append(String.format(&quot;&lt;p&gt;&lt;a href='/%s'&gt;%s&lt;/a&gt;&lt;/p&gt;&quot;,</span>
+<span class="fc" id="L65">			sb.append(String.format(&quot;&lt;p&gt;&lt;a href='/%s'&gt;%s&lt;/a&gt;&lt;/p&gt;&quot;,</span>
 				plugName, plugName));
-<span class="nc" id="L57">		}</span>
-<span class="nc" id="L58">		sb.append(&quot;&lt;/body&gt;&lt;/html&gt;&quot;);</span>
+<span class="fc" id="L67">		}</span>
+<span class="fc" id="L68">		sb.append(&quot;&lt;/body&gt;&lt;/html&gt;&quot;);</span>
 
-<span class="nc" id="L60">		return sb.toString();</span>
+<span class="fc" id="L70">		return sb.toString();</span>
 	}
 
 	protected String report(PlugSim plug) {
-<span class="nc" id="L64">		String name = plug.getName();</span>
-<span class="nc" id="L65">		return String.format(&quot;&lt;html&gt;&lt;body&gt;&quot;</span>
+<span class="fc" id="L74">		String name = plug.getName();</span>
+<span class="fc" id="L75">		return String.format(&quot;&lt;html&gt;&lt;body&gt;&quot;</span>
 			+&quot;&lt;p&gt;Plug %s is %s.&lt;/p&gt;&quot;
 			+&quot;&lt;p&gt;Power reading is %.3f.&lt;/p&gt;&quot;
 			+&quot;&lt;p&gt;&lt;a href='/%s?action=on'&gt;Switch On&lt;/a&gt;&lt;/p&gt;&quot;
@@ -70,10 +80,10 @@ public class HTTPCommands implements RequestHandler {
 			+&quot;&lt;p&gt;&lt;a href='/%s?action=toggle'&gt;Toggle&lt;/a&gt;&lt;/p&gt;&quot;
 			+&quot;&lt;/body&gt;&lt;/html&gt;&quot;,
 			name,
-<span class="nc bnc" id="L73" title="All 2 branches missed.">			plug.isOn()? &quot;on&quot;: &quot;off&quot;,</span>
-<span class="nc" id="L74">			plug.getPower(), name, name, name);</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">			plug.isOn()? &quot;on&quot;: &quot;off&quot;,</span>
+<span class="fc" id="L84">			plug.getPower(), name, name, name);</span>
 	}
 
-<span class="nc" id="L77">	private static final Logger logger = LoggerFactory.getLogger(HTTPCommands.class);</span>
+<span class="fc" id="L87">	private static final Logger logger = LoggerFactory.getLogger(HTTPCommands.class);</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

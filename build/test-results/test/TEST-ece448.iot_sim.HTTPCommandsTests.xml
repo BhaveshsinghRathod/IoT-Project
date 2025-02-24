@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ece448.iot_sim.HTTPCommandsTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-24T19:49:45" hostname="iit" time="0.008">
+  <properties/>
+  <testcase name="testSwitchOnPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.004"/>
+  <testcase name="testListPlugs" classname="ece448.iot_sim.HTTPCommandsTests" time="0.002"/>
+  <testcase name="testReportSinglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <testcase name="testSwitchOffPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <system-out><![CDATA[2025-02-24 13:49:45,539 INFO HTTPCmd /testPlug: {action=on}
+2025-02-24 13:49:45,541 INFO HTTPCmd /: {}
+2025-02-24 13:49:45,543 INFO HTTPCmd /testPlug: {}
+2025-02-24 13:49:45,544 INFO HTTPCmd /testPlug: {action=off}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
