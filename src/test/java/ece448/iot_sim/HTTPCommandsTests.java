@@ -56,4 +56,55 @@ public class HTTPCommandsTests {
         assertFalse(plug.isOn());
     }
 
+    @Test
+    public void testTogglePlug() {
+        PlugSim plug = new PlugSim("testPlug");
+        HTTPCommands httpCommands = new HTTPCommands(Arrays.asList(plug));
+
+        Map<String, String> params = new HashMap<>();
+        params.put("action", "toggle");
+
+        httpCommands.handleGet("/testPlug", params);
+        assertTrue(plug.isOn());
+    }
+
+    @Test
+    public void testTogglePlugTwice() {
+        PlugSim plug = new PlugSim("testPlug");
+        HTTPCommands httpCommands = new HTTPCommands(Arrays.asList(plug));
+
+        Map<String, String> params = new HashMap<>();
+        params.put("action", "toggle");
+
+        httpCommands.handleGet("/testPlug", params);
+        httpCommands.handleGet("/testPlug", params);
+        assertFalse(plug.isOn());
+    }
+
+    @Test
+    public void testReportAfterSwitchOn() {
+        PlugSim plug = new PlugSim("testPlug");
+        HTTPCommands httpCommands = new HTTPCommands(Arrays.asList(plug));
+
+        Map<String, String> params = new HashMap<>();
+        params.put("action", "on");
+        httpCommands.handleGet("/testPlug", params);
+
+        String response = httpCommands.handleGet("/testPlug", new HashMap<>());
+        assertTrue(response.contains("Plug testPlug is on"));
+    }
+
+    @Test
+    public void testReportAfterToggle() {
+        PlugSim plug = new PlugSim("testPlug");
+        HTTPCommands httpCommands = new HTTPCommands(Arrays.asList(plug));
+
+        Map<String, String> params = new HashMap<>();
+        params.put("action", "toggle");
+        httpCommands.handleGet("/testPlug", params);
+
+        String response = httpCommands.handleGet("/testPlug", new HashMap<>());
+        assertTrue(response.contains("Plug testPlug is on"));
+    }
+
 }

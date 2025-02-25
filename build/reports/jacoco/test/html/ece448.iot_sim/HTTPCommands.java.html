@@ -45,10 +45,10 @@ public class HTTPCommands implements RequestHandler {
 		// P2: add your code here, modify the next line if necessary
 <span class="fc bfc" id="L46" title="All 2 branches covered.">		if (&quot;on&quot;.equals(action)){</span>
 <span class="fc" id="L47">			plug.switchOn();</span>
-<span class="pc bpc" id="L48" title="1 of 2 branches missed.">		} else if (&quot;off&quot;.equals(action)) {</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">		} else if (&quot;off&quot;.equals(action)) {</span>
 <span class="fc" id="L49">			plug.switchOff();</span>
-<span class="nc bnc" id="L50" title="All 2 branches missed.">		} else if (&quot;toggle&quot;.equals(action)) {</span>
-<span class="nc" id="L51">			plug.toggle();</span>
+<span class="pc bpc" id="L50" title="1 of 2 branches missed.">		} else if (&quot;toggle&quot;.equals(action)) {</span>
+<span class="fc" id="L51">			plug.toggle();</span>
 		} else {
 <span class="nc" id="L53">			return &quot;&lt;html&gt;&lt;body&gt;&lt;p&gt;Invalid action&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;;</span>
 		}

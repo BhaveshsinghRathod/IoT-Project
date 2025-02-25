@@ -1360,3 +1360,276 @@
 2025-02-24 13:49:54,280 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
 2025-02-24 13:49:54,282 INFO [Grading.java:35] testCase09 of GradeP2: success
 2025-02-24 13:49:54,285 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-02-25 11:44:40,981 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:44:40,992 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:44:40,992 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:44:40,992 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:44:40,992 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:44:40,993 WARN [PlugSim.java:68] Invalid power value in plug name: plug.invalid
+2025-02-25 11:44:41,005 DEBUG [PlugSim.java:88] Plug test.200: power 200.0
+2025-02-25 11:44:41,009 DEBUG [PlugSim.java:88] Plug plug: power 350.0
+2025-02-25 11:44:41,010 DEBUG [PlugSim.java:88] Plug plug: power 334.99705838431765
+2025-02-25 11:44:41,010 DEBUG [PlugSim.java:88] Plug plug: power 248.30443675596052
+2025-02-25 11:44:41,010 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:44:41,011 DEBUG [PlugSim.java:88] Plug a: power 86.37675792381143
+2025-02-25 11:44:41,011 DEBUG [PlugSim.java:88] Plug a: power 178.40350450281633
+2025-02-25 11:44:41,011 DEBUG [PlugSim.java:88] Plug a: power 191.17443078971948
+2025-02-25 11:44:41,011 DEBUG [PlugSim.java:88] Plug a: power 187.77373105970344
+2025-02-25 11:44:41,011 DEBUG [PlugSim.java:88] Plug a: power 168.37818816741188
+2025-02-25 11:44:41,012 DEBUG [PlugSim.java:88] Plug a: power 150.80533415513753
+2025-02-25 11:44:41,012 DEBUG [PlugSim.java:88] Plug a: power 165.61376828110133
+2025-02-25 11:44:41,012 DEBUG [PlugSim.java:88] Plug a: power 175.16282977579624
+2025-02-25 11:44:41,012 DEBUG [PlugSim.java:88] Plug a: power 162.30217888646803
+2025-02-25 11:44:41,012 DEBUG [PlugSim.java:88] Plug a: power 164.89471116838453
+2025-02-25 11:44:41,017 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-02-25 11:44:41,020 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 11:44:41,021 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-02-25 11:44:41,022 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-02-25 11:44:41,024 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-02-25 11:44:56,358 DEBUG [PlugSim.java:88] Plug xxxx: power 0.0
+2025-02-25 11:44:56,366 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 11:44:56,366 DEBUG [PlugSim.java:88] Plug zzzz.789: power 0.0
+2025-02-25 11:44:56,368 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-02-25 11:44:56,732 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35688 GET /xxxx HTTP/1.1
+2025-02-25 11:44:56,733 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 11:44:56,749 INFO [Grading.java:35] testCase00 of GradeP2: success
+2025-02-25 11:44:56,752 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35702 GET /xxxx?action=on HTTP/1.1
+2025-02-25 11:44:56,753 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 11:44:56,755 INFO [Grading.java:35] testCase01 of GradeP2: success
+2025-02-25 11:44:56,758 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35708 GET /xxxx?action=off HTTP/1.1
+2025-02-25 11:44:56,759 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=off}
+2025-02-25 11:44:56,761 INFO [Grading.java:35] testCase02 of GradeP2: success
+2025-02-25 11:44:56,764 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35710 GET /xxxx?action=on HTTP/1.1
+2025-02-25 11:44:56,765 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 11:44:56,766 INFO [Grading.java:35] testCase03 of GradeP2: success
+2025-02-25 11:44:56,769 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35714 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 11:44:56,771 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 11:44:56,772 INFO [Grading.java:35] testCase04 of GradeP2: success
+2025-02-25 11:44:56,776 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35726 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 11:44:56,777 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 11:44:56,778 INFO [Grading.java:35] testCase05 of GradeP2: success
+2025-02-25 11:44:56,783 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35728 GET /yyyy HTTP/1.1
+2025-02-25 11:44:56,783 INFO [HTTPCommands.java:30] HTTPCmd /yyyy: {}
+2025-02-25 11:44:56,786 INFO [Grading.java:35] testCase06 of GradeP2: success
+2025-02-25 11:44:56,789 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35742 GET /xxxx HTTP/1.1
+2025-02-25 11:44:56,791 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 11:44:56,795 INFO [Grading.java:35] testCase07 of GradeP2: success
+2025-02-25 11:44:56,799 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35752 GET /zzzz.789 HTTP/1.1
+2025-02-25 11:44:56,799 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 11:44:56,801 INFO [Grading.java:35] testCase08 of GradeP2: success
+2025-02-25 11:44:56,803 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35756 GET /zzzz.789?action=on HTTP/1.1
+2025-02-25 11:44:56,804 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {action=on}
+2025-02-25 11:44:57,367 DEBUG [PlugSim.java:88] Plug xxxx: power 36.372678807028635
+2025-02-25 11:44:57,370 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 11:44:57,371 DEBUG [PlugSim.java:88] Plug zzzz.789: power 789.0
+2025-02-25 11:44:58,312 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35772 GET /zzzz.789 HTTP/1.1
+2025-02-25 11:44:58,313 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 11:44:58,317 INFO [Grading.java:35] testCase09 of GradeP2: success
+2025-02-25 11:44:58,324 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-02-25 11:54:27,348 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:54:27,367 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:54:27,368 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:54:27,368 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:54:27,368 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:54:27,369 WARN [PlugSim.java:68] Invalid power value in plug name: plug.invalid
+2025-02-25 11:54:27,375 DEBUG [PlugSim.java:88] Plug test.200: power 200.0
+2025-02-25 11:54:27,378 DEBUG [PlugSim.java:88] Plug plug: power 350.0
+2025-02-25 11:54:27,379 DEBUG [PlugSim.java:88] Plug plug: power 256.72172782980317
+2025-02-25 11:54:27,380 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 11:54:27,381 DEBUG [PlugSim.java:88] Plug a: power 53.20036594216183
+2025-02-25 11:54:27,381 DEBUG [PlugSim.java:88] Plug a: power 120.47411696238527
+2025-02-25 11:54:27,381 DEBUG [PlugSim.java:88] Plug a: power 105.03696427085617
+2025-02-25 11:54:27,382 DEBUG [PlugSim.java:88] Plug a: power 102.79372017753334
+2025-02-25 11:54:27,382 DEBUG [PlugSim.java:88] Plug a: power 95.05164104004886
+2025-02-25 11:54:27,382 DEBUG [PlugSim.java:88] Plug a: power 99.24798586246354
+2025-02-25 11:54:27,382 DEBUG [PlugSim.java:88] Plug a: power 168.85582641660287
+2025-02-25 11:54:27,383 DEBUG [PlugSim.java:88] Plug a: power 169.37101385383622
+2025-02-25 11:54:27,383 DEBUG [PlugSim.java:88] Plug a: power 159.1905857435308
+2025-02-25 11:54:27,383 DEBUG [PlugSim.java:88] Plug a: power 165.41016719413471
+2025-02-25 11:54:27,390 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-02-25 11:54:27,392 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 11:54:27,394 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-02-25 11:54:27,395 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 11:54:27,396 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 11:54:27,398 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-02-25 11:54:27,399 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-02-25 11:54:32,284 DEBUG [PlugSim.java:88] Plug xxxx: power 0.0
+2025-02-25 11:54:32,293 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-02-25 11:54:32,296 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 11:54:32,298 DEBUG [PlugSim.java:88] Plug zzzz.789: power 0.0
+2025-02-25 11:54:32,590 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46160 GET /xxxx HTTP/1.1
+2025-02-25 11:54:32,591 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 11:54:32,618 INFO [Grading.java:35] testCase00 of GradeP2: success
+2025-02-25 11:54:32,621 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46174 GET /xxxx?action=on HTTP/1.1
+2025-02-25 11:54:32,622 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 11:54:32,623 INFO [Grading.java:35] testCase01 of GradeP2: success
+2025-02-25 11:54:32,626 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46188 GET /xxxx?action=off HTTP/1.1
+2025-02-25 11:54:32,626 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=off}
+2025-02-25 11:54:32,628 INFO [Grading.java:35] testCase02 of GradeP2: success
+2025-02-25 11:54:32,630 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46196 GET /xxxx?action=on HTTP/1.1
+2025-02-25 11:54:32,631 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 11:54:32,633 INFO [Grading.java:35] testCase03 of GradeP2: success
+2025-02-25 11:54:32,636 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46200 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 11:54:32,637 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 11:54:32,639 INFO [Grading.java:35] testCase04 of GradeP2: success
+2025-02-25 11:54:32,641 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46202 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 11:54:32,641 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 11:54:32,643 INFO [Grading.java:35] testCase05 of GradeP2: success
+2025-02-25 11:54:32,645 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46216 GET /yyyy HTTP/1.1
+2025-02-25 11:54:32,646 INFO [HTTPCommands.java:30] HTTPCmd /yyyy: {}
+2025-02-25 11:54:32,649 INFO [Grading.java:35] testCase06 of GradeP2: success
+2025-02-25 11:54:32,651 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46222 GET /xxxx HTTP/1.1
+2025-02-25 11:54:32,651 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 11:54:32,653 INFO [Grading.java:35] testCase07 of GradeP2: success
+2025-02-25 11:54:32,655 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46228 GET /zzzz.789 HTTP/1.1
+2025-02-25 11:54:32,656 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 11:54:32,659 INFO [Grading.java:35] testCase08 of GradeP2: success
+2025-02-25 11:54:32,662 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46234 GET /zzzz.789?action=on HTTP/1.1
+2025-02-25 11:54:32,663 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {action=on}
+2025-02-25 11:54:33,299 DEBUG [PlugSim.java:88] Plug xxxx: power 62.20511397810189
+2025-02-25 11:54:33,305 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 11:54:33,306 DEBUG [PlugSim.java:88] Plug zzzz.789: power 789.0
+2025-02-25 11:54:34,172 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46244 GET /zzzz.789 HTTP/1.1
+2025-02-25 11:54:34,174 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 11:54:34,178 INFO [Grading.java:35] testCase09 of GradeP2: success
+2025-02-25 11:54:34,182 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-02-25 12:01:22,131 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:01:22,149 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:01:22,150 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:01:22,151 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:01:22,151 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:01:22,153 WARN [PlugSim.java:68] Invalid power value in plug name: plug.invalid
+2025-02-25 12:01:22,163 DEBUG [PlugSim.java:88] Plug test.200: power 200.0
+2025-02-25 12:01:22,167 DEBUG [PlugSim.java:88] Plug plug: power 350.0
+2025-02-25 12:01:22,167 DEBUG [PlugSim.java:88] Plug plug: power 255.4066601382512
+2025-02-25 12:01:22,169 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:01:22,170 DEBUG [PlugSim.java:88] Plug a: power 23.34318317964087
+2025-02-25 12:01:22,171 DEBUG [PlugSim.java:88] Plug a: power 122.23939904102328
+2025-02-25 12:01:22,172 DEBUG [PlugSim.java:88] Plug a: power 140.7382049312704
+2025-02-25 12:01:22,172 DEBUG [PlugSim.java:88] Plug a: power 131.76590377615636
+2025-02-25 12:01:22,172 DEBUG [PlugSim.java:88] Plug a: power 119.88184921484739
+2025-02-25 12:01:22,173 DEBUG [PlugSim.java:88] Plug a: power 110.34546199059696
+2025-02-25 12:01:22,173 DEBUG [PlugSim.java:88] Plug a: power 127.90017371587106
+2025-02-25 12:01:22,173 DEBUG [PlugSim.java:88] Plug a: power 113.03118013240018
+2025-02-25 12:01:22,173 DEBUG [PlugSim.java:88] Plug a: power 125.14574727129025
+2025-02-25 12:01:22,173 DEBUG [PlugSim.java:88] Plug a: power 105.81517317658535
+2025-02-25 12:01:22,184 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-02-25 12:01:22,186 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 12:01:22,187 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-02-25 12:01:22,188 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-02-25 12:01:22,190 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-02-25 12:01:22,192 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 12:01:22,193 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 12:01:22,194 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-02-25 12:01:22,196 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-02-25 12:01:28,895 DEBUG [PlugSim.java:88] Plug xxxx: power 0.0
+2025-02-25 12:01:28,904 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-02-25 12:01:28,904 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 12:01:28,905 DEBUG [PlugSim.java:88] Plug zzzz.789: power 0.0
+2025-02-25 12:01:29,180 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59114 GET /xxxx HTTP/1.1
+2025-02-25 12:01:29,181 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 12:01:29,199 INFO [Grading.java:35] testCase00 of GradeP2: success
+2025-02-25 12:01:29,202 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59120 GET /xxxx?action=on HTTP/1.1
+2025-02-25 12:01:29,202 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 12:01:29,215 INFO [Grading.java:35] testCase01 of GradeP2: success
+2025-02-25 12:01:29,218 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59122 GET /xxxx?action=off HTTP/1.1
+2025-02-25 12:01:29,219 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=off}
+2025-02-25 12:01:29,221 INFO [Grading.java:35] testCase02 of GradeP2: success
+2025-02-25 12:01:29,223 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59134 GET /xxxx?action=on HTTP/1.1
+2025-02-25 12:01:29,224 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 12:01:29,225 INFO [Grading.java:35] testCase03 of GradeP2: success
+2025-02-25 12:01:29,228 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59148 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 12:01:29,229 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 12:01:29,231 INFO [Grading.java:35] testCase04 of GradeP2: success
+2025-02-25 12:01:29,233 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59158 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 12:01:29,234 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 12:01:29,237 INFO [Grading.java:35] testCase05 of GradeP2: success
+2025-02-25 12:01:29,241 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59166 GET /yyyy HTTP/1.1
+2025-02-25 12:01:29,242 INFO [HTTPCommands.java:30] HTTPCmd /yyyy: {}
+2025-02-25 12:01:29,244 INFO [Grading.java:35] testCase06 of GradeP2: success
+2025-02-25 12:01:29,250 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59168 GET /xxxx HTTP/1.1
+2025-02-25 12:01:29,251 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 12:01:29,252 INFO [Grading.java:35] testCase07 of GradeP2: success
+2025-02-25 12:01:29,255 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59176 GET /zzzz.789 HTTP/1.1
+2025-02-25 12:01:29,255 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 12:01:29,257 INFO [Grading.java:35] testCase08 of GradeP2: success
+2025-02-25 12:01:29,260 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59192 GET /zzzz.789?action=on HTTP/1.1
+2025-02-25 12:01:29,261 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {action=on}
+2025-02-25 12:01:29,907 DEBUG [PlugSim.java:88] Plug xxxx: power 58.77440918055748
+2025-02-25 12:01:29,913 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 12:01:29,914 DEBUG [PlugSim.java:88] Plug zzzz.789: power 789.0
+2025-02-25 12:01:30,767 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:59204 GET /zzzz.789 HTTP/1.1
+2025-02-25 12:01:30,768 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 12:01:30,772 INFO [Grading.java:35] testCase09 of GradeP2: success
+2025-02-25 12:01:30,778 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-02-25 12:06:51,112 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:06:51,126 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:06:51,127 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:06:51,127 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:06:51,127 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:06:51,128 WARN [PlugSim.java:68] Invalid power value in plug name: plug.invalid
+2025-02-25 12:06:51,135 DEBUG [PlugSim.java:88] Plug test.200: power 200.0
+2025-02-25 12:06:51,138 DEBUG [PlugSim.java:88] Plug plug: power 350.0
+2025-02-25 12:06:51,139 DEBUG [PlugSim.java:88] Plug plug: power 254.35824940242262
+2025-02-25 12:06:51,140 DEBUG [PlugSim.java:88] Plug a: power 0.0
+2025-02-25 12:06:51,140 DEBUG [PlugSim.java:88] Plug a: power 37.45242605870496
+2025-02-25 12:06:51,141 DEBUG [PlugSim.java:88] Plug a: power 41.389755617146655
+2025-02-25 12:06:51,141 DEBUG [PlugSim.java:88] Plug a: power 49.70505076970032
+2025-02-25 12:06:51,141 DEBUG [PlugSim.java:88] Plug a: power 132.80313705981925
+2025-02-25 12:06:51,141 DEBUG [PlugSim.java:88] Plug a: power 151.30404793472638
+2025-02-25 12:06:51,142 DEBUG [PlugSim.java:88] Plug a: power 148.44805594757324
+2025-02-25 12:06:51,142 DEBUG [PlugSim.java:88] Plug a: power 131.4439175619016
+2025-02-25 12:06:51,142 DEBUG [PlugSim.java:88] Plug a: power 147.56077376767158
+2025-02-25 12:06:51,142 DEBUG [PlugSim.java:88] Plug a: power 147.45367043287646
+2025-02-25 12:06:51,142 DEBUG [PlugSim.java:88] Plug a: power 132.93620748889535
+2025-02-25 12:06:51,149 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-02-25 12:06:51,151 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 12:06:51,152 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-02-25 12:06:51,153 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-02-25 12:06:51,153 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 12:06:51,154 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-02-25 12:06:51,155 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-02-25 12:06:51,156 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 12:06:51,157 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-02-25 12:06:51,158 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-02-25 12:06:51,159 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-02-25 12:06:55,519 DEBUG [PlugSim.java:88] Plug xxxx: power 0.0
+2025-02-25 12:06:55,522 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-02-25 12:06:55,531 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 12:06:55,532 DEBUG [PlugSim.java:88] Plug zzzz.789: power 0.0
+2025-02-25 12:06:55,762 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46770 GET /xxxx HTTP/1.1
+2025-02-25 12:06:55,763 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 12:06:55,777 INFO [Grading.java:35] testCase00 of GradeP2: success
+2025-02-25 12:06:55,781 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46782 GET /xxxx?action=on HTTP/1.1
+2025-02-25 12:06:55,781 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 12:06:55,785 INFO [Grading.java:35] testCase01 of GradeP2: success
+2025-02-25 12:06:55,787 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46790 GET /xxxx?action=off HTTP/1.1
+2025-02-25 12:06:55,788 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=off}
+2025-02-25 12:06:55,790 INFO [Grading.java:35] testCase02 of GradeP2: success
+2025-02-25 12:06:55,792 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46794 GET /xxxx?action=on HTTP/1.1
+2025-02-25 12:06:55,792 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=on}
+2025-02-25 12:06:55,793 INFO [Grading.java:35] testCase03 of GradeP2: success
+2025-02-25 12:06:55,795 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46806 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 12:06:55,795 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 12:06:55,797 INFO [Grading.java:35] testCase04 of GradeP2: success
+2025-02-25 12:06:55,799 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46808 GET /xxxx?action=toggle HTTP/1.1
+2025-02-25 12:06:55,799 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {action=toggle}
+2025-02-25 12:06:55,800 INFO [Grading.java:35] testCase05 of GradeP2: success
+2025-02-25 12:06:55,803 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46818 GET /yyyy HTTP/1.1
+2025-02-25 12:06:55,803 INFO [HTTPCommands.java:30] HTTPCmd /yyyy: {}
+2025-02-25 12:06:55,804 INFO [Grading.java:35] testCase06 of GradeP2: success
+2025-02-25 12:06:55,806 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46826 GET /xxxx HTTP/1.1
+2025-02-25 12:06:55,806 INFO [HTTPCommands.java:30] HTTPCmd /xxxx: {}
+2025-02-25 12:06:55,807 INFO [Grading.java:35] testCase07 of GradeP2: success
+2025-02-25 12:06:55,809 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46842 GET /zzzz.789 HTTP/1.1
+2025-02-25 12:06:55,810 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 12:06:55,811 INFO [Grading.java:35] testCase08 of GradeP2: success
+2025-02-25 12:06:55,813 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46846 GET /zzzz.789?action=on HTTP/1.1
+2025-02-25 12:06:55,813 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {action=on}
+2025-02-25 12:06:56,533 DEBUG [PlugSim.java:88] Plug xxxx: power 76.50521300172248
+2025-02-25 12:06:56,536 DEBUG [PlugSim.java:88] Plug yyyy: power 0.0
+2025-02-25 12:06:56,537 DEBUG [PlugSim.java:88] Plug zzzz.789: power 789.0
+2025-02-25 12:06:57,320 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:46856 GET /zzzz.789 HTTP/1.1
+2025-02-25 12:06:57,326 INFO [HTTPCommands.java:30] HTTPCmd /zzzz.789: {}
+2025-02-25 12:06:57,331 INFO [Grading.java:35] testCase09 of GradeP2: success
+2025-02-25 12:06:57,336 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
