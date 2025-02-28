@@ -35,8 +35,8 @@ public class HTTPCommands implements RequestHandler {
 		}
 
 <span class="fc" id="L37">		PlugSim plug = plugs.get(path.substring(1));</span>
-<span class="pc bpc" id="L38" title="1 of 2 branches missed.">		if (plug == null)</span>
-<span class="nc" id="L39">			return null; // no such plug</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">		if (plug == null)</span>
+<span class="fc" id="L39">			return null; // no such plug</span>
 
 <span class="fc" id="L41">		String action = params.get(&quot;action&quot;);</span>
 <span class="fc bfc" id="L42" title="All 2 branches covered.">		if (action == null)</span>
@@ -47,10 +47,10 @@ public class HTTPCommands implements RequestHandler {
 <span class="fc" id="L47">			plug.switchOn();</span>
 <span class="fc bfc" id="L48" title="All 2 branches covered.">		} else if (&quot;off&quot;.equals(action)) {</span>
 <span class="fc" id="L49">			plug.switchOff();</span>
-<span class="pc bpc" id="L50" title="1 of 2 branches missed.">		} else if (&quot;toggle&quot;.equals(action)) {</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">		} else if (&quot;toggle&quot;.equals(action)) {</span>
 <span class="fc" id="L51">			plug.toggle();</span>
 		} else {
-<span class="nc" id="L53">			return &quot;&lt;html&gt;&lt;body&gt;&lt;p&gt;Invalid action&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;;</span>
+<span class="fc" id="L53">			return &quot;&lt;html&gt;&lt;body&gt;&lt;p&gt;Invalid action&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;;</span>
 		}
 <span class="fc" id="L55">		return report(plug);</span>
 		//return &quot;&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;&quot;;

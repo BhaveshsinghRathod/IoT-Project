@@ -107,4 +107,25 @@ public class HTTPCommandsTests {
         assertTrue(response.contains("Plug testPlug is on"));
     }
 
+    @Test
+    public void testNonExistingPlug() {
+        PlugSim plug = new PlugSim("plug1");
+        HTTPCommands httpCommands = new HTTPCommands(Arrays.asList(plug));
+
+        String response = httpCommands.handleGet("/unknownPlug", new HashMap<>());
+        assertNull(response);
+    }
+
+    @Test
+    public void testInvalidAction() {
+        PlugSim plug = new PlugSim("testPlug");
+        HTTPCommands httpCommands = new HTTPCommands(Arrays.asList(plug));
+
+        Map<String, String> params = new HashMap<>();
+        params.put("action", "invalidAction");
+
+        String response = httpCommands.handleGet("/testPlug", params);
+        assertNotNull(response);
+    }
+
 }

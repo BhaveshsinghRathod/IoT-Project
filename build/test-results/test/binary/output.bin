@@ -1,12 +1,14 @@
-L2025-02-25 12:06:51,128 WARN Invalid power value in plug name: plug.invalid
-<2025-02-25 12:06:51,149 INFO HTTPCmd /testPlug: {action=on}
-@2025-02-25 12:06:51,151 INFO HTTPCmd /testPlug: {action=toggle}
-<2025-02-25 12:06:51,152 INFO HTTPCmd /testPlug: {action=on}
-32025-02-25 12:06:51,153 INFO HTTPCmd /testPlug: {}
-@2025-02-25 12:06:51,153 INFO HTTPCmd /testPlug: {action=toggle}
-32025-02-25 12:06:51,154 INFO HTTPCmd /testPlug: {}
-+2025-02-25 12:06:51,155 INFO HTTPCmd /: {}
-@2025-02-25 12:06:51,156 INFO HTTPCmd /testPlug: {action=toggle}
-@2025-02-25 12:06:51,157 INFO HTTPCmd /testPlug: {action=toggle}
-32025-02-25 12:06:51,158 INFO HTTPCmd /testPlug: {}
-=2025-02-25 12:06:51,159 INFO HTTPCmd /testPlug: {action=off}
+L2025-02-27 19:35:31,539 WARN Invalid power value in plug name: plug.invalid
+<2025-02-27 19:35:31,560 INFO HTTPCmd /testPlug: {action=on}
+@2025-02-27 19:35:31,563 INFO HTTPCmd /testPlug: {action=toggle}
+<2025-02-27 19:35:31,564 INFO HTTPCmd /testPlug: {action=on}
+32025-02-27 19:35:31,565 INFO HTTPCmd /testPlug: {}
+@2025-02-27 19:35:31,566 INFO HTTPCmd /testPlug: {action=toggle}
+32025-02-27 19:35:31,569 INFO HTTPCmd /testPlug: {}
++2025-02-27 19:35:31,571 INFO HTTPCmd /: {}
+@2025-02-27 19:35:31,573 INFO HTTPCmd /testPlug: {action=toggle}
+@2025-02-27 19:35:31,574 INFO HTTPCmd /testPlug: {action=toggle}
+G2025-02-27 19:35:31,576 INFO HTTPCmd /testPlug: {action=invalidAction}
+62025-02-27 19:35:31,577 INFO HTTPCmd /unknownPlug: {}
+32025-02-27 19:35:31,578 INFO HTTPCmd /testPlug: {}
+=2025-02-27 19:35:31,580 INFO HTTPCmd /testPlug: {action=off}
