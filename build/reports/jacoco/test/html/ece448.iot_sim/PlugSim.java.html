@@ -2,106 +2,133 @@
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * Simulate a smart plug with power monitoring.
  */
 public class PlugSim {
 
-	private final String name;
-<span class="fc" id="L12">	private boolean on = false;</span>
-<span class="fc" id="L13">	private double power = 0; // in watts</span>
+    private final String name;
+<span class="fc" id="L15">    private boolean on = false;</span>
+<span class="fc" id="L16">    private double power = 0; // in watts</span>
+<span class="fc" id="L17">    private List&lt;Consumer&lt;Boolean&gt;&gt; stateChangeListeners = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L18">    private List&lt;Consumer&lt;Double&gt;&gt; powerChangeListeners = new ArrayList&lt;&gt;();</span>
 
-<span class="fc" id="L15">	public PlugSim(String name) {</span>
-<span class="fc" id="L16">		this.name = name;</span>
-<span class="fc" id="L17">	}</span>
+<span class="fc" id="L20">    public PlugSim(String name) {</span>
+<span class="fc" id="L21">        this.name = name;</span>
+<span class="fc" id="L22">    }</span>
 
-	/**
-	 * No need to synchronize if read a final field.
-	 */
-	public String getName() {
-<span class="fc" id="L23">		return name;</span>
-	}
+    /**
+     * No need to synchronize if read a final field.
+     */
+    public String getName() {
+<span class="fc" id="L28">        return name;</span>
+    }
 
-	/**
-	 * Switch the plug on.
-	 */
-	synchronized public void switchOn() {
-		// P1: add your code here
-<span class="fc" id="L31">		on = true;</span>
-<span class="fc" id="L32">	}</span>
+    /**
+     * Switch the plug on.
+     */
+    synchronized public void switchOn() {
+<span class="pc bpc" id="L35" title="1 of 2 branches missed.">        if (!on) {</span>
+<span class="fc" id="L36">            on = true;</span>
+<span class="fc" id="L37">            notifyStateChange();</span>
+        }
+<span class="fc" id="L39">    }</span>
 
-	/**
-	 * Switch the plug off.
-	 */
-	synchronized public void switchOff() {
-		// P1: add your code here
-<span class="fc" id="L39">		on = false;</span>
-<span class="fc" id="L40">	}</span>
+    /**
+     * Switch the plug off.
+     */
+    synchronized public void switchOff() {
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        if (on) {</span>
+<span class="fc" id="L46">            on = false;</span>
+<span class="fc" id="L47">            updatePower(0);</span>
+<span class="fc" id="L48">            notifyStateChange();</span>
+        }
+<span class="fc" id="L50">    }</span>
 
-	/**
-	 * Toggle the plug.
-	 */
-	synchronized public void toggle() {
-		// P1: add your code here
-<span class="fc bfc" id="L47" title="All 2 branches covered.">		on = !on;</span>
-<span class="fc bfc" id="L48" title="All 2 branches covered.">		if (!on) {</span>
-<span class="fc" id="L49">			power = 0;</span>
-		}
-<span class="fc" id="L51">	}</span>
+    /**
+     * Toggle the plug.
+     */
+    synchronized public void toggle() {
+<span class="fc bfc" id="L56" title="All 2 branches covered.">        on = !on;</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        if (!on) {</span>
+<span class="fc" id="L58">            updatePower(0);</span>
+        }
+<span class="fc" id="L60">        notifyStateChange();</span>
+<span class="fc" id="L61">    }</span>
 
-	/**
-	 * Measure power.
-	 */
-	synchronized public void measurePower() {
-<span class="fc bfc" id="L57" title="All 2 branches covered.">		if (!on) {</span>
-<span class="fc" id="L58">			updatePower(0);</span>
-<span class="fc" id="L59">			return;</span>
-		}
+    /**
+     * Measure power.
+     */
+    synchronized public void measurePower() {
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (!on) {</span>
+<span class="fc" id="L68">            updatePower(0);</span>
+<span class="fc" id="L69">            return;</span>
+        }
 
+        // a trick to help testing
+<span class="fc bfc" id="L73" title="All 2 branches covered.">        if (name.indexOf(&quot;.&quot;) != -1) {</span>
+            try {
+<span class="fc" id="L75">                updatePower(Integer.parseInt(name.split(&quot;\\.&quot;)[1]));</span>
+<span class="fc" id="L76">            } catch (NumberFormatException e) {</span>
+<span class="fc" id="L77">                logger.warn(&quot;Invalid power value in plug name: {}&quot;, name);</span>
+<span class="fc" id="L78">            }</span>
+        }
+        // do some random walk
+<span class="fc bfc" id="L81" title="All 2 branches covered.">        else if (power &lt; 100) {</span>
+<span class="fc" id="L82">            updatePower(power + Math.random() * 100);</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        } else if (power &gt; 300) {</span>
+<span class="fc" id="L84">            updatePower(power - Math.random() * 100);</span>
+        } else {
+<span class="fc" id="L86">            updatePower(power + Math.random() * 40 - 20);</span>
+        }
+<span class="fc" id="L88">    }</span>
 
-		// a trick to help testing
-<span class="fc bfc" id="L64" title="All 2 branches covered.">		if (name.indexOf(&quot;.&quot;) != -1){</span>
-			try {
-<span class="fc" id="L66">				updatePower(Integer.parseInt(name.split(&quot;\\.&quot;)[1]));</span>
-<span class="fc" id="L67">			} catch (NumberFormatException e) {</span>
-<span class="fc" id="L68">				logger.warn(&quot;Invalid power value in plug name: {}&quot;, name);</span>
-<span class="fc" id="L69">			}</span>
-		}
-		// do some random walk
-<span class="fc bfc" id="L72" title="All 2 branches covered.">		else if (power &lt; 100)</span>
-		{
-<span class="fc" id="L74">			updatePower(power + Math.random() * 100);</span>
-		}
-<span class="fc bfc" id="L76" title="All 2 branches covered.">		else if (power &gt; 300)</span>
-		{
-<span class="fc" id="L78">			updatePower(power - Math.random() * 100);</span>
-		}
-		else
-		{
-<span class="fc" id="L82">			updatePower(power + Math.random() * 40 - 20);</span>
-		}
-<span class="fc" id="L84">	}</span>
+    protected void updatePower(double p) {
+<span class="fc bfc" id="L91" title="All 2 branches covered.">        if (power != p) {</span>
+<span class="fc" id="L92">            power = p;</span>
+<span class="fc" id="L93">            logger.debug(&quot;Plug {}: power {}&quot;, name, power);</span>
+<span class="fc" id="L94">            notifyPowerChange();</span>
+        }
+<span class="fc" id="L96">    }</span>
 
-	protected void updatePower(double p) {
-<span class="fc" id="L87">		power = p;</span>
-<span class="fc" id="L88">		logger.debug(&quot;Plug {}: power {}&quot;, name, power);</span>
-<span class="fc" id="L89">	}</span>
+    /**
+     * Getter: current state
+     */
+    synchronized public boolean isOn() {
+<span class="fc" id="L102">        return on;</span>
+    }
 
-	/**
-	 * Getter: current state
-	 */
-	synchronized public boolean isOn() {
-<span class="fc" id="L95">		return on;</span>
-	}
+    /**
+     * Getter: last power reading
+     */
+    synchronized public double getPower() {
+<span class="fc" id="L109">        return power;</span>
+    }
 
-	/**
-	 * Getter: last power reading
-	 */
-	synchronized public double getPower() {
-<span class="fc" id="L102">		return power;</span>
-	}
+    public void addStateChangeListener(Consumer&lt;Boolean&gt; listener) {
+<span class="nc" id="L113">        stateChangeListeners.add(listener);</span>
+<span class="nc" id="L114">    }</span>
 
-<span class="fc" id="L105">	private static final Logger logger = LoggerFactory.getLogger(PlugSim.class);</span>
+    public void addPowerChangeListener(Consumer&lt;Double&gt; listener) {
+<span class="nc" id="L117">        powerChangeListeners.add(listener);</span>
+<span class="nc" id="L118">    }</span>
+
+    private void notifyStateChange() {
+<span class="pc bpc" id="L121" title="1 of 2 branches missed.">        for (Consumer&lt;Boolean&gt; listener : stateChangeListeners) {</span>
+<span class="nc" id="L122">            listener.accept(on);</span>
+<span class="nc" id="L123">        }</span>
+<span class="fc" id="L124">    }</span>
+
+    private void notifyPowerChange() {
+<span class="pc bpc" id="L127" title="1 of 2 branches missed.">        for (Consumer&lt;Double&gt; listener : powerChangeListeners) {</span>
+<span class="nc" id="L128">            listener.accept(power);</span>
+<span class="nc" id="L129">        }</span>
+<span class="fc" id="L130">    }</span>
+
+<span class="fc" id="L132">    private static final Logger logger = LoggerFactory.getLogger(PlugSim.class);</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

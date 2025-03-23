@@ -5,52 +5,101 @@ import java.util.ArrayList;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import ece448.iot_sim.http_server.JHTTP;
 
 public class Main implements AutoCloseable {
-	public static void main(String[] args) throws Exception {
-		// load configuration file
-<span class="nc bnc" id="L16" title="All 2 branches missed.">		String configFile = args.length &gt; 0 ? args[0] : &quot;simConfig.json&quot;;</span>
-<span class="nc" id="L17">		SimConfig config = mapper.readValue(new File(configFile), SimConfig.class);</span>
-<span class="nc" id="L18">		logger.info(&quot;{}: {}&quot;, configFile, mapper.writeValueAsString(config));</span>
+    public static void main(String[] args) throws Exception {
+<span class="nc bnc" id="L19" title="All 2 branches missed.">        String configFile = args.length &gt; 0 ? args[0] : &quot;simConfig.json&quot;;</span>
+<span class="nc" id="L20">        SimConfig config = mapper.readValue(new File(configFile), SimConfig.class);</span>
+<span class="nc" id="L21">        logger.info(&quot;Loaded config: {}&quot;, mapper.writeValueAsString(config));</span>
 
-<span class="nc" id="L20">		try (Main m = new Main(config))</span>
-		{
-			// loop forever
-			for (;;)
-			{
-<span class="nc" id="L25">				Thread.sleep(60000);</span>
-			}
-		}
-	}
+<span class="nc" id="L23">        try (Main m = new Main(config)) {</span>
+<span class="nc" id="L24">            while (true) Thread.sleep(60000);</span>
+        }
+    }
 
-<span class="nc" id="L30">	public Main(SimConfig config) throws Exception {</span>
-		// create plugs
-<span class="nc" id="L32">		ArrayList&lt;PlugSim&gt; plugs = new ArrayList&lt;&gt;();</span>
-<span class="nc bnc" id="L33" title="All 2 branches missed.">		for (String plugName: config.getPlugNames()) {</span>
-<span class="nc" id="L34">			plugs.add(new PlugSim(plugName));</span>
-<span class="nc" id="L35">		}</span>
+<span class="nc" id="L28">    public Main(SimConfig config) throws Exception {</span>
+        // Initialize plugs
+<span class="nc" id="L30">        ArrayList&lt;PlugSim&gt; plugs = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L31" title="All 2 branches missed.">        for (String name : config.getPlugNames()) {</span>
+<span class="nc" id="L32">            plugs.add(new PlugSim(name));</span>
+<span class="nc" id="L33">        }</span>
 
-		// start power measurements
-<span class="nc" id="L38">		MeasurePower measurePower = new MeasurePower(plugs);</span>
-<span class="nc" id="L39">		measurePower.start();</span>
+        // Start power monitoring
+<span class="nc" id="L36">        new MeasurePower(plugs).start();</span>
 
-		// start HTTP commands
-<span class="nc" id="L42">		this.http = new JHTTP(config.getHttpPort(), new HTTPCommands(plugs));</span>
-<span class="nc" id="L43">		this.http.start();</span>
-<span class="nc" id="L44">	}</span>
+        // HTTP Server
+<span class="nc" id="L39">        this.http = new JHTTP(config.getHttpPort(), new HTTPCommands(plugs));</span>
+<span class="nc" id="L40">        this.http.start();</span>
 
-	@Override
-	public void close() throws Exception {
-<span class="nc" id="L48">		http.close();</span>
-<span class="nc" id="L49">	}</span>
+        // MQTT Client Setup
+<span class="nc" id="L43">        this.mqttClient = new MqttClient(</span>
+<span class="nc" id="L44">            config.getMqttBroker(),</span>
+<span class="nc" id="L45">            config.getMqttClientId(),</span>
+            new org.eclipse.paho.client.mqttv3.persist.MemoryPersistence()
+        );
+        
+<span class="nc" id="L49">        MqttConnectOptions options = new MqttConnectOptions();</span>
+<span class="nc" id="L50">        options.setCleanSession(true);</span>
+<span class="nc" id="L51">        mqttClient.connect(options);</span>
 
-	private final JHTTP http;
+        // MQTT Command Handling
+<span class="nc" id="L54">        MQTTCommands commands = new MQTTCommands(plugs, config.getMqttTopicPrefix());</span>
+<span class="nc" id="L55">        mqttClient.subscribe(commands.getTopic(), (topic, msg) -&gt; {</span>
+            try {
+<span class="nc" id="L57">                commands.handleMessage(topic, msg);</span>
+<span class="nc" id="L58">            } catch (Exception e) {</span>
+<span class="nc" id="L59">                logger.error(&quot;MQTT command error: {}&quot;, e.getMessage());</span>
+<span class="nc" id="L60">            }</span>
+<span class="nc" id="L61">        });</span>
 
-<span class="nc" id="L53">	private static final ObjectMapper mapper = new ObjectMapper();</span>
-<span class="nc" id="L54">	private static final Logger logger = LoggerFactory.getLogger(Main.class);</span>
+        // MQTT Update Publishing
+<span class="nc" id="L64">        MQTTUpdates updates = new MQTTUpdates(config.getMqttTopicPrefix());</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">        for (PlugSim plug : plugs) {</span>
+            // State updates
+<span class="nc" id="L67">            plug.addStateChangeListener(state -&gt; {</span>
+                try {
+<span class="nc" id="L69">                    String topic = updates.getTopic(plug.getName(), &quot;state&quot;);</span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">                    MqttMessage message = updates.getMessage(state ? &quot;on&quot; : &quot;off&quot;);</span>
+<span class="nc" id="L71">                    mqttClient.publish(topic, message);</span>
+<span class="nc" id="L72">                } catch (Exception e) {</span>
+<span class="nc" id="L73">                    logger.error(&quot;State update failed: {}&quot;, e.getMessage());</span>
+<span class="nc" id="L74">                }</span>
+<span class="nc" id="L75">            });</span>
+
+            // Power updates (always format to 3 decimal places)
+<span class="nc" id="L78">            plug.addPowerChangeListener(power -&gt; {</span>
+                try {
+<span class="nc" id="L80">                    String topic = updates.getTopic(plug.getName(), &quot;power&quot;);</span>
+<span class="nc" id="L81">                    String value = String.format(&quot;%.3f&quot;, power);</span>
+<span class="nc" id="L82">                    MqttMessage message = updates.getMessage(value);</span>
+<span class="nc" id="L83">                    mqttClient.publish(topic, message);</span>
+<span class="nc" id="L84">                } catch (Exception e) {</span>
+<span class="nc" id="L85">                    logger.error(&quot;Power update failed: {}&quot;, e.getMessage());</span>
+<span class="nc" id="L86">                }</span>
+<span class="nc" id="L87">            });</span>
+<span class="nc" id="L88">        }</span>
+<span class="nc" id="L89">    }</span>
+
+    @Override
+    public void close() throws Exception {
+<span class="nc" id="L93">        http.close();</span>
+<span class="nc bnc" id="L94" title="All 4 branches missed.">        if (mqttClient != null &amp;&amp; mqttClient.isConnected()) {</span>
+<span class="nc" id="L95">            mqttClient.disconnect();</span>
+<span class="nc" id="L96">            mqttClient.close();</span>
+        }
+<span class="nc" id="L98">    }</span>
+
+    private final JHTTP http;
+    private final MqttClient mqttClient;
+<span class="nc" id="L102">    private static final ObjectMapper mapper = new ObjectMapper();</span>
+<span class="nc" id="L103">    private static final Logger logger = LoggerFactory.getLogger(Main.class);</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

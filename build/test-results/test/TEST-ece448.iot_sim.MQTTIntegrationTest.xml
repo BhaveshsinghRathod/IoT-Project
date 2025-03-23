@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ece448.iot_sim.MQTTIntegrationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-03-23T21:35:08" hostname="iit" time="0.283">
+  <properties/>
+  <testcase name="testPowerUpdateMessage" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.281"/>
+  <testcase name="testPlugToggle" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.001"/>
+  <testcase name="testCommandTopic" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.0"/>
+  <testcase name="testPlugOnOff" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.0"/>
+  <testcase name="testStateUpdateTopic" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.001"/>
+  <testcase name="testStateUpdateMessage" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.0"/>
+  <testcase name="testInvalidAction" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.0"/>
+  <testcase name="testPowerUpdateTopic" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.0"/>
+  <testcase name="testUnknownPlug" classname="ece448.iot_sim.MQTTIntegrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
