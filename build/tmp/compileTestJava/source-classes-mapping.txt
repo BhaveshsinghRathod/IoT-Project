@@ -1,6 +1,6 @@
 ece448/iot_sim/PlugSimTests.java
  ece448.iot_sim.PlugSimTests
-ece448/iot_sim/MQTTIntegrationTest.java
- ece448.iot_sim.MQTTIntegrationTest
+ece448/iot_sim/MQTTCommandsTest.java
+ ece448.iot_sim.MQTTCommandsTest
 ece448/iot_sim/HTTPCommandsTests.java
  ece448.iot_sim.HTTPCommandsTests

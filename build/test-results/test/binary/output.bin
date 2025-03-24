@@ -1,14 +1,32 @@
-L2025-03-23 16:35:08,809 WARN Invalid power value in plug name: plug.invalid
-<2025-03-23 16:35:08,849 INFO HTTPCmd /testPlug: {action=on}
-@2025-03-23 16:35:08,852 INFO HTTPCmd /testPlug: {action=toggle}
-<2025-03-23 16:35:08,853 INFO HTTPCmd /testPlug: {action=on}
-32025-03-23 16:35:08,854 INFO HTTPCmd /testPlug: {}
-@2025-03-23 16:35:08,856 INFO HTTPCmd /testPlug: {action=toggle}
-32025-03-23 16:35:08,857 INFO HTTPCmd /testPlug: {}
-+2025-03-23 16:35:08,857 INFO HTTPCmd /: {}
-@2025-03-23 16:35:08,859 INFO HTTPCmd /testPlug: {action=toggle}
-@2025-03-23 16:35:08,860 INFO HTTPCmd /testPlug: {action=toggle}
-G2025-03-23 16:35:08,860 INFO HTTPCmd /testPlug: {action=invalidAction}
-62025-03-23 16:35:08,862 INFO HTTPCmd /unknownPlug: {}
- 32025-03-23 16:35:08,862 INFO HTTPCmd /testPlug: {}
-!=2025-03-23 16:35:08,863 INFO HTTPCmd /testPlug: {action=off}
+D2025-03-23 23:08:52,416 WARN Invalid plug name format: plug.invalid
+;2025-03-23 23:08:52,422 INFO Plug plug.invalid switched ON
+D2025-03-23 23:08:52,423 WARN Invalid plug name format: plug.invalid
+72025-03-23 23:08:52,427 INFO Plug test.200 switched ON
+02025-03-23 23:08:52,432 INFO Plug a switched ON
+	32025-03-23 23:08:52,435 INFO Plug plug switched ON
+02025-03-23 23:08:52,440 INFO Plug a switched ON
+12025-03-23 23:08:52,441 INFO Plug a switched OFF
+02025-03-23 23:08:52,442 INFO Plug a switched ON
+A2025-03-23 23:08:52,601 WARN Invalid topic format: invalid/topic
+92025-03-23 23:08:52,604 WARN Plug not found: nonexistent
+<2025-03-23 23:08:52,611 INFO HTTPCmd /testPlug: {action=on}
+72025-03-23 23:08:52,611 INFO Plug testPlug switched ON
+@2025-03-23 23:08:52,612 INFO HTTPCmd /testPlug: {action=toggle}
+72025-03-23 23:08:52,613 INFO Plug testPlug switched ON
+<2025-03-23 23:08:52,614 INFO HTTPCmd /testPlug: {action=on}
+72025-03-23 23:08:52,614 INFO Plug testPlug switched ON
+32025-03-23 23:08:52,614 INFO HTTPCmd /testPlug: {}
+@2025-03-23 23:08:52,615 INFO HTTPCmd /testPlug: {action=toggle}
+72025-03-23 23:08:52,616 INFO Plug testPlug switched ON
+32025-03-23 23:08:52,616 INFO HTTPCmd /testPlug: {}
++2025-03-23 23:08:52,618 INFO HTTPCmd /: {}
+@2025-03-23 23:08:52,620 INFO HTTPCmd /testPlug: {action=toggle}
+72025-03-23 23:08:52,620 INFO Plug testPlug switched ON
+@2025-03-23 23:08:52,621 INFO HTTPCmd /testPlug: {action=toggle}
+82025-03-23 23:08:52,622 INFO Plug testPlug switched OFF
+G2025-03-23 23:08:52,623 INFO HTTPCmd /testPlug: {action=invalidAction}
+62025-03-23 23:08:52,624 INFO HTTPCmd /unknownPlug: {}
+32025-03-23 23:08:52,625 INFO HTTPCmd /testPlug: {}
+72025-03-23 23:08:52,627 INFO Plug testPlug switched ON
+=2025-03-23 23:08:52,627 INFO HTTPCmd /testPlug: {action=off}
+82025-03-23 23:08:52,628 INFO Plug testPlug switched OFF

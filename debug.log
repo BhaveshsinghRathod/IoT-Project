@@ -8461,3 +8461,689 @@
 2025-03-23 16:35:19,750 INFO [Grading.java:42] testCase09 of GradeP3: failed
 2025-03-23 16:35:19,756 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
 2025-03-23 16:35:19,782 INFO [GradeP3.java:52] MqttCtl grader/iot_sim: disconnected
+2025-03-23 19:38:55,557 WARN [PlugSim.java:77] Invalid power value in plug name: plug.invalid
+2025-03-23 19:38:55,584 DEBUG [PlugSim.java:93] Plug test.200: power 200.0
+2025-03-23 19:38:55,588 DEBUG [PlugSim.java:93] Plug plug: power 350.0
+2025-03-23 19:38:55,588 DEBUG [PlugSim.java:93] Plug plug: power 326.5029896002986
+2025-03-23 19:38:55,588 DEBUG [PlugSim.java:93] Plug plug: power 271.73848405586216
+2025-03-23 19:38:55,589 DEBUG [PlugSim.java:93] Plug a: power 89.78236331935531
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 103.57987278264648
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 120.86125354582094
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 131.61855428011594
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 119.00139134972571
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 110.79332990188331
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 95.95333826682368
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 182.25791664695637
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 171.33460691172817
+2025-03-23 19:38:55,590 DEBUG [PlugSim.java:93] Plug a: power 172.67224552439774
+2025-03-23 19:38:55,597 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 19:38:55,606 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 19:38:55,607 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 19:38:55,609 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 19:38:55,611 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 19:38:55,612 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 19:38:55,612 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-03-23 19:38:55,613 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 19:38:55,613 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 19:38:55,614 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=invalidAction}
+2025-03-23 19:38:55,614 INFO [HTTPCommands.java:30] HTTPCmd /unknownPlug: {}
+2025-03-23 19:38:55,616 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 19:38:55,617 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-03-23 19:39:08,344 INFO [GradeP3.java:47] MqttCtl grader/iot_sim: tcp://127.0.0.1 connected
+2025-03-23 19:39:08,489 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-03-23 19:39:08,808 INFO [Grading.java:42] testCase00 of GradeP3: failed
+2025-03-23 19:39:09,811 INFO [Grading.java:42] testCase01 of GradeP3: failed
+2025-03-23 19:39:10,814 INFO [Grading.java:42] testCase02 of GradeP3: failed
+2025-03-23 19:39:11,816 INFO [Grading.java:42] testCase03 of GradeP3: failed
+2025-03-23 19:39:13,319 INFO [Grading.java:42] testCase04 of GradeP3: failed
+2025-03-23 19:39:13,321 INFO [Grading.java:42] testCase05 of GradeP3: failed
+2025-03-23 19:39:13,568 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:55388 GET /yy?action=on HTTP/1.1
+2025-03-23 19:39:13,569 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=on}
+2025-03-23 19:39:13,571 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742776747621/grade_p3/iot_ece448/update/yy/state on
+2025-03-23 19:39:14,489 DEBUG [PlugSim.java:93] Plug yy: power 86.43408078206659
+2025-03-23 19:39:14,491 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742776747621/grade_p3/iot_ece448/update/yy/power 86.434
+2025-03-23 19:39:14,586 INFO [Grading.java:35] testCase06 of GradeP3: success
+2025-03-23 19:39:14,595 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:55402 GET /yy?action=off HTTP/1.1
+2025-03-23 19:39:14,595 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=off}
+2025-03-23 19:39:14,596 DEBUG [PlugSim.java:93] Plug yy: power 0.0
+2025-03-23 19:39:14,597 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742776747621/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 19:39:14,598 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742776747621/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 19:39:15,601 INFO [Grading.java:35] testCase07 of GradeP3: success
+2025-03-23 19:39:15,609 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:55404 GET /zz.666 HTTP/1.1
+2025-03-23 19:39:15,609 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 19:39:16,614 INFO [Grading.java:42] testCase08 of GradeP3: failed
+2025-03-23 19:39:16,618 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:55412 GET /zz.666 HTTP/1.1
+2025-03-23 19:39:16,618 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 19:39:17,620 INFO [Grading.java:42] testCase09 of GradeP3: failed
+2025-03-23 19:39:17,623 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-03-23 19:39:17,636 INFO [GradeP3.java:52] MqttCtl grader/iot_sim: disconnected
+2025-03-23 21:42:47,907 WARN [MQTTCommands.java:77] Invalid action: invalid
+2025-03-23 21:42:47,943 WARN [PlugSim.java:77] Invalid power value in plug name: plug.invalid
+2025-03-23 21:42:47,944 DEBUG [PlugSim.java:93] Plug test.200: power 200.0
+2025-03-23 21:42:47,947 DEBUG [PlugSim.java:93] Plug plug: power 350.0
+2025-03-23 21:42:47,948 DEBUG [PlugSim.java:93] Plug plug: power 343.7805416990431
+2025-03-23 21:42:47,949 DEBUG [PlugSim.java:93] Plug plug: power 317.05361034951056
+2025-03-23 21:42:47,949 DEBUG [PlugSim.java:93] Plug plug: power 289.7258764535506
+2025-03-23 21:42:47,949 DEBUG [PlugSim.java:93] Plug a: power 90.69382009229533
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 173.06967747557206
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 173.28899116255525
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 181.55835439690713
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 192.2496760214087
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 201.54192791237307
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 182.70187858655973
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 179.3820933014976
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 171.3417853346864
+2025-03-23 21:42:47,950 DEBUG [PlugSim.java:93] Plug a: power 189.25150050164288
+2025-03-23 21:42:47,954 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 21:42:47,957 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 21:42:47,958 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 21:42:47,959 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 21:42:47,960 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 21:42:47,960 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 21:42:47,961 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-03-23 21:42:47,962 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 21:42:47,962 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 21:42:47,963 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=invalidAction}
+2025-03-23 21:42:47,964 INFO [HTTPCommands.java:30] HTTPCmd /unknownPlug: {}
+2025-03-23 21:42:47,964 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 21:42:47,964 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-03-23 22:02:50,759 WARN [PlugSim.java:77] Invalid power value in plug name: plug.invalid
+2025-03-23 22:02:50,777 DEBUG [PlugSim.java:93] Plug test.200: power 200.0
+2025-03-23 22:02:50,780 DEBUG [PlugSim.java:93] Plug plug: power 350.0
+2025-03-23 22:02:50,781 DEBUG [PlugSim.java:93] Plug plug: power 278.0302845748897
+2025-03-23 22:02:50,781 DEBUG [PlugSim.java:93] Plug a: power 34.57833095993177
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 93.15660777380049
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 94.83678977906638
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 151.20715854527714
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 161.13310125900747
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 162.82963878476764
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 143.11957920376327
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 123.44247564159832
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 128.14457059509033
+2025-03-23 22:02:50,782 DEBUG [PlugSim.java:93] Plug a: power 124.52480427048172
+2025-03-23 22:02:50,786 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 22:02:50,788 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:02:50,788 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 22:02:50,789 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:02:50,789 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:02:50,790 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:02:50,790 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-03-23 22:02:50,791 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:02:50,791 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:02:50,792 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=invalidAction}
+2025-03-23 22:02:50,792 INFO [HTTPCommands.java:30] HTTPCmd /unknownPlug: {}
+2025-03-23 22:02:50,792 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:02:50,793 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-03-23 22:03:03,402 INFO [GradeP3.java:47] MqttCtl grader/iot_sim: tcp://127.0.0.1 connected
+2025-03-23 22:03:03,531 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-03-23 22:03:03,855 INFO [Grading.java:42] testCase00 of GradeP3: failed
+2025-03-23 22:03:04,858 INFO [Grading.java:42] testCase01 of GradeP3: failed
+2025-03-23 22:03:05,861 INFO [Grading.java:42] testCase02 of GradeP3: failed
+2025-03-23 22:03:06,863 INFO [Grading.java:42] testCase03 of GradeP3: failed
+2025-03-23 22:03:08,365 INFO [Grading.java:42] testCase04 of GradeP3: failed
+2025-03-23 22:03:08,370 INFO [Grading.java:42] testCase05 of GradeP3: failed
+2025-03-23 22:03:08,599 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45372 GET /yy?action=on HTTP/1.1
+2025-03-23 22:03:08,599 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=on}
+2025-03-23 22:03:08,601 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785382654/grade_p3/iot_ece448/update/yy/state on
+2025-03-23 22:03:09,531 DEBUG [PlugSim.java:93] Plug yy: power 57.68121669556161
+2025-03-23 22:03:09,535 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785382654/grade_p3/iot_ece448/update/yy/power 57.681
+2025-03-23 22:03:09,614 INFO [Grading.java:35] testCase06 of GradeP3: success
+2025-03-23 22:03:09,618 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45386 GET /yy?action=off HTTP/1.1
+2025-03-23 22:03:09,619 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=off}
+2025-03-23 22:03:09,619 DEBUG [PlugSim.java:93] Plug yy: power 0.0
+2025-03-23 22:03:09,620 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785382654/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:03:09,621 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785382654/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 22:03:10,623 INFO [Grading.java:35] testCase07 of GradeP3: success
+2025-03-23 22:03:10,629 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45392 GET /zz.666 HTTP/1.1
+2025-03-23 22:03:10,629 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 22:03:11,633 INFO [Grading.java:42] testCase08 of GradeP3: failed
+2025-03-23 22:03:11,640 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45400 GET /zz.666 HTTP/1.1
+2025-03-23 22:03:11,641 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 22:03:12,643 INFO [Grading.java:42] testCase09 of GradeP3: failed
+2025-03-23 22:03:12,645 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-03-23 22:03:12,655 INFO [GradeP3.java:52] MqttCtl grader/iot_sim: disconnected
+2025-03-23 22:06:24,844 WARN [PlugSim.java:77] Invalid power value in plug name: plug.invalid
+2025-03-23 22:06:24,856 DEBUG [PlugSim.java:93] Plug test.200: power 200.0
+2025-03-23 22:06:24,859 DEBUG [PlugSim.java:93] Plug plug: power 350.0
+2025-03-23 22:06:24,860 DEBUG [PlugSim.java:93] Plug plug: power 271.30928487161475
+2025-03-23 22:06:24,861 DEBUG [PlugSim.java:93] Plug a: power 52.88189047635253
+2025-03-23 22:06:24,861 DEBUG [PlugSim.java:93] Plug a: power 142.68576635027517
+2025-03-23 22:06:24,861 DEBUG [PlugSim.java:93] Plug a: power 123.47110834762253
+2025-03-23 22:06:24,862 DEBUG [PlugSim.java:93] Plug a: power 115.42482645079338
+2025-03-23 22:06:24,862 DEBUG [PlugSim.java:93] Plug a: power 125.97859645538574
+2025-03-23 22:06:24,862 DEBUG [PlugSim.java:93] Plug a: power 116.85962329433593
+2025-03-23 22:06:24,862 DEBUG [PlugSim.java:93] Plug a: power 120.28648544244476
+2025-03-23 22:06:24,862 DEBUG [PlugSim.java:93] Plug a: power 105.7969665515213
+2025-03-23 22:06:24,863 DEBUG [PlugSim.java:93] Plug a: power 89.63830725873997
+2025-03-23 22:06:24,863 DEBUG [PlugSim.java:93] Plug a: power 185.71003979036846
+2025-03-23 22:06:24,958 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 22:06:24,960 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:06:24,961 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 22:06:24,963 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:06:24,964 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:06:24,965 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:06:24,966 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-03-23 22:06:24,967 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:06:24,967 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:06:24,968 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=invalidAction}
+2025-03-23 22:06:24,968 INFO [HTTPCommands.java:30] HTTPCmd /unknownPlug: {}
+2025-03-23 22:06:24,969 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:06:24,969 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-03-23 22:06:29,874 INFO [GradeP3.java:47] MqttCtl grader/iot_sim: tcp://127.0.0.1 connected
+2025-03-23 22:06:30,017 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-03-23 22:06:30,355 INFO [Grading.java:42] testCase00 of GradeP3: failed
+2025-03-23 22:06:31,363 INFO [Grading.java:42] testCase01 of GradeP3: failed
+2025-03-23 22:06:32,367 INFO [Grading.java:42] testCase02 of GradeP3: failed
+2025-03-23 22:06:33,375 INFO [Grading.java:42] testCase03 of GradeP3: failed
+2025-03-23 22:06:34,879 INFO [Grading.java:42] testCase04 of GradeP3: failed
+2025-03-23 22:06:34,883 INFO [Grading.java:42] testCase05 of GradeP3: failed
+2025-03-23 22:06:35,152 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:37556 GET /yy?action=on HTTP/1.1
+2025-03-23 22:06:35,152 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=on}
+2025-03-23 22:06:35,156 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785589058/grade_p3/iot_ece448/update/yy/state on
+2025-03-23 22:06:36,017 DEBUG [PlugSim.java:93] Plug yy: power 98.52770065285856
+2025-03-23 22:06:36,025 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785589058/grade_p3/iot_ece448/update/yy/power 98.528
+2025-03-23 22:06:36,179 INFO [Grading.java:35] testCase06 of GradeP3: success
+2025-03-23 22:06:36,184 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:37564 GET /yy?action=off HTTP/1.1
+2025-03-23 22:06:36,184 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=off}
+2025-03-23 22:06:36,185 DEBUG [PlugSim.java:93] Plug yy: power 0.0
+2025-03-23 22:06:36,186 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785589058/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:06:36,187 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785589058/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 22:06:37,189 INFO [Grading.java:35] testCase07 of GradeP3: success
+2025-03-23 22:06:37,195 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:37568 GET /zz.666 HTTP/1.1
+2025-03-23 22:06:37,196 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 22:06:38,199 INFO [Grading.java:42] testCase08 of GradeP3: failed
+2025-03-23 22:06:38,208 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:37570 GET /zz.666 HTTP/1.1
+2025-03-23 22:06:38,209 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 22:06:39,215 INFO [Grading.java:42] testCase09 of GradeP3: failed
+2025-03-23 22:06:39,222 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-03-23 22:06:39,237 INFO [GradeP3.java:52] MqttCtl grader/iot_sim: disconnected
+2025-03-23 22:11:52,268 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,282 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,282 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,283 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,283 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,283 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,286 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,289 DEBUG [PlugSim.java:80] Plug plug.invalid: power 0.0
+2025-03-23 22:11:52,291 WARN [PlugSim.java:67] Invalid plug name format: plug.invalid
+2025-03-23 22:11:52,308 INFO [PlugSim.java:32] Plug plug.invalid switched ON
+2025-03-23 22:11:52,311 WARN [PlugSim.java:67] Invalid plug name format: plug.invalid
+2025-03-23 22:11:52,313 DEBUG [PlugSim.java:80] Plug test.200: power 0.0
+2025-03-23 22:11:52,316 DEBUG [PlugSim.java:80] Plug test.200: power 200.0
+2025-03-23 22:11:52,318 INFO [PlugSim.java:32] Plug test.200 switched ON
+2025-03-23 22:11:52,320 DEBUG [PlugSim.java:80] Plug test.200: power 200.0
+2025-03-23 22:11:52,323 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,326 DEBUG [PlugSim.java:80] Plug smartPlug123: power 0.0
+2025-03-23 22:11:52,327 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,328 DEBUG [PlugSim.java:80] Plug a: power 53.08564204956415
+2025-03-23 22:11:52,328 INFO [PlugSim.java:32] Plug a switched ON
+2025-03-23 22:11:52,330 DEBUG [PlugSim.java:80] Plug plug: power 0.0
+2025-03-23 22:11:52,331 DEBUG [PlugSim.java:80] Plug plug: power 63.87253376538603
+2025-03-23 22:11:52,331 INFO [PlugSim.java:32] Plug plug switched ON
+2025-03-23 22:11:52,331 DEBUG [PlugSim.java:80] Plug plug: power 350.0
+2025-03-23 22:11:52,331 DEBUG [PlugSim.java:80] Plug plug: power 273.45294385330374
+2025-03-23 22:11:52,332 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,335 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,338 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,339 DEBUG [PlugSim.java:80] Plug a: power 95.23693880039174
+2025-03-23 22:11:52,339 INFO [PlugSim.java:32] Plug a switched ON
+2025-03-23 22:11:52,339 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,343 INFO [PlugSim.java:41] Plug a switched OFF
+2025-03-23 22:11:52,345 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 22:11:52,346 DEBUG [PlugSim.java:80] Plug a: power 23.355212146201833
+2025-03-23 22:11:52,346 INFO [PlugSim.java:32] Plug a switched ON
+2025-03-23 22:11:52,349 DEBUG [PlugSim.java:80] Plug a: power 104.89960868861502
+2025-03-23 22:11:52,349 DEBUG [PlugSim.java:80] Plug a: power 121.43933476595947
+2025-03-23 22:11:52,350 DEBUG [PlugSim.java:80] Plug a: power 121.12638063485679
+2025-03-23 22:11:52,350 DEBUG [PlugSim.java:80] Plug a: power 131.21905293953114
+2025-03-23 22:11:52,350 DEBUG [PlugSim.java:80] Plug a: power 144.95694169073548
+2025-03-23 22:11:52,350 DEBUG [PlugSim.java:80] Plug a: power 151.43606591818696
+2025-03-23 22:11:52,351 DEBUG [PlugSim.java:80] Plug a: power 161.0207926594223
+2025-03-23 22:11:52,351 DEBUG [PlugSim.java:80] Plug a: power 149.21487885320218
+2025-03-23 22:11:52,351 DEBUG [PlugSim.java:80] Plug a: power 129.3037253119672
+2025-03-23 22:11:52,351 DEBUG [PlugSim.java:80] Plug a: power 121.3454288018435
+2025-03-23 22:11:52,367 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,368 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 22:11:52,370 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,371 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 22:11:52,376 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,376 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 22:11:52,517 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,518 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 22:11:52,522 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,522 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 22:11:52,523 WARN [MQTTCommands.java:105] Invalid topic format: invalid/topic
+2025-03-23 22:11:52,526 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,526 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 22:11:52,526 WARN [MQTTCommands.java:120] Plug not found: nonexistent
+2025-03-23 22:11:52,534 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,537 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 22:11:52,538 DEBUG [PlugSim.java:80] Plug testPlug: power 83.96050225618085
+2025-03-23 22:11:52,538 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 22:11:52,543 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,543 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:11:52,543 DEBUG [PlugSim.java:80] Plug testPlug: power 41.73737382506613
+2025-03-23 22:11:52,544 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 22:11:52,544 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,545 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 22:11:52,546 DEBUG [PlugSim.java:80] Plug testPlug: power 81.38317862039176
+2025-03-23 22:11:52,547 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 22:11:52,548 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:11:52,551 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,552 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:11:52,552 DEBUG [PlugSim.java:80] Plug testPlug: power 13.332860372183319
+2025-03-23 22:11:52,553 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 22:11:52,553 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:11:52,554 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,555 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 22:11:52,555 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-03-23 22:11:52,556 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,557 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:11:52,557 DEBUG [PlugSim.java:80] Plug testPlug: power 71.20615468135682
+2025-03-23 22:11:52,557 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 22:11:52,558 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 22:11:52,558 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,559 INFO [PlugSim.java:41] Plug testPlug switched OFF
+2025-03-23 22:11:52,560 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,560 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=invalidAction}
+2025-03-23 22:11:52,561 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 22:11:52,561 INFO [HTTPCommands.java:30] HTTPCmd /unknownPlug: {}
+2025-03-23 22:11:52,562 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,562 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 22:11:52,563 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,564 DEBUG [PlugSim.java:80] Plug testPlug: power 26.27984888668734
+2025-03-23 22:11:52,564 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 22:11:52,564 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-03-23 22:11:52,565 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 22:11:52,565 INFO [PlugSim.java:41] Plug testPlug switched OFF
+2025-03-23 22:11:57,485 INFO [GradeP3.java:47] MqttCtl grader/iot_sim: tcp://127.0.0.1 connected
+2025-03-23 22:11:57,635 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 22:11:57,637 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:11:57,638 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:11:57,640 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 22:11:57,641 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:11:57,642 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:11:57,644 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-03-23 22:11:57,958 INFO [Main.java:164] Mqtt subscribe to 1742785916737/grade_p3/iot_ece448/action/#
+2025-03-23 22:11:57,974 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/state off
+2025-03-23 22:11:57,976 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 22:11:57,977 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/state off
+2025-03-23 22:11:57,978 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 22:11:57,978 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 22:11:57,979 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:11:57,979 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 22:11:57,980 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:11:57,980 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/state off
+2025-03-23 22:11:57,983 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:11:57,985 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/state off
+2025-03-23 22:11:57,985 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:11:57,989 INFO [Grading.java:35] testCase00 of GradeP3: success
+2025-03-23 22:11:58,028 DEBUG [PlugSim.java:80] Plug xx: power 26.113282505003532
+2025-03-23 22:11:58,034 INFO [PlugSim.java:32] Plug xx switched ON
+2025-03-23 22:11:58,036 DEBUG [PlugSim.java:80] Plug xx: power 86.85180910837887
+2025-03-23 22:11:58,069 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 26.113
+2025-03-23 22:11:58,070 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/state on
+2025-03-23 22:11:58,071 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 86.852
+2025-03-23 22:11:58,643 DEBUG [PlugSim.java:80] Plug xx: power 182.39001850782387
+2025-03-23 22:11:58,646 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:11:58,646 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 182.390
+2025-03-23 22:11:58,648 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:11:58,650 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:11:58,652 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:11:59,028 INFO [Grading.java:35] testCase01 of GradeP3: success
+2025-03-23 22:11:59,042 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 22:11:59,048 INFO [PlugSim.java:41] Plug xx switched OFF
+2025-03-23 22:11:59,050 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 22:11:59,083 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 22:11:59,084 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/state off
+2025-03-23 22:11:59,084 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 22:11:59,653 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 22:11:59,658 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:11:59,658 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 22:11:59,660 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:11:59,660 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:11:59,664 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:12:00,043 INFO [Grading.java:35] testCase02 of GradeP3: success
+2025-03-23 22:12:00,047 DEBUG [PlugSim.java:80] Plug xx: power 12.993160464917175
+2025-03-23 22:12:00,049 INFO [PlugSim.java:32] Plug xx switched ON
+2025-03-23 22:12:00,054 DEBUG [PlugSim.java:80] Plug xx: power 25.52204674137427
+2025-03-23 22:12:00,089 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 12.993
+2025-03-23 22:12:00,089 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/state on
+2025-03-23 22:12:00,090 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 25.522
+2025-03-23 22:12:00,665 DEBUG [PlugSim.java:80] Plug xx: power 46.29224835531399
+2025-03-23 22:12:00,668 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 46.292
+2025-03-23 22:12:00,669 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:00,671 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:12:00,671 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:00,673 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:12:01,049 INFO [Grading.java:35] testCase03 of GradeP3: success
+2025-03-23 22:12:01,674 DEBUG [PlugSim.java:80] Plug xx: power 63.920183407658996
+2025-03-23 22:12:01,677 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 63.920
+2025-03-23 22:12:01,677 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:01,681 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:12:01,681 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:01,683 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:12:02,553 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:02,557 INFO [PlugSim.java:32] Plug zz.666 switched ON
+2025-03-23 22:12:02,563 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:02,595 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:02,596 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/state on
+2025-03-23 22:12:02,597 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:02,684 DEBUG [PlugSim.java:80] Plug xx: power 68.54734210260689
+2025-03-23 22:12:02,687 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:02,687 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 68.547
+2025-03-23 22:12:02,691 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:02,693 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:02,695 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:03,695 DEBUG [PlugSim.java:80] Plug xx: power 114.83676836482832
+2025-03-23 22:12:03,698 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:03,698 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 114.837
+2025-03-23 22:12:03,701 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:03,701 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:03,704 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:04,056 INFO [Grading.java:35] testCase04 of GradeP3: success
+2025-03-23 22:12:04,061 INFO [Grading.java:35] testCase05 of GradeP3: success
+2025-03-23 22:12:04,309 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54066 GET /yy?action=on HTTP/1.1
+2025-03-23 22:12:04,310 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=on}
+2025-03-23 22:12:04,311 DEBUG [PlugSim.java:80] Plug yy: power 8.742380606728107
+2025-03-23 22:12:04,312 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 8.742
+2025-03-23 22:12:04,312 INFO [PlugSim.java:32] Plug yy switched ON
+2025-03-23 22:12:04,313 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/state on
+2025-03-23 22:12:04,704 DEBUG [PlugSim.java:80] Plug xx: power 119.23886444803694
+2025-03-23 22:12:04,707 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 119.239
+2025-03-23 22:12:04,708 DEBUG [PlugSim.java:80] Plug yy: power 20.71428358116345
+2025-03-23 22:12:04,711 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 20.714
+2025-03-23 22:12:04,711 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:04,713 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:05,329 INFO [Grading.java:35] testCase06 of GradeP3: success
+2025-03-23 22:12:05,336 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54080 GET /yy?action=off HTTP/1.1
+2025-03-23 22:12:05,337 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=off}
+2025-03-23 22:12:05,337 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:05,339 INFO [PlugSim.java:41] Plug yy switched OFF
+2025-03-23 22:12:05,339 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:05,343 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 22:12:05,713 DEBUG [PlugSim.java:80] Plug xx: power 108.45350627761113
+2025-03-23 22:12:05,715 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:05,715 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 108.454
+2025-03-23 22:12:05,717 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:05,718 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:05,719 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:06,346 INFO [Grading.java:35] testCase07 of GradeP3: success
+2025-03-23 22:12:06,350 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:12:06,353 INFO [PlugSim.java:41] Plug zz.666 switched OFF
+2025-03-23 22:12:06,353 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54094 GET /zz.666 HTTP/1.1
+2025-03-23 22:12:06,354 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 22:12:06,355 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:12:06,390 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:12:06,391 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/state off
+2025-03-23 22:12:06,392 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:12:06,719 DEBUG [PlugSim.java:80] Plug xx: power 106.92382121012572
+2025-03-23 22:12:06,723 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:06,723 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 106.924
+2025-03-23 22:12:06,727 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 22:12:06,727 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:06,729 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 22:12:07,360 INFO [Grading.java:35] testCase08 of GradeP3: success
+2025-03-23 22:12:07,365 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:07,365 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54108 GET /zz.666 HTTP/1.1
+2025-03-23 22:12:07,367 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 22:12:07,367 INFO [PlugSim.java:32] Plug zz.666 switched ON
+2025-03-23 22:12:07,368 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:07,404 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:07,405 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/state on
+2025-03-23 22:12:07,405 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:07,730 DEBUG [PlugSim.java:80] Plug xx: power 115.63518811555119
+2025-03-23 22:12:07,733 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 22:12:07,733 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/xx/power 115.635
+2025-03-23 22:12:07,735 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 22:12:07,735 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 22:12:07,737 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742785916737/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 22:12:08,371 INFO [Grading.java:35] testCase09 of GradeP3: success
+2025-03-23 22:12:08,373 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-03-23 22:12:08,390 INFO [GradeP3.java:52] MqttCtl grader/iot_sim: disconnected
+2025-03-23 23:08:52,389 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,413 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,413 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,414 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,414 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,414 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,415 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,416 DEBUG [PlugSim.java:80] Plug plug.invalid: power 0.0
+2025-03-23 23:08:52,416 WARN [PlugSim.java:67] Invalid plug name format: plug.invalid
+2025-03-23 23:08:52,422 INFO [PlugSim.java:32] Plug plug.invalid switched ON
+2025-03-23 23:08:52,423 WARN [PlugSim.java:67] Invalid plug name format: plug.invalid
+2025-03-23 23:08:52,424 DEBUG [PlugSim.java:80] Plug test.200: power 0.0
+2025-03-23 23:08:52,424 DEBUG [PlugSim.java:80] Plug test.200: power 200.0
+2025-03-23 23:08:52,427 INFO [PlugSim.java:32] Plug test.200 switched ON
+2025-03-23 23:08:52,428 DEBUG [PlugSim.java:80] Plug test.200: power 200.0
+2025-03-23 23:08:52,429 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,429 DEBUG [PlugSim.java:80] Plug smartPlug123: power 0.0
+2025-03-23 23:08:52,430 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,431 DEBUG [PlugSim.java:80] Plug a: power 85.51901471756425
+2025-03-23 23:08:52,432 INFO [PlugSim.java:32] Plug a switched ON
+2025-03-23 23:08:52,433 DEBUG [PlugSim.java:80] Plug plug: power 0.0
+2025-03-23 23:08:52,434 DEBUG [PlugSim.java:80] Plug plug: power 28.704129665668976
+2025-03-23 23:08:52,435 INFO [PlugSim.java:32] Plug plug switched ON
+2025-03-23 23:08:52,437 DEBUG [PlugSim.java:80] Plug plug: power 350.0
+2025-03-23 23:08:52,437 DEBUG [PlugSim.java:80] Plug plug: power 321.39784013436065
+2025-03-23 23:08:52,438 DEBUG [PlugSim.java:80] Plug plug: power 302.2920940745906
+2025-03-23 23:08:52,438 DEBUG [PlugSim.java:80] Plug plug: power 235.94374969374564
+2025-03-23 23:08:52,439 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,439 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,439 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,440 DEBUG [PlugSim.java:80] Plug a: power 15.202259786593164
+2025-03-23 23:08:52,440 INFO [PlugSim.java:32] Plug a switched ON
+2025-03-23 23:08:52,440 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,441 INFO [PlugSim.java:41] Plug a switched OFF
+2025-03-23 23:08:52,441 DEBUG [PlugSim.java:80] Plug a: power 0.0
+2025-03-23 23:08:52,442 DEBUG [PlugSim.java:80] Plug a: power 40.6182757888064
+2025-03-23 23:08:52,442 INFO [PlugSim.java:32] Plug a switched ON
+2025-03-23 23:08:52,442 DEBUG [PlugSim.java:80] Plug a: power 85.7966243234879
+2025-03-23 23:08:52,443 DEBUG [PlugSim.java:80] Plug a: power 122.80954643482558
+2025-03-23 23:08:52,443 DEBUG [PlugSim.java:80] Plug a: power 114.11280476719656
+2025-03-23 23:08:52,443 DEBUG [PlugSim.java:80] Plug a: power 121.78075557311439
+2025-03-23 23:08:52,444 DEBUG [PlugSim.java:80] Plug a: power 121.50086637419895
+2025-03-23 23:08:52,444 DEBUG [PlugSim.java:80] Plug a: power 133.12186778260485
+2025-03-23 23:08:52,444 DEBUG [PlugSim.java:80] Plug a: power 113.54525369285554
+2025-03-23 23:08:52,444 DEBUG [PlugSim.java:80] Plug a: power 128.6657209685781
+2025-03-23 23:08:52,444 DEBUG [PlugSim.java:80] Plug a: power 137.1690476040817
+2025-03-23 23:08:52,445 DEBUG [PlugSim.java:80] Plug a: power 138.6256724632949
+2025-03-23 23:08:52,455 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,456 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 23:08:52,458 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,459 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 23:08:52,459 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,460 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 23:08:52,598 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,599 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 23:08:52,600 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,601 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 23:08:52,601 WARN [MQTTCommands.java:105] Invalid topic format: invalid/topic
+2025-03-23 23:08:52,603 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,604 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 23:08:52,604 WARN [MQTTCommands.java:120] Plug not found: nonexistent
+2025-03-23 23:08:52,608 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,611 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 23:08:52,611 DEBUG [PlugSim.java:80] Plug testPlug: power 83.72602734500303
+2025-03-23 23:08:52,611 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 23:08:52,612 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,612 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 23:08:52,613 DEBUG [PlugSim.java:80] Plug testPlug: power 99.9693816380189
+2025-03-23 23:08:52,613 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 23:08:52,614 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,614 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-03-23 23:08:52,614 DEBUG [PlugSim.java:80] Plug testPlug: power 56.35575440881365
+2025-03-23 23:08:52,614 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 23:08:52,614 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 23:08:52,615 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,615 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 23:08:52,616 DEBUG [PlugSim.java:80] Plug testPlug: power 90.41659021690892
+2025-03-23 23:08:52,616 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 23:08:52,616 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 23:08:52,618 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,618 DEBUG [PlugSim.java:80] Plug plug2: power 0.0
+2025-03-23 23:08:52,618 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-03-23 23:08:52,619 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,620 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 23:08:52,620 DEBUG [PlugSim.java:80] Plug testPlug: power 11.864182163367886
+2025-03-23 23:08:52,620 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 23:08:52,621 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-03-23 23:08:52,621 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,622 INFO [PlugSim.java:41] Plug testPlug switched OFF
+2025-03-23 23:08:52,623 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,623 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=invalidAction}
+2025-03-23 23:08:52,624 DEBUG [PlugSim.java:80] Plug plug1: power 0.0
+2025-03-23 23:08:52,624 INFO [HTTPCommands.java:30] HTTPCmd /unknownPlug: {}
+2025-03-23 23:08:52,625 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,625 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-03-23 23:08:52,626 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,627 DEBUG [PlugSim.java:80] Plug testPlug: power 3.628020800018561
+2025-03-23 23:08:52,627 INFO [PlugSim.java:32] Plug testPlug switched ON
+2025-03-23 23:08:52,627 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-03-23 23:08:52,628 DEBUG [PlugSim.java:80] Plug testPlug: power 0.0
+2025-03-23 23:08:52,628 INFO [PlugSim.java:41] Plug testPlug switched OFF
+2025-03-23 23:09:00,434 INFO [GradeP3.java:47] MqttCtl grader/iot_sim: tcp://127.0.0.1 connected
+2025-03-23 23:09:00,619 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 23:09:00,622 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:00,622 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:00,624 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 23:09:00,626 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:00,626 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:00,629 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-03-23 23:09:00,948 INFO [Main.java:162] Mqtt subscribe to 1742789339449/grade_p3/iot_ece448/action/#
+2025-03-23 23:09:00,970 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/state off
+2025-03-23 23:09:00,974 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 23:09:00,975 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/state off
+2025-03-23 23:09:00,977 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 23:09:00,978 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 23:09:00,979 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:00,980 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 23:09:00,981 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:00,982 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/state off
+2025-03-23 23:09:00,983 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:00,984 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/state off
+2025-03-23 23:09:00,986 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:00,990 INFO [Grading.java:35] testCase00 of GradeP3: success
+2025-03-23 23:09:01,029 DEBUG [PlugSim.java:80] Plug xx: power 60.56264156714799
+2025-03-23 23:09:01,034 INFO [PlugSim.java:32] Plug xx switched ON
+2025-03-23 23:09:01,036 DEBUG [PlugSim.java:80] Plug xx: power 83.39060495066198
+2025-03-23 23:09:01,069 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 60.563
+2025-03-23 23:09:01,070 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/state on
+2025-03-23 23:09:01,070 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 83.391
+2025-03-23 23:09:01,627 DEBUG [PlugSim.java:80] Plug xx: power 154.95631031014477
+2025-03-23 23:09:01,632 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 154.956
+2025-03-23 23:09:01,632 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:01,635 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:01,635 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:01,638 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:02,030 INFO [Grading.java:35] testCase01 of GradeP3: success
+2025-03-23 23:09:02,034 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 23:09:02,037 INFO [PlugSim.java:41] Plug xx switched OFF
+2025-03-23 23:09:02,043 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 23:09:02,076 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 23:09:02,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/state off
+2025-03-23 23:09:02,079 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 23:09:02,640 DEBUG [PlugSim.java:80] Plug xx: power 0.0
+2025-03-23 23:09:02,643 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:02,643 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 0.000
+2025-03-23 23:09:02,646 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:02,646 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:02,649 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:03,036 INFO [Grading.java:35] testCase02 of GradeP3: success
+2025-03-23 23:09:03,039 DEBUG [PlugSim.java:80] Plug xx: power 97.81161207563463
+2025-03-23 23:09:03,041 INFO [PlugSim.java:32] Plug xx switched ON
+2025-03-23 23:09:03,043 DEBUG [PlugSim.java:80] Plug xx: power 183.7205047329803
+2025-03-23 23:09:03,080 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 97.812
+2025-03-23 23:09:03,081 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/state on
+2025-03-23 23:09:03,082 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 183.721
+2025-03-23 23:09:03,649 DEBUG [PlugSim.java:80] Plug xx: power 176.58060493314767
+2025-03-23 23:09:03,651 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:03,652 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 176.581
+2025-03-23 23:09:03,653 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:03,653 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:03,654 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:04,040 INFO [Grading.java:35] testCase03 of GradeP3: success
+2025-03-23 23:09:04,655 DEBUG [PlugSim.java:80] Plug xx: power 177.54078272183082
+2025-03-23 23:09:04,657 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:04,657 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 177.541
+2025-03-23 23:09:04,659 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:04,659 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:04,661 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:05,544 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:05,548 INFO [PlugSim.java:32] Plug zz.666 switched ON
+2025-03-23 23:09:05,550 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:05,586 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:05,587 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/state on
+2025-03-23 23:09:05,588 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:05,662 DEBUG [PlugSim.java:80] Plug xx: power 171.16093259808983
+2025-03-23 23:09:05,664 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:05,665 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 171.161
+2025-03-23 23:09:05,666 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:05,666 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:05,668 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:06,668 DEBUG [PlugSim.java:80] Plug xx: power 187.501412474674
+2025-03-23 23:09:06,674 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 187.501
+2025-03-23 23:09:06,676 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:06,677 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:06,678 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:06,681 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:07,046 INFO [Grading.java:35] testCase04 of GradeP3: success
+2025-03-23 23:09:07,051 INFO [Grading.java:35] testCase05 of GradeP3: success
+2025-03-23 23:09:07,398 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35614 GET /yy?action=on HTTP/1.1
+2025-03-23 23:09:07,398 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=on}
+2025-03-23 23:09:07,399 DEBUG [PlugSim.java:80] Plug yy: power 97.29051740822068
+2025-03-23 23:09:07,400 INFO [PlugSim.java:32] Plug yy switched ON
+2025-03-23 23:09:07,400 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 97.291
+2025-03-23 23:09:07,401 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/state on
+2025-03-23 23:09:07,681 DEBUG [PlugSim.java:80] Plug xx: power 176.92561153293357
+2025-03-23 23:09:07,683 DEBUG [PlugSim.java:80] Plug yy: power 130.1407798401238
+2025-03-23 23:09:07,683 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 176.926
+2025-03-23 23:09:07,685 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:07,686 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 130.141
+2025-03-23 23:09:07,687 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:08,442 INFO [Grading.java:35] testCase06 of GradeP3: success
+2025-03-23 23:09:08,452 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35628 GET /yy?action=off HTTP/1.1
+2025-03-23 23:09:08,453 INFO [HTTPCommands.java:30] HTTPCmd /yy: {action=off}
+2025-03-23 23:09:08,454 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:08,456 INFO [PlugSim.java:41] Plug yy switched OFF
+2025-03-23 23:09:08,456 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:08,458 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/state off
+2025-03-23 23:09:08,687 DEBUG [PlugSim.java:80] Plug xx: power 174.12283616150188
+2025-03-23 23:09:08,689 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 174.123
+2025-03-23 23:09:08,690 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:08,691 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:08,691 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:08,692 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:09,461 INFO [Grading.java:35] testCase07 of GradeP3: success
+2025-03-23 23:09:09,464 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:09,466 INFO [PlugSim.java:41] Plug zz.666 switched OFF
+2025-03-23 23:09:09,468 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35630 GET /zz.666 HTTP/1.1
+2025-03-23 23:09:09,469 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 23:09:09,469 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:09,505 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:09,506 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/state off
+2025-03-23 23:09:09,507 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:09,693 DEBUG [PlugSim.java:80] Plug xx: power 172.66280761112313
+2025-03-23 23:09:09,695 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:09,695 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 172.663
+2025-03-23 23:09:09,697 DEBUG [PlugSim.java:80] Plug zz.666: power 0.0
+2025-03-23 23:09:09,698 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:09,699 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 0.000
+2025-03-23 23:09:10,474 INFO [Grading.java:35] testCase08 of GradeP3: success
+2025-03-23 23:09:10,475 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:10,477 INFO [PlugSim.java:32] Plug zz.666 switched ON
+2025-03-23 23:09:10,477 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:35634 GET /zz.666 HTTP/1.1
+2025-03-23 23:09:10,478 INFO [HTTPCommands.java:30] HTTPCmd /zz.666: {}
+2025-03-23 23:09:10,478 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:10,516 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:10,517 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/state on
+2025-03-23 23:09:10,517 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:10,699 DEBUG [PlugSim.java:80] Plug xx: power 167.39602136885935
+2025-03-23 23:09:10,702 DEBUG [PlugSim.java:80] Plug yy: power 0.0
+2025-03-23 23:09:10,702 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/xx/power 167.396
+2025-03-23 23:09:10,704 DEBUG [PlugSim.java:80] Plug zz.666: power 666.0
+2025-03-23 23:09:10,706 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/yy/power 0.000
+2025-03-23 23:09:10,707 DEBUG [GradeP3.java:84] MqttCtl grader/iot_sim: 1742789339449/grade_p3/iot_ece448/update/zz.666/power 666.000
+2025-03-23 23:09:11,481 INFO [Grading.java:35] testCase09 of GradeP3: success
+2025-03-23 23:09:11,484 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-03-23 23:09:11,512 INFO [GradeP3.java:52] MqttCtl grader/iot_sim: disconnected

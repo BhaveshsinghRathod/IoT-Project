@@ -5,51 +5,46 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SimConfig {
+public class SimConfig { // configuration class for the IOT simulator
 
-    private final int httpPort;
-    private final List&lt;String&gt; plugNames;
-    private final String mqttBroker;
-    private final String mqttClientId;
-    private final String mqttTopicPrefix;
+	private final int httpPort; // Port number for the HTTP server
+	private final List&lt;String&gt; plugNames; // List of the plug names in the simulation
+	private final String mqttBroker; // MQTT broker URL
+	private final String mqttClientId; // MQTT client identifier
+	private final String mqttTopicPrefix; // Prefix for MQTT topics
 
-    @JsonCreator
-    public SimConfig(
-        @JsonProperty(value = &quot;httpPort&quot;, required = true) int httpPort,
-        @JsonProperty(value = &quot;plugNames&quot;, required = true) List&lt;String&gt; plugNames,
-        @JsonProperty(value = &quot;mqttBroker&quot;, required = false) String mqttBroker,
-        @JsonProperty(value = &quot;mqttClientId&quot;, required = false) String mqttClientId,
-<span class="nc" id="L22">        @JsonProperty(value = &quot;mqttTopicPrefix&quot;, required = false) String mqttTopicPrefix) {</span>
-<span class="nc" id="L23">        this.httpPort = httpPort;</span>
-<span class="nc" id="L24">        this.plugNames = plugNames;</span>
-<span class="nc" id="L25">        this.mqttBroker = mqttBroker;</span>
-<span class="nc" id="L26">        this.mqttClientId = mqttClientId;</span>
-<span class="nc" id="L27">        this.mqttTopicPrefix = mqttTopicPrefix;</span>
-<span class="nc" id="L28">    }</span>
+	@JsonCreator
+	public SimConfig(
+		@JsonProperty(value = &quot;httpPort&quot;, required = true) int httpPort,
+		@JsonProperty(value = &quot;plugNames&quot;, required = true) List&lt;String&gt; plugNames,
+		@JsonProperty(value = &quot;mqttBroker&quot;, required = false) String mqttBroker,
+		@JsonProperty(value = &quot;mqttClientId&quot;, required = false) String mqttClientId,
+<span class="nc" id="L22">		@JsonProperty(value = &quot;mqttTopicPrefix&quot;, required = false) String mqttTopicPrefix) {</span>
+<span class="nc" id="L23">		this.httpPort = httpPort;</span>
+<span class="nc" id="L24">		this.plugNames = plugNames;</span>
+<span class="nc" id="L25">		this.mqttBroker = mqttBroker;</span>
+<span class="nc" id="L26">		this.mqttClientId = mqttClientId;</span>
+<span class="nc" id="L27">		this.mqttTopicPrefix = mqttTopicPrefix;</span>
+<span class="nc" id="L28">	}</span>
 
-    public int getHttpPort() {
-<span class="nc" id="L31">        return httpPort;</span>
-    }
+	public int getHttpPort() { // returns the HTTP port number for the simulator
+<span class="nc" id="L31">		return httpPort;</span>
+	}
 
-    public List&lt;String&gt; getPlugNames() {
-<span class="nc" id="L35">        return plugNames;</span>
-    }
+	public List&lt;String&gt; getPlugNames() { // returns the list of plug names in the simulation
+<span class="nc" id="L35">		return plugNames;</span>
+	}
 
-    public String getMqttBroker() {
-<span class="nc" id="L39">        return mqttBroker;</span>
-    }
+	public String getMqttBroker() { // return the MQTT broker URL or null if not provided
+<span class="nc" id="L39">		return mqttBroker;</span>
+	}
 
-    public String getMqttClientId() {
-<span class="nc" id="L43">        return mqttClientId;</span>
-    }
+	public String getMqttClientId() { // return the MQTT client ID or null if not provided
+<span class="nc" id="L43">		return mqttClientId;</span>
+	}
 
-    public String getMqttTopicPrefix() {
-<span class="nc" id="L47">        return mqttTopicPrefix;</span>
-    }
-
-    // Added method to get MQTT prefix
-    public String getMqttPrefix() {
-<span class="nc" id="L52">        return mqttTopicPrefix;</span>
-    }
+	public String getMqttTopicPrefix() { // return the MQTT topic prefix or null if not provided
+<span class="nc" id="L47">		return mqttTopicPrefix;</span>
+	}
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

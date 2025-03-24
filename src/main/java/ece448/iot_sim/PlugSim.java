@@ -4,81 +4,69 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
 
-/**
- * Simulate a smart plug with power monitoring.
- */
-public class PlugSim {
+public class PlugSim { // simulated a smart plug that can be switched on/off and measures power consumption
 
-    private final String name;
-    private boolean on = false;
-    private double power = 0; // in watts
-    private List<Consumer<Boolean>> stateChangeListeners = new ArrayList<>();
-    private List<Consumer<Double>> powerChangeListeners = new ArrayList<>();
+    public static interface Observer { // Observer interface to notify listeners about plug state and power changes
+        void update(String name, String key, String value);
+    }
+
+    private final String name; // unique identifier for the plug
+    private boolean on = false; // plug state 
+    private double power = 0; // power consumption in watts
+    private final List<Observer> observers = new ArrayList<>();
 
     public PlugSim(String name) {
         this.name = name;
+        measurePower(); // measure initial power
     }
 
-    /**
-     * No need to synchronize if read a final field.
-     */
     public String getName() {
         return name;
     }
 
-    /**
-     * Switch the plug on.
-     */
-    synchronized public void switchOn() {
+    synchronized public void switchOn() { // switches the plug ON and notifies observer.
         if (!on) {
             on = true;
-            notifyStateChange();
+            measurePower(); // measure immediately after switching ON
+            logger.info("Plug {} switched ON", name);
+            notifyObservers("state", "on");
         }
     }
 
-    /**
-     * Switch the plug off.
-     */
-    synchronized public void switchOff() {
+    synchronized public void switchOff() { // switches the plug OFF and notifies the observer
         if (on) {
             on = false;
-            updatePower(0);
-            notifyStateChange();
+            measurePower(); // measure immediately after switching OFF
+            logger.info("Plug {} switched OFF", name);
+            notifyObservers("state", "off");
         }
     }
 
-    /**
-     * Toggle the plug.
-     */
-    synchronized public void toggle() {
-        on = !on;
-        if (!on) {
-            updatePower(0);
+    synchronized public void toggle() { // toggles the plug state between ON and OFF
+        if (on) {
+            switchOff();
+        } else {
+            switchOn();
         }
-        notifyStateChange();
     }
 
-    /**
-     * Measure power.
-     */
-    synchronized public void measurePower() {
+    synchronized public void measurePower() { // Measures and updates power consumption based on plug state
         if (!on) {
             updatePower(0);
             return;
         }
 
-        // a trick to help testing
-        if (name.indexOf(".") != -1) {
+        String[] parts = name.split("\\.");
+        if (parts.length == 2) {
             try {
-                updatePower(Integer.parseInt(name.split("\\.")[1]));
+                double newPower = Double.parseDouble(parts[1]);
+                updatePower(newPower);
+                return;
             } catch (NumberFormatException e) {
-                logger.warn("Invalid power value in plug name: {}", name);
+                logger.warn("Invalid plug name format: {}", name);
             }
-        }
-        // do some random walk
-        else if (power < 100) {
+        } else if (power < 100) { // adjust power within a reasonable range for simulation purposes
             updatePower(power + Math.random() * 100);
         } else if (power > 300) {
             updatePower(power - Math.random() * 100);
@@ -88,44 +76,30 @@ public class PlugSim {
     }
 
     protected void updatePower(double p) {
-        if (power != p) {
-            power = p;
-            logger.debug("Plug {}: power {}", name, power);
-            notifyPowerChange();
-        }
+        power = p; // updates the power value and notifies the observer
+        logger.debug("Plug {}: power {}", name, power);
+        notifyObservers("power", String.format("%.3f", power));
     }
 
-    /**
-     * Getter: current state
-     */
     synchronized public boolean isOn() {
         return on;
     }
 
-    /**
-     * Getter: last power reading
-     */
     synchronized public double getPower() {
         return power;
     }
 
-    public void addStateChangeListener(Consumer<Boolean> listener) {
-        stateChangeListeners.add(listener);
+    public void addObserver(Observer observer) { // registers an observer and immediately notifies it of the current states and power
+        observers.add(observer);
+        
+        // Immediately notify observer with current state and power
+        observer.update(name, "state", isOn() ? "on" : "off");
+        observer.update(name, "power", String.format("%.3f", getPower()));
     }
 
-    public void addPowerChangeListener(Consumer<Double> listener) {
-        powerChangeListeners.add(listener);
-    }
-
-    private void notifyStateChange() {
-        for (Consumer<Boolean> listener : stateChangeListeners) {
-            listener.accept(on);
-        }
-    }
-
-    private void notifyPowerChange() {
-        for (Consumer<Double> listener : powerChangeListeners) {
-            listener.accept(power);
+    private void notifyObservers(String key, String value) {
+        for (Observer observer : observers) {
+            observer.update(name, key, value);
         }
     }
 

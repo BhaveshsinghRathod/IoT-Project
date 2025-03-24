@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ece448.iot_sim.MQTTCommandsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-03-24T04:08:52" hostname="iit" time="0.15">
+  <properties/>
+  <testcase name="testMQTTUpdatesGetTopic" classname="ece448.iot_sim.MQTTCommandsTest" time="0.003"/>
+  <testcase name="testGetTopic" classname="ece448.iot_sim.MQTTCommandsTest" time="0.002"/>
+  <testcase name="testMQTTUpdatesGetMessage" classname="ece448.iot_sim.MQTTCommandsTest" time="0.138"/>
+  <testcase name="testMQTTUpdatesGetMessageDifferentValue" classname="ece448.iot_sim.MQTTCommandsTest" time="0.002"/>
+  <testcase name="testHandleMessageInvalidTopic" classname="ece448.iot_sim.MQTTCommandsTest" time="0.003"/>
+  <testcase name="testHandleMessageNonexistentPlug" classname="ece448.iot_sim.MQTTCommandsTest" time="0.002"/>
+  <system-out><![CDATA[2025-03-23 23:08:52,601 WARN Invalid topic format: invalid/topic
+2025-03-23 23:08:52,604 WARN Plug not found: nonexistent
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

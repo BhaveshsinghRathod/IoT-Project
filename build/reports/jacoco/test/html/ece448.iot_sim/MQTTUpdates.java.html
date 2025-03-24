@@ -2,21 +2,24 @@
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
-public class MQTTUpdates {
-    private final String prefix;
+public class MQTTUpdates { // Manages MQTT update messages by formatting topics and creating messages
+    private final String topicPrefix; // construct an MQTTupdates instance with the specified topic prefix
 
-<span class="fc" id="L8">    public MQTTUpdates(String prefix) {</span>
-<span class="fc" id="L9">        this.prefix = prefix;</span>
+<span class="fc" id="L8">    public MQTTUpdates(String topicPrefix) {</span>
+<span class="pc bpc" id="L9" title="1 of 2 branches missed.">        this.topicPrefix = topicPrefix != null ? topicPrefix : &quot;&quot;;</span>
 <span class="fc" id="L10">    }</span>
 
-    public String getTopic(String plugName, String updateType) {
-<span class="fc" id="L13">        return prefix + &quot;/update/&quot; + plugName + &quot;/&quot; + updateType;</span>
+    public String getTopic(String name, String key) {
+<span class="fc" id="L13">        return String.format(&quot;%s/update/%s/%s&quot;, topicPrefix, name, key);</span>
     }
 
-    public MqttMessage getMessage(String value) {
-<span class="fc" id="L17">        MqttMessage message = new MqttMessage(value.getBytes());</span>
-<span class="fc" id="L18">        message.setRetained(true);</span>
-<span class="fc" id="L19">        return message;</span>
+    public MqttMessage getMessage(String value) { // creates an MQTT message with the given value
+<span class="pc bpc" id="L17" title="1 of 2 branches missed.">        if (value == null) {</span>
+<span class="nc" id="L18">            throw new IllegalArgumentException(&quot;Value cannot be null&quot;);</span>
+        }
+<span class="fc" id="L20">        MqttMessage msg = new MqttMessage(value.getBytes());</span>
+<span class="fc" id="L21">        msg.setRetained(true);</span>
+<span class="fc" id="L22">        return msg;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
