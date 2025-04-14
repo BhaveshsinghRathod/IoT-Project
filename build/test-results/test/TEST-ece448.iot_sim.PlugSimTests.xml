@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_sim.PlugSimTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-03-24T04:08:52" hostname="iit" time="0.334">
+<testsuite name="ece448.iot_sim.PlugSimTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-04-14T05:02:15" hostname="iit" time="0.335">
   <properties/>
-  <testcase name="testSwitchOff" classname="ece448.iot_sim.PlugSimTests" time="0.301"/>
-  <testcase name="testPowerRemainsZeroWhenOff" classname="ece448.iot_sim.PlugSimTests" time="0.003"/>
-  <testcase name="testInvalidPowerValueInName" classname="ece448.iot_sim.PlugSimTests" time="0.008"/>
-  <testcase name="testPowerUpdateBasedOnName" classname="ece448.iot_sim.PlugSimTests" time="0.005"/>
+  <testcase name="testSwitchOff" classname="ece448.iot_sim.PlugSimTests" time="0.31"/>
+  <testcase name="testPowerRemainsZeroWhenOff" classname="ece448.iot_sim.PlugSimTests" time="0.002"/>
+  <testcase name="testInvalidPowerValueInName" classname="ece448.iot_sim.PlugSimTests" time="0.006"/>
+  <testcase name="testPowerUpdateBasedOnName" classname="ece448.iot_sim.PlugSimTests" time="0.003"/>
   <testcase name="testInit" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
-  <testcase name="testGetName" classname="ece448.iot_sim.PlugSimTests" time="0.0"/>
-  <testcase name="testSwitchOn" classname="ece448.iot_sim.PlugSimTests" time="0.003"/>
-  <testcase name="testPowerDecreasesWhenAbove300" classname="ece448.iot_sim.PlugSimTests" time="0.005"/>
+  <testcase name="testGetName" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
+  <testcase name="testSwitchOn" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
+  <testcase name="testPowerDecreasesWhenAbove300" classname="ece448.iot_sim.PlugSimTests" time="0.002"/>
   <testcase name="testMeasurePowerWhenOff" classname="ece448.iot_sim.PlugSimTests" time="0.001"/>
   <testcase name="testToggle" classname="ece448.iot_sim.PlugSimTests" time="0.002"/>
-  <testcase name="testPowerFLuctuationRange" classname="ece448.iot_sim.PlugSimTests" time="0.004"/>
-  <system-out><![CDATA[2025-03-23 23:08:52,416 WARN Invalid plug name format: plug.invalid
-2025-03-23 23:08:52,422 INFO Plug plug.invalid switched ON
-2025-03-23 23:08:52,423 WARN Invalid plug name format: plug.invalid
-2025-03-23 23:08:52,427 INFO Plug test.200 switched ON
-2025-03-23 23:08:52,432 INFO Plug a switched ON
-2025-03-23 23:08:52,435 INFO Plug plug switched ON
-2025-03-23 23:08:52,440 INFO Plug a switched ON
-2025-03-23 23:08:52,441 INFO Plug a switched OFF
-2025-03-23 23:08:52,442 INFO Plug a switched ON
+  <testcase name="testPowerFLuctuationRange" classname="ece448.iot_sim.PlugSimTests" time="0.005"/>
+  <system-out><![CDATA[2025-04-14 00:02:15,374 WARN Invalid plug name format: plug.invalid
+2025-04-14 00:02:15,379 INFO Plug plug.invalid switched ON
+2025-04-14 00:02:15,379 WARN Invalid plug name format: plug.invalid
+2025-04-14 00:02:15,382 INFO Plug test.200 switched ON
+2025-04-14 00:02:15,385 INFO Plug a switched ON
+2025-04-14 00:02:15,387 INFO Plug plug switched ON
+2025-04-14 00:02:15,390 INFO Plug a switched ON
+2025-04-14 00:02:15,391 INFO Plug a switched OFF
+2025-04-14 00:02:15,393 INFO Plug a switched ON
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

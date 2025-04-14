@@ -57,7 +57,7 @@ public class MQTTCommands {
 */
 
 
-
+/*
 package ece448.iot_sim;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
@@ -140,5 +140,120 @@ public class MQTTCommands {
                 return;
         }
         plug.measurePower();
+    }
+}
+*/
+
+
+
+
+package ece448.iot_sim;
+
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MQTTCommands {
+
+    private final Map<String, PlugSim> plugs = new TreeMap<>();
+    private final String topicPrefix;
+    private final MqttClient mqttClient;  // New: MQTT client for publishing
+    private static final Logger logger = LoggerFactory.getLogger(MQTTCommands.class);
+
+    public MQTTCommands(List<PlugSim> plugs, String topicPrefix, MqttClient mqttClient) {
+        if (plugs != null) {
+            for (PlugSim plug : plugs) {
+                this.plugs.put(plug.getName(), plug);
+            }
+        }
+        this.topicPrefix = topicPrefix != null ? topicPrefix : "";
+        this.mqttClient = mqttClient;
+    }
+
+    public String getTopic() {
+        return topicPrefix + "/action/#";
+    }
+
+    public void handleMessage(String topic, MqttMessage msg) {
+        if (topic == null || msg == null) {
+            logger.warn("Null message/topic received");
+            return;
+        }
+
+        if (topicPrefix.isEmpty()) {
+            logger.warn("Empty or null topicPrefix");
+            return;
+        }
+
+        String[] parts = topic.split("/");
+        String[] prefixParts = topicPrefix.split("/");
+
+        if (parts.length < prefixParts.length + 3) {
+            logger.warn("Invalid topic format: {}", topic);
+            return;
+        }
+
+        for (int i = 0; i < prefixParts.length; i++) {
+            if (!parts[i].equals(prefixParts[i])) {
+                return;
+            }
+        }
+
+        String plugName = parts[prefixParts.length + 1];
+        String action = parts[prefixParts.length + 2];
+
+        PlugSim plug = plugs.get(plugName);
+        if (plug == null) {
+            logger.warn("Plug not found: {}", plugName);
+            return;
+        }
+
+        executeAction(plug, action, plugName);
+    }
+
+    private void executeAction(PlugSim plug, String action, String plugName) {
+        switch (action) {
+            case "toggle":
+                plug.toggle();
+                break;
+            case "on":
+                plug.switchOn();
+                break;
+            case "off":
+                plug.switchOff();
+                break;
+            default:
+                logger.warn("Unknown action: {}", action);
+                return;
+        }
+
+        plug.measurePower(); // Existing
+
+        // New: Publish plug state
+        publishPlugState(plugName, plug.getStates());
+    }
+
+    private void publishPlugState(String plugName, boolean state) {
+        if (mqttClient == null || !mqttClient.isConnected()) {
+            logger.warn("MQTT client is not connected. Cannot publish state.");
+            return;
+        }
+
+        String topic = topicPrefix + "/state/" + plugName;
+        String payload = state ? "on" : "off";
+
+        try {
+            MqttMessage msg = new MqttMessage(payload.getBytes());
+            mqttClient.publish(topic, msg);
+            logger.info("Published state to {}: {}", topic, payload);
+        } catch (MqttException e) {
+            logger.error("Failed to publish plug state for {}", plugName, e);
+        }
     }
 }

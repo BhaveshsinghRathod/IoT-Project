@@ -57,7 +57,7 @@ public class MQTTCommands {
 */
 
 
-
+/*
 package ece448.iot_sim;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
@@ -70,76 +70,191 @@ import java.util.TreeMap;
 
 public class MQTTCommands {
 
-<span class="fc" id="L73">    private final Map&lt;String, PlugSim&gt; plugs = new TreeMap&lt;&gt;();</span>
+    private final Map&lt;String, PlugSim&gt; plugs = new TreeMap&lt;&gt;();
     private final String topicPrefix;
-<span class="fc" id="L75">    private static final Logger logger = LoggerFactory.getLogger(MQTTCommands.class);</span>
+    private static final Logger logger = LoggerFactory.getLogger(MQTTCommands.class);
 
-<span class="fc" id="L77">    public MQTTCommands(List&lt;PlugSim&gt; plugs, String topicPrefix) {</span>
-<span class="pc bpc" id="L78" title="1 of 2 branches missed.">        if (plugs != null) {</span>
-<span class="fc bfc" id="L79" title="All 2 branches covered.">            for (PlugSim plug : plugs) {</span>
-<span class="fc" id="L80">                this.plugs.put(plug.getName(), plug);</span>
-<span class="fc" id="L81">            }</span>
+    public MQTTCommands(List&lt;PlugSim&gt; plugs, String topicPrefix) {
+        if (plugs != null) {
+            for (PlugSim plug : plugs) {
+                this.plugs.put(plug.getName(), plug);
+            }
         }
-<span class="pc bpc" id="L83" title="1 of 2 branches missed.">        this.topicPrefix = topicPrefix != null ? topicPrefix : &quot;&quot;;</span>
-<span class="fc" id="L84">    }</span>
+        this.topicPrefix = topicPrefix != null ? topicPrefix : &quot;&quot;;
+    }
 
     public String getTopic() {
-<span class="fc" id="L87">        return topicPrefix + &quot;/action/#&quot;;</span>
+        return topicPrefix + &quot;/action/#&quot;;
     }
 
     public void handleMessage(String topic, MqttMessage msg) {
-<span class="pc bpc" id="L91" title="2 of 4 branches missed.">        if (topic == null || msg == null) {</span>
-<span class="nc" id="L92">            logger.warn(&quot;Null message/topic received&quot;);</span>
-<span class="nc" id="L93">            return;</span>
+        if (topic == null || msg == null) {
+            logger.warn(&quot;Null message/topic received&quot;);
+            return;
         }
 
-<span class="pc bpc" id="L96" title="1 of 2 branches missed.">        if (topicPrefix.isEmpty()) {</span>
-<span class="nc" id="L97">            logger.warn(&quot;Empty or null topicPrefix&quot;);</span>
-<span class="nc" id="L98">            return;</span>
+        if (topicPrefix.isEmpty()) {
+            logger.warn(&quot;Empty or null topicPrefix&quot;);
+            return;
         }
 
-<span class="fc" id="L101">        String[] parts = topic.split(&quot;/&quot;);</span>
-<span class="fc" id="L102">        String[] prefixParts = topicPrefix.split(&quot;/&quot;);</span>
+        String[] parts = topic.split(&quot;/&quot;);
+        String[] prefixParts = topicPrefix.split(&quot;/&quot;);
 
-<span class="fc bfc" id="L104" title="All 2 branches covered.">        if (parts.length &lt; prefixParts.length + 3) {</span>
-<span class="fc" id="L105">            logger.warn(&quot;Invalid topic format: {}&quot;, topic);</span>
-<span class="fc" id="L106">            return;</span>
+        if (parts.length &lt; prefixParts.length + 3) {
+            logger.warn(&quot;Invalid topic format: {}&quot;, topic);
+            return;
         }
 
-<span class="fc bfc" id="L109" title="All 2 branches covered.">        for (int i = 0; i &lt; prefixParts.length; i++) {</span>
-<span class="pc bpc" id="L110" title="1 of 2 branches missed.">            if (!parts[i].equals(prefixParts[i])) {</span>
-<span class="nc" id="L111">                return;</span>
+        for (int i = 0; i &lt; prefixParts.length; i++) {
+            if (!parts[i].equals(prefixParts[i])) {
+                return;
             }
         }
 
-<span class="fc" id="L115">        String plugName = parts[prefixParts.length + 1];</span>
-<span class="fc" id="L116">        String action = parts[prefixParts.length + 2];</span>
+        String plugName = parts[prefixParts.length + 1];
+        String action = parts[prefixParts.length + 2];
 
-<span class="fc" id="L118">        PlugSim plug = plugs.get(plugName);</span>
-<span class="pc bpc" id="L119" title="1 of 2 branches missed.">        if (plug == null) {</span>
-<span class="fc" id="L120">            logger.warn(&quot;Plug not found: {}&quot;, plugName);</span>
-<span class="fc" id="L121">            return;</span>
+        PlugSim plug = plugs.get(plugName);
+        if (plug == null) {
+            logger.warn(&quot;Plug not found: {}&quot;, plugName);
+            return;
         }
 
-<span class="nc" id="L124">        executeAction(plug, action);</span>
-<span class="nc" id="L125">    }</span>
+        executeAction(plug, action);
+    }
 
     private void executeAction(PlugSim plug, String action) {
-<span class="nc bnc" id="L128" title="All 4 branches missed.">        switch (action) {</span>
+        switch (action) {
             case &quot;toggle&quot;:
-<span class="nc" id="L130">                plug.toggle();</span>
-<span class="nc" id="L131">                break;</span>
+                plug.toggle();
+                break;
             case &quot;on&quot;:
-<span class="nc" id="L133">                plug.switchOn();</span>
-<span class="nc" id="L134">                break;</span>
+                plug.switchOn();
+                break;
             case &quot;off&quot;:
-<span class="nc" id="L136">                plug.switchOff();</span>
-<span class="nc" id="L137">                break;</span>
+                plug.switchOff();
+                break;
             default:
-<span class="nc" id="L139">                logger.warn(&quot;Unknown action: {}&quot;, action);</span>
-<span class="nc" id="L140">                return;</span>
+                logger.warn(&quot;Unknown action: {}&quot;, action);
+                return;
         }
-<span class="nc" id="L142">        plug.measurePower();</span>
-<span class="nc" id="L143">    }</span>
+        plug.measurePower();
+    }
+}
+*/
+
+
+
+
+package ece448.iot_sim;
+
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MQTTCommands {
+
+<span class="fc" id="L164">    private final Map&lt;String, PlugSim&gt; plugs = new TreeMap&lt;&gt;();</span>
+    private final String topicPrefix;
+    private final MqttClient mqttClient;  // New: MQTT client for publishing
+<span class="fc" id="L167">    private static final Logger logger = LoggerFactory.getLogger(MQTTCommands.class);</span>
+
+<span class="fc" id="L169">    public MQTTCommands(List&lt;PlugSim&gt; plugs, String topicPrefix, MqttClient mqttClient) {</span>
+<span class="pc bpc" id="L170" title="1 of 2 branches missed.">        if (plugs != null) {</span>
+<span class="fc bfc" id="L171" title="All 2 branches covered.">            for (PlugSim plug : plugs) {</span>
+<span class="fc" id="L172">                this.plugs.put(plug.getName(), plug);</span>
+<span class="fc" id="L173">            }</span>
+        }
+<span class="pc bpc" id="L175" title="1 of 2 branches missed.">        this.topicPrefix = topicPrefix != null ? topicPrefix : &quot;&quot;;</span>
+<span class="fc" id="L176">        this.mqttClient = mqttClient;</span>
+<span class="fc" id="L177">    }</span>
+
+    public String getTopic() {
+<span class="fc" id="L180">        return topicPrefix + &quot;/action/#&quot;;</span>
+    }
+
+    public void handleMessage(String topic, MqttMessage msg) {
+<span class="pc bpc" id="L184" title="2 of 4 branches missed.">        if (topic == null || msg == null) {</span>
+<span class="nc" id="L185">            logger.warn(&quot;Null message/topic received&quot;);</span>
+<span class="nc" id="L186">            return;</span>
+        }
+
+<span class="pc bpc" id="L189" title="1 of 2 branches missed.">        if (topicPrefix.isEmpty()) {</span>
+<span class="nc" id="L190">            logger.warn(&quot;Empty or null topicPrefix&quot;);</span>
+<span class="nc" id="L191">            return;</span>
+        }
+
+<span class="fc" id="L194">        String[] parts = topic.split(&quot;/&quot;);</span>
+<span class="fc" id="L195">        String[] prefixParts = topicPrefix.split(&quot;/&quot;);</span>
+
+<span class="fc bfc" id="L197" title="All 2 branches covered.">        if (parts.length &lt; prefixParts.length + 3) {</span>
+<span class="fc" id="L198">            logger.warn(&quot;Invalid topic format: {}&quot;, topic);</span>
+<span class="fc" id="L199">            return;</span>
+        }
+
+<span class="fc bfc" id="L202" title="All 2 branches covered.">        for (int i = 0; i &lt; prefixParts.length; i++) {</span>
+<span class="pc bpc" id="L203" title="1 of 2 branches missed.">            if (!parts[i].equals(prefixParts[i])) {</span>
+<span class="nc" id="L204">                return;</span>
+            }
+        }
+
+<span class="fc" id="L208">        String plugName = parts[prefixParts.length + 1];</span>
+<span class="fc" id="L209">        String action = parts[prefixParts.length + 2];</span>
+
+<span class="fc" id="L211">        PlugSim plug = plugs.get(plugName);</span>
+<span class="pc bpc" id="L212" title="1 of 2 branches missed.">        if (plug == null) {</span>
+<span class="fc" id="L213">            logger.warn(&quot;Plug not found: {}&quot;, plugName);</span>
+<span class="fc" id="L214">            return;</span>
+        }
+
+<span class="nc" id="L217">        executeAction(plug, action, plugName);</span>
+<span class="nc" id="L218">    }</span>
+
+    private void executeAction(PlugSim plug, String action, String plugName) {
+<span class="nc bnc" id="L221" title="All 4 branches missed.">        switch (action) {</span>
+            case &quot;toggle&quot;:
+<span class="nc" id="L223">                plug.toggle();</span>
+<span class="nc" id="L224">                break;</span>
+            case &quot;on&quot;:
+<span class="nc" id="L226">                plug.switchOn();</span>
+<span class="nc" id="L227">                break;</span>
+            case &quot;off&quot;:
+<span class="nc" id="L229">                plug.switchOff();</span>
+<span class="nc" id="L230">                break;</span>
+            default:
+<span class="nc" id="L232">                logger.warn(&quot;Unknown action: {}&quot;, action);</span>
+<span class="nc" id="L233">                return;</span>
+        }
+
+<span class="nc" id="L236">        plug.measurePower(); // Existing</span>
+
+        // New: Publish plug state
+<span class="nc" id="L239">        publishPlugState(plugName, plug.getStates());</span>
+<span class="nc" id="L240">    }</span>
+
+    private void publishPlugState(String plugName, boolean state) {
+<span class="nc bnc" id="L243" title="All 4 branches missed.">        if (mqttClient == null || !mqttClient.isConnected()) {</span>
+<span class="nc" id="L244">            logger.warn(&quot;MQTT client is not connected. Cannot publish state.&quot;);</span>
+<span class="nc" id="L245">            return;</span>
+        }
+
+<span class="nc" id="L248">        String topic = topicPrefix + &quot;/state/&quot; + plugName;</span>
+<span class="nc bnc" id="L249" title="All 2 branches missed.">        String payload = state ? &quot;on&quot; : &quot;off&quot;;</span>
+
+        try {
+<span class="nc" id="L252">            MqttMessage msg = new MqttMessage(payload.getBytes());</span>
+<span class="nc" id="L253">            mqttClient.publish(topic, msg);</span>
+<span class="nc" id="L254">            logger.info(&quot;Published state to {}: {}&quot;, topic, payload);</span>
+<span class="nc" id="L255">        } catch (MqttException e) {</span>
+<span class="nc" id="L256">            logger.error(&quot;Failed to publish plug state for {}&quot;, plugName, e);</span>
+<span class="nc" id="L257">        }</span>
+<span class="nc" id="L258">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

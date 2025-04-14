@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PlugsResource.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">iot_ece448</a> &gt; <a href="index.source.html" class="el_package">ece448.iot_hub</a> &gt; <span class="el_source">PlugsResource.java</span></div><h1>PlugsResource.java</h1><pre class="source lang-java linenums">package ece448.iot_hub;
+
+import java.util.List;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class PlugsResource {
+
+<span class="fc" id="L16">    private static final Logger LOGGER = LoggerFactory.getLogger(PlugsResource.class);</span>
+    private final PlugsModel plugsModel;
+
+<span class="fc" id="L19">    public PlugsResource(PlugsModel plugsModel) {</span>
+<span class="fc" id="L20">        this.plugsModel = plugsModel;</span>
+<span class="fc" id="L21">    }</span>
+
+    /**
+     * Handles requests to retrieve a single plug's details.
+     * Optionally performs an action (e.g., &quot;on&quot;, &quot;off&quot;) on the plug.
+     *
+     * @param plug   The name of the plug.
+     * @param action The optional action to perform on the plug.
+     * @return A map representing the plug's details.
+     */
+    @GetMapping(&quot;/api/plugs/{plug:.+}&quot;)
+    public Object getPlug(
+        @PathVariable(&quot;plug&quot;) String plug,
+        @RequestParam(value = &quot;action&quot;, required = false) String action) {
+
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        if (action != null) {</span>
+            // Perform the specified action on the plug
+<span class="nc" id="L38">            plugsModel.controlPlug(plug, action);</span>
+<span class="nc" id="L39">            LOGGER.info(&quot;Performed action '{}' on plug '{}'&quot;, action, plug);</span>
+        }
+
+<span class="nc" id="L42">        Map&lt;String, Object&gt; plugDetails = plugsModel.createPlug(plug);</span>
+<span class="nc" id="L43">        LOGGER.info(&quot;Retrieved details for plug '{}': {}&quot;, plug, plugDetails);</span>
+<span class="nc" id="L44">        return plugDetails;</span>
+    }
+
+    /**
+     * Handles requests to retrieve details of all plugs.
+     *
+     * @return A list of maps, each representing a plug's details.
+     */
+    @GetMapping(&quot;/api/plugs&quot;)
+    public Object getAllPlugs() {
+<span class="nc" id="L54">        List&lt;Map&lt;String, Object&gt;&gt; allPlugs = plugsModel.getAllPlugs();</span>
+<span class="nc" id="L55">        LOGGER.info(&quot;Retrieved details for all plugs: {}&quot;, allPlugs);</span>
+<span class="nc" id="L56">        return allPlugs;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -4,7 +4,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.MqttSecurityException;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,13 +21,16 @@ public class MQTTCommandsTest {
     private MQTTCommands mqttCommands; // Instance of MQTTCommands to be tested
     private List<PlugSim> plugs; // List of plug sim for testing
     private static final String PREFIX = "iot_ece448"; // MQTT topic prefix used for communication
+    private MqttClient mqttClient;
 
     @Before
-    public void setUp() { // Initialize the list of simulated plugs
+    public void setUp() throws MqttException, MqttSecurityException{ // Initialize the list of simulated plugs
         plugs = new ArrayList<>();
         plugs.add(new PlugSim("plug1"));
         plugs.add(new PlugSim("plug2"));
-        mqttCommands = new MQTTCommands(plugs, PREFIX); // Initialize the MQTTCommands instance with the simulated plugs and topic prefix
+        mqttClient = new MqttClient("tcp://localhost:1883", mqttClient.generateClientId(), new MemoryPersistence());
+        mqttClient.connect();
+        mqttCommands = new MQTTCommands(plugs, PREFIX, mqttClient); // Initialize the MQTTCommands instance with the simulated plugs and topic prefix
     }
 
     @Test // Verify that the topic subscription format is correct

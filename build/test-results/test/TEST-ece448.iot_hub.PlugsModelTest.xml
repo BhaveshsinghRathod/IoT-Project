@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ece448.iot_hub.PlugsModelTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-14T05:02:17" hostname="iit" time="0.01">
+  <properties/>
+  <testcase name="testGetAllPlugsWithBothStateAndPower" classname="ece448.iot_hub.PlugsModelTest" time="0.003"/>
+  <testcase name="testGetAllPlugsWithOverlappingPlugs" classname="ece448.iot_hub.PlugsModelTest" time="0.001"/>
+  <testcase name="testCreatePlugWithStateAndPower" classname="ece448.iot_hub.PlugsModelTest" time="0.001"/>
+  <testcase name="testCreatePlugWithNullPower" classname="ece448.iot_hub.PlugsModelTest" time="0.001"/>
+  <testcase name="testCreatePlugWithNullState" classname="ece448.iot_hub.PlugsModelTest" time="0.001"/>
+  <testcase name="testCreatePlugWithNullStateAndPower" classname="ece448.iot_hub.PlugsModelTest" time="0.001"/>
+  <testcase name="testGetAllPlugsEmpty" classname="ece448.iot_hub.PlugsModelTest" time="0.001"/>
+  <testcase name="testGetAllPlugsWithOnlyPowers" classname="ece448.iot_hub.PlugsModelTest" time="0.0"/>
+  <testcase name="testControlPlug" classname="ece448.iot_hub.PlugsModelTest" time="0.001"/>
+  <testcase name="testGetAllPlugsWithOnlyStates" classname="ece448.iot_hub.PlugsModelTest" time="0.0"/>
+  <system-out><![CDATA[2025-04-14 00:02:17,629 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,632 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,633 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,634 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,635 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,636 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,637 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,637 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,638 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:02:17,638 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

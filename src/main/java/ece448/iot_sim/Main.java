@@ -158,7 +158,7 @@ public class Main implements AutoCloseable {
         this.mqtt.connect();
 
         // setup MQTT commands to handle incoming messages
-        MQTTCommands mqttCmd = new MQTTCommands(plugs, config.getMqttTopicPrefix());
+        MQTTCommands mqttCmd = new MQTTCommands(plugs, config.getMqttTopicPrefix(), mqtt);
         logger.info("Mqtt subscribe to {}", mqttCmd.getTopic());
         this.mqtt.subscribe(mqttCmd.getTopic(), (topic, msg) -> {
             mqttCmd.handleMessage(topic, msg);

@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class PlugSim { // simulated a smart plug that can be switched on/off and measures power consumption
 
@@ -15,10 +16,27 @@ public class PlugSim { // simulated a smart plug that can be switched on/off and
     private boolean on = false; // plug state 
     private double power = 0; // power consumption in watts
     private final List<Observer> observers = new ArrayList<>();
+    //
+    private boolean state;
+    private final ConcurrentHashMap<String, Boolean> plugStates = new ConcurrentHashMap<>();
+
 
     public PlugSim(String name) {
         this.name = name;
+        //
+        this.state = false;
+        plugStates.put(name, state);
+        //
         measurePower(); // measure initial power
+    }
+
+    public synchronized void setState(boolean newState) {
+        this.state = newState;
+        plugStates.put(name, newState);
+    }
+
+    public synchronized boolean getStates() {
+        return plugStates.getOrDefault(name, false);
     }
 
     public String getName() {

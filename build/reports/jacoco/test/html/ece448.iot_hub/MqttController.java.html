@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MqttController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">iot_ece448</a> &gt; <a href="index.source.html" class="el_package">ece448.iot_hub</a> &gt; <span class="el_source">MqttController.java</span></div><h1>MqttController.java</h1><pre class="source lang-java linenums">package ece448.iot_hub;
+
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.HashMap;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MqttController {
+<span class="fc" id="L22">    private static final Logger LOGGER = LoggerFactory.getLogger(MqttController.class);</span>
+    
+    private final String broker;
+    private final String clientId;
+    protected final String topicPrefix;
+    
+    protected MqttClient client;
+<span class="fc" id="L29">    private final HashMap&lt;String, String&gt; states = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L30">    private final HashMap&lt;String, String&gt; powers = new HashMap&lt;&gt;();</span>
+
+    public MqttController(
+        @Value(&quot;${mqtt.broker:tcp://localhost:1883}&quot;) String broker,
+        @Value(&quot;${mqtt.clientId:iot_hub}&quot;) String clientId,
+<span class="fc" id="L35">        @Value(&quot;${mqtt.topicPrefix:iot_ece448}&quot;) String topicPrefix) {</span>
+        
+<span class="fc" id="L37">        this.broker = broker;</span>
+<span class="fc" id="L38">        this.clientId = clientId;</span>
+<span class="fc" id="L39">        this.topicPrefix = topicPrefix;</span>
+        
+<span class="fc" id="L41">        LOGGER.info(&quot;Initializing MQTT Controller - Broker: {}, Client ID: {}, Topic Prefix: {}&quot;,</span>
+            broker, clientId, topicPrefix);
+<span class="fc" id="L43">    }</span>
+
+    @PostConstruct
+    public void start() {
+        try {
+<span class="fc" id="L48">            initializeMqttConnection();</span>
+<span class="fc" id="L49">            LOGGER.info(&quot;Successfully connected to MQTT broker: {}&quot;, broker);</span>
+<span class="fc" id="L50">        } catch (Exception e) {</span>
+<span class="fc" id="L51">            LOGGER.error(&quot;Connection failure to {}: {}&quot;, broker, e.getMessage(), e);</span>
+<span class="fc" id="L52">        }</span>
+<span class="fc" id="L53">    }</span>
+
+    protected void initializeMqttConnection() throws Exception {
+<span class="nc" id="L56">        client = new MqttClient(broker, clientId, new MemoryPersistence());</span>
+        
+<span class="nc" id="L58">        MqttConnectOptions connectOptions = new MqttConnectOptions();</span>
+<span class="nc" id="L59">        connectOptions.setCleanSession(true);</span>
+<span class="nc" id="L60">        client.connect(connectOptions);</span>
+        
+<span class="nc" id="L62">        client.subscribe(topicPrefix + &quot;/update/#&quot;, this::processIncomingMessage);</span>
+<span class="nc" id="L63">    }</span>
+
+    @PreDestroy
+    public void close() {
+        try {
+<span class="pc bpc" id="L68" title="1 of 4 branches missed.">            if (client != null &amp;&amp; client.isConnected()) {</span>
+<span class="fc" id="L69">                client.disconnect();</span>
+<span class="fc" id="L70">                LOGGER.info(&quot;Disconnected from MQTT broker&quot;);</span>
+            }
+<span class="fc" id="L72">        } catch (Exception e) {</span>
+<span class="fc" id="L73">            LOGGER.error(&quot;Disconnection error: {}&quot;, e.getMessage(), e);</span>
+<span class="fc" id="L74">        }</span>
+<span class="fc" id="L75">    }</span>
+
+    synchronized public void publishAction(String plugName, String action) {
+<span class="fc" id="L78">        final String topic = String.format(&quot;%s/action/%s/%s&quot;, topicPrefix, plugName, action);</span>
+        
+        try {
+<span class="fc bfc" id="L81" title="All 4 branches covered.">            if (client == null || !client.isConnected()) {</span>
+<span class="fc" id="L82">                LOGGER.warn(&quot;Publish failed - MQTT client not connected&quot;);</span>
+<span class="fc" id="L83">                return;</span>
+            }
+            
+<span class="fc" id="L86">            transmitMqttMessage(topic);</span>
+<span class="fc" id="L87">            LOGGER.debug(&quot;Action published - Device: {}, Action: {}&quot;, plugName, action);</span>
+<span class="fc" id="L88">        } catch (Exception e) {</span>
+<span class="fc" id="L89">            LOGGER.error(&quot;Publish error - Device: {}, Action: {}&quot;, plugName, action, e);</span>
+<span class="fc" id="L90">        }</span>
+<span class="fc" id="L91">    }</span>
+
+    protected void transmitMqttMessage(String topic) throws Exception {
+<span class="nc" id="L94">        client.publish(topic, new MqttMessage());</span>
+<span class="nc" id="L95">    }</span>
+
+    // State management methods
+    synchronized public String getState(String plugName) {
+<span class="fc" id="L99">        return states.get(plugName);</span>
+    }
+
+    synchronized public String getPower(String plugName) {
+<span class="fc" id="L103">        return powers.get(plugName);</span>
+    }
+
+    synchronized public Map&lt;String, String&gt; getStates() {
+<span class="fc" id="L107">        return new TreeMap&lt;&gt;(states);</span>
+    }
+
+    synchronized public Map&lt;String, String&gt; getPowers() {
+<span class="fc" id="L111">        return new TreeMap&lt;&gt;(powers);</span>
+    }
+
+    synchronized protected void processIncomingMessage(String topic, MqttMessage message) {
+<span class="fc" id="L115">        LOGGER.debug(&quot;Received message - Topic: {}, Payload: {}&quot;, topic, message);</span>
+        
+        // Expected topic format: {prefix}/update/{device}/{type}
+<span class="fc" id="L118">        String[] components = topic.substring(topicPrefix.length() + 1).split(&quot;/&quot;);</span>
+<span class="fc bfc" id="L119" title="All 4 branches covered.">        if (components.length != 3 || !&quot;update&quot;.equals(components[0])) {</span>
+<span class="fc" id="L120">            LOGGER.debug(&quot;Ignoring malformed topic: {}&quot;, topic);</span>
+<span class="fc" id="L121">            return;</span>
+        }
+
+<span class="fc" id="L124">        String device = components[1];</span>
+<span class="fc" id="L125">        String updateType = components[2];</span>
+<span class="fc" id="L126">        String value = new String(message.getPayload());</span>
+
+<span class="fc bfc" id="L128" title="All 3 branches covered.">        switch (updateType) {</span>
+            case &quot;state&quot;:
+<span class="fc" id="L130">                states.put(device, value);</span>
+<span class="fc" id="L131">                LOGGER.debug(&quot;State updated - Device: {}, Value: {}&quot;, device, value);</span>
+<span class="fc" id="L132">                break;</span>
+            case &quot;power&quot;:
+<span class="fc" id="L134">                powers.put(device, value);</span>
+<span class="fc" id="L135">                LOGGER.debug(&quot;Power updated - Device: {}, Value: {}&quot;, device, value);</span>
+<span class="fc" id="L136">                break;</span>
+            default:
+<span class="fc" id="L138">                LOGGER.debug(&quot;Unhandled update type: {}&quot;, updateType);</span>
+        }
+<span class="fc" id="L140">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

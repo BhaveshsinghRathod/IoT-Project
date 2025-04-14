@@ -12,42 +12,41 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 public class Main implements AutoCloseable {
 
-	public static void main(String[] args) throws Exception {
-		// load configuration file
-<span class="nc bnc" id="L17" title="All 2 branches missed.">		String configFile = args.length &gt; 0 ? args[0] : &quot;hubConfig.json&quot;;</span>
-<span class="nc" id="L18">		HubConfig config = mapper.readValue(new File(configFile), HubConfig.class);</span>
-<span class="nc" id="L19">		logger.info(&quot;{}: {}&quot;, configFile, mapper.writeValueAsString(config));</span>
+    public static void main(String[] args) throws Exception {
+        // Load configuration file
+<span class="nc bnc" id="L17" title="All 2 branches missed.">        String configFile = (args.length &gt; 0) ? args[0] : &quot;hubConfig.json&quot;;</span>
+<span class="nc" id="L18">        HubConfig config = MAPPER.readValue(new File(configFile), HubConfig.class);</span>
+<span class="nc" id="L19">        LOGGER.info(&quot;Loaded configuration from {}: {}&quot;, configFile, MAPPER.writeValueAsString(config));</span>
 
-<span class="nc" id="L21">		try (Main m = new Main(config, args))</span>
-		{
-			// loop forever
-			for (;;)
-			{
-<span class="nc" id="L26">				Thread.sleep(60000);</span>
-			}
-		}
-	}
+<span class="nc" id="L21">        try (Main mainInstance = new Main(config, args)) {</span>
+            // Run indefinitely
+            while (true) {
+<span class="nc" id="L24">                Thread.sleep(60000); // Sleep for 1 minute</span>
+            }
+        }
+    }
 
-<span class="nc" id="L31">	public Main(HubConfig config, String[] args) throws Exception {</span>
-		// Spring app
-<span class="nc" id="L33">		HashMap&lt;String, Object&gt; props = new HashMap&lt;&gt;();</span>
-<span class="nc" id="L34">		props.put(&quot;server.port&quot;, config.getHttpPort());</span>
-<span class="nc" id="L35">		props.put(&quot;mqtt.broker&quot;, config.getMqttBroker());</span>
-<span class="nc" id="L36">		props.put(&quot;mqtt.clientId&quot;, config.getMqttClientId());</span>
-<span class="nc" id="L37">		props.put(&quot;mqtt.topicPrefix&quot;, config.getMqttTopicPrefix());</span>
-<span class="nc" id="L38">		SpringApplication app = new SpringApplication(App.class);</span>
-<span class="nc" id="L39">		app.setDefaultProperties(props);</span>
-<span class="nc" id="L40">		this.appCtx = app.run(args);</span>
-<span class="nc" id="L41">	}</span>
+<span class="nc" id="L29">    public Main(HubConfig config, String[] args) throws Exception {</span>
+        // Initialize Spring application with custom properties
+<span class="nc" id="L31">        HashMap&lt;String, Object&gt; properties = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L32">        properties.put(&quot;server.port&quot;, config.getHttpPort());</span>
+<span class="nc" id="L33">        properties.put(&quot;mqtt.broker&quot;, config.getMqttBroker());</span>
+<span class="nc" id="L34">        properties.put(&quot;mqtt.clientId&quot;, config.getMqttClientId());</span>
+<span class="nc" id="L35">        properties.put(&quot;mqtt.topicPrefix&quot;, config.getMqttTopicPrefix());</span>
 
-	@Override
-	public void close() throws Exception {
-<span class="nc" id="L45">		appCtx.close();</span>
-<span class="nc" id="L46">	}</span>
+<span class="nc" id="L37">        SpringApplication springApp = new SpringApplication(App.class);</span>
+<span class="nc" id="L38">        springApp.setDefaultProperties(properties);</span>
+<span class="nc" id="L39">        this.applicationContext = springApp.run(args);</span>
+<span class="nc" id="L40">    }</span>
 
-	private final ConfigurableApplicationContext appCtx;
+    @Override
+    public void close() throws Exception {
+<span class="nc" id="L44">        applicationContext.close();</span>
+<span class="nc" id="L45">    }</span>
 
-<span class="nc" id="L50">	private static final ObjectMapper mapper = new ObjectMapper();</span>
-<span class="nc" id="L51">	private static final Logger logger = LoggerFactory.getLogger(Main.class);	</span>
+    private final ConfigurableApplicationContext applicationContext;
+
+<span class="nc" id="L49">    private static final ObjectMapper MAPPER = new ObjectMapper();</span>
+<span class="nc" id="L50">    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ece448.iot_hub.PlugsResourceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-14T05:02:17" hostname="iit" time="0.001">
+  <properties/>
+  <testcase name="testGetAllPlugs" classname="ece448.iot_hub.PlugsResourceTest" time="0.0"/>
+  <testcase name="testGetPlugWithAction" classname="ece448.iot_hub.PlugsResourceTest" time="0.0"/>
+  <testcase name="testGetPlugWithoutAction" classname="ece448.iot_hub.PlugsResourceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

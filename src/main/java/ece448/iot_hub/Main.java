@@ -12,41 +12,40 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 public class Main implements AutoCloseable {
 
-	public static void main(String[] args) throws Exception {
-		// load configuration file
-		String configFile = args.length > 0 ? args[0] : "hubConfig.json";
-		HubConfig config = mapper.readValue(new File(configFile), HubConfig.class);
-		logger.info("{}: {}", configFile, mapper.writeValueAsString(config));
+    public static void main(String[] args) throws Exception {
+        // Load configuration file
+        String configFile = (args.length > 0) ? args[0] : "hubConfig.json";
+        HubConfig config = MAPPER.readValue(new File(configFile), HubConfig.class);
+        LOGGER.info("Loaded configuration from {}: {}", configFile, MAPPER.writeValueAsString(config));
 
-		try (Main m = new Main(config, args))
-		{
-			// loop forever
-			for (;;)
-			{
-				Thread.sleep(60000);
-			}
-		}
-	}
+        try (Main mainInstance = new Main(config, args)) {
+            // Run indefinitely
+            while (true) {
+                Thread.sleep(60000); // Sleep for 1 minute
+            }
+        }
+    }
 
-	public Main(HubConfig config, String[] args) throws Exception {
-		// Spring app
-		HashMap<String, Object> props = new HashMap<>();
-		props.put("server.port", config.getHttpPort());
-		props.put("mqtt.broker", config.getMqttBroker());
-		props.put("mqtt.clientId", config.getMqttClientId());
-		props.put("mqtt.topicPrefix", config.getMqttTopicPrefix());
-		SpringApplication app = new SpringApplication(App.class);
-		app.setDefaultProperties(props);
-		this.appCtx = app.run(args);
-	}
+    public Main(HubConfig config, String[] args) throws Exception {
+        // Initialize Spring application with custom properties
+        HashMap<String, Object> properties = new HashMap<>();
+        properties.put("server.port", config.getHttpPort());
+        properties.put("mqtt.broker", config.getMqttBroker());
+        properties.put("mqtt.clientId", config.getMqttClientId());
+        properties.put("mqtt.topicPrefix", config.getMqttTopicPrefix());
 
-	@Override
-	public void close() throws Exception {
-		appCtx.close();
-	}
+        SpringApplication springApp = new SpringApplication(App.class);
+        springApp.setDefaultProperties(properties);
+        this.applicationContext = springApp.run(args);
+    }
 
-	private final ConfigurableApplicationContext appCtx;
+    @Override
+    public void close() throws Exception {
+        applicationContext.close();
+    }
 
-	private static final ObjectMapper mapper = new ObjectMapper();
-	private static final Logger logger = LoggerFactory.getLogger(Main.class);	
+    private final ConfigurableApplicationContext applicationContext;
+
+    private static final ObjectMapper MAPPER = new ObjectMapper();
+    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 }

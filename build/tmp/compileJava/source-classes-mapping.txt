@@ -6,6 +6,8 @@ ece448/grading/GradeP2.java
  ece448.grading.GradeP2
 ece448/iot_sim/MeasurePower.java
  ece448.iot_sim.MeasurePower
+ece448/iot_hub/PlugsModel.java
+ ece448.iot_hub.PlugsModel
 ece448/grading/GradeP3.java
  ece448.grading.GradeP3
  ece448.grading.GradeP3$MqttController
@@ -13,6 +15,10 @@ ece448/iot_sim/SimConfig.java
  ece448.iot_sim.SimConfig
 ece448/iot_sim/HTTPCommands.java
  ece448.iot_sim.HTTPCommands
+ece448/iot_hub/PlugsResource.java
+ ece448.iot_hub.PlugsResource
+ece448/iot_hub/MqttController.java
+ ece448.iot_hub.MqttController
 ece448/iot_sim/http_server/JHTTP.java
  ece448.iot_sim.http_server.JHTTP
 ece448/grading/GradeP1.java
