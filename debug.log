@@ -41295,3 +41295,1443 @@ org.eclipse.paho.client.mqttv3.MqttException: MqttException
 2025-04-14 00:12:31,276 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
 2025-04-14 00:12:31,284 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
 2025-04-14 00:12:31,345 INFO [GradeP3.java:52] MqttCtl grader/iot_hub: disconnected
+2025-04-14 00:48:57,821 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,829 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,830 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,830 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,830 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,830 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,831 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,831 DEBUG [PlugSim.java:98] Plug plug.invalid: power 0.0
+2025-04-14 00:48:57,832 WARN [PlugSim.java:85] Invalid plug name format: plug.invalid
+2025-04-14 00:48:57,835 INFO [PlugSim.java:50] Plug plug.invalid switched ON
+2025-04-14 00:48:57,836 WARN [PlugSim.java:85] Invalid plug name format: plug.invalid
+2025-04-14 00:48:57,836 DEBUG [PlugSim.java:98] Plug test.200: power 0.0
+2025-04-14 00:48:57,837 DEBUG [PlugSim.java:98] Plug test.200: power 200.0
+2025-04-14 00:48:57,839 INFO [PlugSim.java:50] Plug test.200 switched ON
+2025-04-14 00:48:57,840 DEBUG [PlugSim.java:98] Plug test.200: power 200.0
+2025-04-14 00:48:57,840 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,841 DEBUG [PlugSim.java:98] Plug smartPlug123: power 0.0
+2025-04-14 00:48:57,842 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,842 DEBUG [PlugSim.java:98] Plug a: power 20.122260063902285
+2025-04-14 00:48:57,842 INFO [PlugSim.java:50] Plug a switched ON
+2025-04-14 00:48:57,843 DEBUG [PlugSim.java:98] Plug plug: power 0.0
+2025-04-14 00:48:57,843 DEBUG [PlugSim.java:98] Plug plug: power 43.21465616038878
+2025-04-14 00:48:57,843 INFO [PlugSim.java:50] Plug plug switched ON
+2025-04-14 00:48:57,844 DEBUG [PlugSim.java:98] Plug plug: power 350.0
+2025-04-14 00:48:57,844 DEBUG [PlugSim.java:98] Plug plug: power 340.46216510306266
+2025-04-14 00:48:57,844 DEBUG [PlugSim.java:98] Plug plug: power 270.35774794428005
+2025-04-14 00:48:57,845 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,845 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,845 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,846 DEBUG [PlugSim.java:98] Plug a: power 7.17941689439503
+2025-04-14 00:48:57,846 INFO [PlugSim.java:50] Plug a switched ON
+2025-04-14 00:48:57,846 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,847 INFO [PlugSim.java:59] Plug a switched OFF
+2025-04-14 00:48:57,847 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:48:57,848 DEBUG [PlugSim.java:98] Plug a: power 16.282959801679688
+2025-04-14 00:48:57,848 INFO [PlugSim.java:50] Plug a switched ON
+2025-04-14 00:48:57,848 DEBUG [PlugSim.java:98] Plug a: power 75.49981128651757
+2025-04-14 00:48:57,848 DEBUG [PlugSim.java:98] Plug a: power 100.24906232144085
+2025-04-14 00:48:57,849 DEBUG [PlugSim.java:98] Plug a: power 89.7213887156877
+2025-04-14 00:48:57,849 DEBUG [PlugSim.java:98] Plug a: power 156.61674703796962
+2025-04-14 00:48:57,849 DEBUG [PlugSim.java:98] Plug a: power 174.149849887943
+2025-04-14 00:48:57,849 DEBUG [PlugSim.java:98] Plug a: power 193.1167510079755
+2025-04-14 00:48:57,850 DEBUG [PlugSim.java:98] Plug a: power 176.2814243296801
+2025-04-14 00:48:57,850 DEBUG [PlugSim.java:98] Plug a: power 171.440918041686
+2025-04-14 00:48:57,850 DEBUG [PlugSim.java:98] Plug a: power 184.29540154766346
+2025-04-14 00:48:57,850 DEBUG [PlugSim.java:98] Plug a: power 172.31736842628953
+2025-04-14 00:48:57,949 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:57,949 DEBUG [PlugSim.java:98] Plug plug2: power 0.0
+2025-04-14 00:48:58,345 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:58,345 DEBUG [PlugSim.java:98] Plug plug2: power 0.0
+2025-04-14 00:48:58,660 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:58,661 DEBUG [PlugSim.java:98] Plug plug2: power 0.0
+2025-04-14 00:48:58,975 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:58,976 DEBUG [PlugSim.java:98] Plug plug2: power 0.0
+2025-04-14 00:48:59,288 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:59,289 DEBUG [PlugSim.java:98] Plug plug2: power 0.0
+2025-04-14 00:48:59,602 WARN [MQTTCommands.java:198] Invalid topic format: invalid/topic
+2025-04-14 00:48:59,605 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:59,605 DEBUG [PlugSim.java:98] Plug plug2: power 0.0
+2025-04-14 00:48:59,917 WARN [MQTTCommands.java:213] Plug not found: nonexistent
+2025-04-14 00:48:59,922 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,923 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-04-14 00:48:59,924 DEBUG [PlugSim.java:98] Plug testPlug: power 95.79319523489612
+2025-04-14 00:48:59,924 INFO [PlugSim.java:50] Plug testPlug switched ON
+2025-04-14 00:48:59,925 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,925 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,925 DEBUG [PlugSim.java:98] Plug testPlug: power 74.08984351816208
+2025-04-14 00:48:59,925 INFO [PlugSim.java:50] Plug testPlug switched ON
+2025-04-14 00:48:59,926 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,926 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=on}
+2025-04-14 00:48:59,926 DEBUG [PlugSim.java:98] Plug testPlug: power 14.87710482837925
+2025-04-14 00:48:59,926 INFO [PlugSim.java:50] Plug testPlug switched ON
+2025-04-14 00:48:59,926 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-04-14 00:48:59,927 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,927 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,927 DEBUG [PlugSim.java:98] Plug testPlug: power 39.1088040550118
+2025-04-14 00:48:59,927 INFO [PlugSim.java:50] Plug testPlug switched ON
+2025-04-14 00:48:59,927 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-04-14 00:48:59,928 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:59,928 DEBUG [PlugSim.java:98] Plug plug2: power 0.0
+2025-04-14 00:48:59,928 INFO [HTTPCommands.java:30] HTTPCmd /: {}
+2025-04-14 00:48:59,929 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,929 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,929 DEBUG [PlugSim.java:98] Plug testPlug: power 50.87339293439368
+2025-04-14 00:48:59,929 INFO [PlugSim.java:50] Plug testPlug switched ON
+2025-04-14 00:48:59,929 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,929 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,929 INFO [PlugSim.java:59] Plug testPlug switched OFF
+2025-04-14 00:48:59,930 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,930 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=invalidAction}
+2025-04-14 00:48:59,930 DEBUG [PlugSim.java:98] Plug plug1: power 0.0
+2025-04-14 00:48:59,930 INFO [HTTPCommands.java:30] HTTPCmd /unknownPlug: {}
+2025-04-14 00:48:59,931 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,931 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {}
+2025-04-14 00:48:59,931 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,931 DEBUG [PlugSim.java:98] Plug testPlug: power 66.75236392527299
+2025-04-14 00:48:59,931 INFO [PlugSim.java:50] Plug testPlug switched ON
+2025-04-14 00:48:59,932 INFO [HTTPCommands.java:30] HTTPCmd /testPlug: {action=off}
+2025-04-14 00:48:59,932 DEBUG [PlugSim.java:98] Plug testPlug: power 0.0
+2025-04-14 00:48:59,932 INFO [PlugSim.java:59] Plug testPlug switched OFF
+2025-04-14 00:48:59,940 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,940 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,941 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,941 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,941 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/power, Payload: 10.5
+2025-04-14 00:48:59,941 DEBUG [MqttController.java:135] Power updated - Device: plug1, Value: 10.5
+2025-04-14 00:48:59,942 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,942 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/state, Payload: on
+2025-04-14 00:48:59,942 DEBUG [MqttController.java:131] State updated - Device: plug1, Value: on
+2025-04-14 00:48:59,942 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,943 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,943 INFO [MqttController.java:70] Disconnected from MQTT broker
+2025-04-14 00:48:59,943 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,944 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,944 INFO [MqttController.java:70] Disconnected from MQTT broker
+2025-04-14 00:48:59,944 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,944 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,945 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,945 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1, Payload: invalid
+2025-04-14 00:48:59,945 DEBUG [MqttController.java:120] Ignoring malformed topic: test_prefix/update/plug1
+2025-04-14 00:48:59,945 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update, Payload: invalid
+2025-04-14 00:48:59,945 DEBUG [MqttController.java:120] Ignoring malformed topic: test_prefix/update
+2025-04-14 00:48:59,945 DEBUG [MqttController.java:115] Received message - Topic: wrong_prefix/update/plug1/state, Payload: invalid
+2025-04-14 00:48:59,945 DEBUG [MqttController.java:120] Ignoring malformed topic: wrong_prefix/update/plug1/state
+2025-04-14 00:48:59,946 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,946 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/unknown, Payload: value
+2025-04-14 00:48:59,946 DEBUG [MqttController.java:138] Unhandled update type: unknown
+2025-04-14 00:48:59,946 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,946 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/state, Payload: test
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:131] State updated - Device: plug1, Value: test
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:115] Received message - Topic: short, Payload: test
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:115] Received message - Topic: test_prefix, Payload: test
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/, Payload: test
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:120] Ignoring malformed topic: test_prefix/
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug/extra/parts, Payload: test
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:120] Ignoring malformed topic: test_prefix/update/plug/extra/parts
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug/, Payload: test
+2025-04-14 00:48:59,947 DEBUG [MqttController.java:120] Ignoring malformed topic: test_prefix/update/plug/
+2025-04-14 00:48:59,947 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,951 ERROR [MqttController.java:51] Connection failure to tcp://localhost:1883: Test exception
+java.lang.RuntimeException: Test exception
+	at ece448.iot_hub.MqttControllerTest.testStartFailure(MqttControllerTest.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-04-14 00:48:59,953 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,954 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,955 DEBUG [MqttController.java:87] Action published - Device: plug1, Action: on
+2025-04-14 00:48:59,955 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,955 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,956 WARN [MqttController.java:82] Publish failed - MQTT client not connected
+2025-04-14 00:48:59,956 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,956 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/wrong/plug1/state, Payload: value
+2025-04-14 00:48:59,956 DEBUG [MqttController.java:120] Ignoring malformed topic: test_prefix/wrong/plug1/state
+2025-04-14 00:48:59,957 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,957 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,958 WARN [MqttController.java:82] Publish failed - MQTT client not connected
+2025-04-14 00:48:59,959 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,960 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1, Payload: value
+2025-04-14 00:48:59,960 DEBUG [MqttController.java:120] Ignoring malformed topic: test_prefix/update/plug1
+2025-04-14 00:48:59,960 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,961 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,964 ERROR [MqttController.java:89] Publish error - Device: plug1, Action: on
+org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at ece448.iot_hub.MqttControllerTest.testPublishActionException(MqttControllerTest.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-04-14 00:48:59,966 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,967 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/state, Payload: test
+2025-04-14 00:48:59,967 DEBUG [MqttController.java:131] State updated - Device: plug1, Value: test
+2025-04-14 00:48:59,967 DEBUG [MqttController.java:115] Received message - Topic: test_prefix, Payload: test
+2025-04-14 00:48:59,967 DEBUG [MqttController.java:115] Received message - Topic: short, Payload: test
+2025-04-14 00:48:59,967 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,967 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/power, Payload: 10.5
+2025-04-14 00:48:59,968 DEBUG [MqttController.java:135] Power updated - Device: plug1, Value: 10.5
+2025-04-14 00:48:59,968 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug2/power, Payload: 0.0
+2025-04-14 00:48:59,968 DEBUG [MqttController.java:135] Power updated - Device: plug2, Value: 0.0
+2025-04-14 00:48:59,968 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,968 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,969 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://localhost:1883
+2025-04-14 00:48:59,969 ERROR [MqttController.java:73] Disconnection error: MqttException
+org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at ece448.iot_hub.MqttControllerTest$2.disconnect(MqttControllerTest.java:509)
+	at ece448.iot_hub.MqttController.close(MqttController.java:69)
+	at ece448.iot_hub.MqttControllerTest.testCloseWithDisconnectException(MqttControllerTest.java:514)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2025-04-14 00:48:59,972 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,972 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/state, Payload: on
+2025-04-14 00:48:59,972 DEBUG [MqttController.java:131] State updated - Device: plug1, Value: on
+2025-04-14 00:48:59,972 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug2/state, Payload: off
+2025-04-14 00:48:59,972 DEBUG [MqttController.java:131] State updated - Device: plug2, Value: off
+2025-04-14 00:48:59,972 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,973 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/power, Payload: 10.5
+2025-04-14 00:48:59,973 DEBUG [MqttController.java:135] Power updated - Device: plug1, Value: 10.5
+2025-04-14 00:48:59,973 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,973 DEBUG [MqttController.java:115] Received message - Topic: test_prefix/update/plug1/state, Payload: on
+2025-04-14 00:48:59,973 DEBUG [MqttController.java:131] State updated - Device: plug1, Value: on
+2025-04-14 00:48:59,973 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,974 DEBUG [MqttController.java:115] Received message - Topic: , Payload: value
+2025-04-14 00:48:59,974 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,974 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: broker, Client ID: clientId, Topic Prefix: prefix
+2025-04-14 00:48:59,974 INFO [MqttController.java:49] Successfully connected to MQTT broker: broker
+2025-04-14 00:48:59,975 DEBUG [MqttController.java:87] Action published - Device: test, Action: on
+2025-04-14 00:48:59,978 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,979 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,980 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,980 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,981 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,981 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,981 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,981 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,982 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:48:59,982 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-04-14 00:49:01,753 INFO [GradeP3.java:47] MqttCtl grader/iot_hub: tcp://127.0.0.1 connected
+2025-04-14 00:49:01,758 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:01,760 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:01,760 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:01,762 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:01,765 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:01,766 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:01,766 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8080
+2025-04-14 00:49:02,083 INFO [Main.java:162] Mqtt subscribe to 1744609740997/grade_p4/iot_ece448/action/#
+2025-04-14 00:49:02,092 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/state off
+2025-04-14 00:49:02,093 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:02,094 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/state off
+2025-04-14 00:49:02,095 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:02,096 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/state off
+2025-04-14 00:49:02,096 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:02,097 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/state off
+2025-04-14 00:49:02,097 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:02,098 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/state off
+2025-04-14 00:49:02,099 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:02,099 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/state off
+2025-04-14 00:49:02,100 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:02,100 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:02,100 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:02,101 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:02,101 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:02,101 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:02,102 INFO [JHTTP.java:44] JHTTP: accepting connections on port 8081
+2025-04-14 00:49:02,102 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:02,104 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:02,104 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:02,413 INFO [Main.java:162] Mqtt subscribe to 1744609740997/grade_p4/iot_ece448/action/#
+2025-04-14 00:49:02,421 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/state off
+2025-04-14 00:49:02,422 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:02,424 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/state off
+2025-04-14 00:49:02,424 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:02,425 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/state off
+2025-04-14 00:49:02,426 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:02,427 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/state off
+2025-04-14 00:49:02,428 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:02,429 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/state off
+2025-04-14 00:49:02,429 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:02,430 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/state off
+2025-04-14 00:49:02,430 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:02,431 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/state off
+2025-04-14 00:49:02,431 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:02,432 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/state off
+2025-04-14 00:49:02,432 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:02,766 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:02,770 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:02,770 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:02,774 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:02,775 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:02,775 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:02,794 INFO [StartupInfoLogger.java:48] Starting GradeP4 on iit with PID 14463 (/home/ece448s25/Desktop/iot_ece448/build/classes/java/main started by ece448s25 in /home/ece448s25/Desktop/iot_ece448)
+2025-04-14 00:49:02,794 DEBUG [StartupInfoLogger.java:51] Running with Spring Boot v1.5.22.RELEASE, Spring v4.3.25.RELEASE
+2025-04-14 00:49:02,794 INFO [SpringApplication.java:570] No active profile set, falling back to default profiles: default
+2025-04-14 00:49:02,829 INFO [AbstractApplicationContext.java:583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ca30bc1: startup date [Mon Apr 14 00:49:02 CDT 2025]; root of context hierarchy
+2025-04-14 00:49:02,959 DEBUG [LoggerProviders.java:160] Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2025-04-14 00:49:02,961 INFO [Version.java:30] HV000001: Hibernate Validator 5.3.6.Final
+2025-04-14 00:49:03,073 INFO [DefaultListableBeanFactory.java:821] Overriding bean definition for bean 'mqttController' with a different definition: replacing [Generic bean: class [ece448.iot_hub.MqttController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/home/ece448s25/Desktop/iot_ece448/build/classes/java/main/ece448/iot_hub/MqttController.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=app; factoryMethodName=mqttController; initMethodName=null; destroyMethodName=close; defined in ece448.iot_hub.App]
+2025-04-14 00:49:03,105 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:03,107 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:03,107 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:03,107 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:03,107 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:03,108 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:03,108 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:03,108 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:03,574 INFO [TomcatEmbeddedServletContainer.java:91] Tomcat initialized with port(s): 8088 (http)
+2025-04-14 00:49:03,590 INFO [DirectJDKLog.java:180] Initializing ProtocolHandler ["http-nio-8088"]
+2025-04-14 00:49:03,605 INFO [DirectJDKLog.java:180] Starting service [Tomcat]
+2025-04-14 00:49:03,605 INFO [DirectJDKLog.java:180] Starting Servlet Engine: Apache Tomcat/8.5.43
+2025-04-14 00:49:03,687 INFO [DirectJDKLog.java:180] Initializing Spring embedded WebApplicationContext
+2025-04-14 00:49:03,688 INFO [EmbeddedWebApplicationContext.java:271] Root WebApplicationContext: initialization completed in 864 ms
+2025-04-14 00:49:03,762 INFO [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2025-04-14 00:49:03,765 INFO [AbstractFilterRegistrationBean.java:251] Mapping filter: 'characterEncodingFilter' to: [/*]
+2025-04-14 00:49:03,766 INFO [AbstractFilterRegistrationBean.java:251] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2025-04-14 00:49:03,766 INFO [AbstractFilterRegistrationBean.java:251] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2025-04-14 00:49:03,766 INFO [AbstractFilterRegistrationBean.java:251] Mapping filter: 'requestContextFilter' to: [/*]
+2025-04-14 00:49:03,776 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:03,777 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:03,777 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:03,779 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:03,780 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:03,781 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:03,798 INFO [MqttController.java:41] Initializing MQTT Controller - Broker: tcp://127.0.0.1, Client ID: testee/iot_hub, Topic Prefix: 1744609740997/grade_p4/iot_ece448
+2025-04-14 00:49:04,110 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:04,110 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://127.0.0.1
+2025-04-14 00:49:04,111 INFO [App.java:28] MqttController testee/iot_hub connected to broker: tcp://127.0.0.1
+2025-04-14 00:49:04,112 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:04,112 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:04,113 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:04,114 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:04,115 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:04,115 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:04,116 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:04,153 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/state, Payload: off
+2025-04-14 00:49:04,153 DEBUG [MqttController.java:131] State updated - Device: a, Value: off
+2025-04-14 00:49:04,154 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:04,154 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:04,154 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/state, Payload: off
+2025-04-14 00:49:04,154 DEBUG [MqttController.java:131] State updated - Device: b, Value: off
+2025-04-14 00:49:04,155 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:04,155 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:04,155 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/state, Payload: off
+2025-04-14 00:49:04,155 DEBUG [MqttController.java:131] State updated - Device: c, Value: off
+2025-04-14 00:49:04,155 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:04,156 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:04,156 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/state, Payload: off
+2025-04-14 00:49:04,156 DEBUG [MqttController.java:131] State updated - Device: d, Value: off
+2025-04-14 00:49:04,156 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:04,156 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:04,156 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/state, Payload: off
+2025-04-14 00:49:04,156 DEBUG [MqttController.java:131] State updated - Device: e, Value: off
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/state, Payload: off
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:131] State updated - Device: f, Value: off
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/state, Payload: off
+2025-04-14 00:49:04,157 DEBUG [MqttController.java:131] State updated - Device: g, Value: off
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:04,158 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:04,159 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:04,159 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:04,430 INFO [MqttController.java:49] Successfully connected to MQTT broker: tcp://127.0.0.1
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/state, Payload: off
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:131] State updated - Device: a, Value: off
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/state, Payload: off
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:131] State updated - Device: b, Value: off
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/state, Payload: off
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:131] State updated - Device: c, Value: off
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:04,472 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/state, Payload: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:131] State updated - Device: d, Value: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/state, Payload: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:131] State updated - Device: e, Value: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/state, Payload: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:131] State updated - Device: f, Value: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/state, Payload: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:131] State updated - Device: g, Value: off
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:04,473 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:04,606 INFO [RequestMappingHandlerAdapter.java:557] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ca30bc1: startup date [Mon Apr 14 00:49:02 CDT 2025]; root of context hierarchy
+2025-04-14 00:49:04,644 INFO [AbstractHandlerMethodMapping.java:544] Mapped "{[/api/plugs],methods=[GET]}" onto public java.lang.Object ece448.iot_hub.PlugsResource.getAllPlugs()
+2025-04-14 00:49:04,645 INFO [AbstractHandlerMethodMapping.java:544] Mapped "{[/api/plugs/{plug:.+}],methods=[GET]}" onto public java.lang.Object ece448.iot_hub.PlugsResource.getPlug(java.lang.String,java.lang.String)
+2025-04-14 00:49:04,647 INFO [AbstractHandlerMethodMapping.java:544] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2025-04-14 00:49:04,647 INFO [AbstractHandlerMethodMapping.java:544] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2025-04-14 00:49:04,666 INFO [AbstractUrlHandlerMapping.java:364] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2025-04-14 00:49:04,666 INFO [AbstractUrlHandlerMapping.java:364] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2025-04-14 00:49:04,688 INFO [AbstractUrlHandlerMapping.java:364] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2025-04-14 00:49:04,704 INFO [WebMvcAutoConfiguration.java:518] Adding welcome page: ServletContext resource [/index.html]
+2025-04-14 00:49:04,766 INFO [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2025-04-14 00:49:04,775 INFO [DirectJDKLog.java:180] Starting ProtocolHandler ["http-nio-8088"]
+2025-04-14 00:49:04,781 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:04,782 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:04,782 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:04,783 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:04,783 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:04,784 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:04,784 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:04,784 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:04,785 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:04,785 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:04,785 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:04,785 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:04,789 INFO [DirectJDKLog.java:180] Using a shared selector for servlet write/read
+2025-04-14 00:49:04,801 INFO [TomcatEmbeddedServletContainer.java:210] Tomcat started on port(s): 8088 (http)
+2025-04-14 00:49:04,805 INFO [StartupInfoLogger.java:57] Started GradeP4 in 2.28 seconds (JVM running for 3.866)
+2025-04-14 00:49:05,017 INFO [DirectJDKLog.java:180] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2025-04-14 00:49:05,017 INFO [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2025-04-14 00:49:05,024 INFO [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2025-04-14 00:49:05,042 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:05,100 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=off, power=0.0}
+2025-04-14 00:49:05,108 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=off, power=0.0}
+2025-04-14 00:49:05,111 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=off, power=0.0}
+2025-04-14 00:49:05,115 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=off, power=0.0}
+2025-04-14 00:49:05,117 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:05,118 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:05,118 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:05,118 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:05,119 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:05,119 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=off, power=0.0}
+2025-04-14 00:49:05,119 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:05,119 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:05,119 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:05,120 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:05,120 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:05,121 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:05,122 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:05,122 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=off, power=0.0}
+2025-04-14 00:49:05,122 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:05,122 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:05,123 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:05,123 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:05,124 DEBUG [GradeP4.java:87] GradeP4: getState1 0000000
+2025-04-14 00:49:05,124 INFO [Grading.java:35] testCase00 of GradeP4: success
+2025-04-14 00:49:05,164 DEBUG [MqttController.java:87] Action published - Device: a, Action: on
+2025-04-14 00:49:05,165 INFO [PlugsResource.java:39] Performed action 'on' on plug 'a'
+2025-04-14 00:49:05,165 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:05,164 WARN [MQTTCommands.java:213] Plug not found: a
+2025-04-14 00:49:05,168 DEBUG [PlugSim.java:98] Plug a: power 91.3095192538999
+2025-04-14 00:49:05,171 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 91.310
+2025-04-14 00:49:05,173 INFO [PlugSim.java:50] Plug a switched ON
+2025-04-14 00:49:05,173 WARN [MQTTCommands.java:213] Plug not found: c
+2025-04-14 00:49:05,174 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/state on
+2025-04-14 00:49:05,214 DEBUG [MqttController.java:87] Action published - Device: c, Action: toggle
+2025-04-14 00:49:05,214 INFO [PlugsResource.java:39] Performed action 'toggle' on plug 'c'
+2025-04-14 00:49:05,214 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 91.310
+2025-04-14 00:49:05,214 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 91.310
+2025-04-14 00:49:05,214 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=off, power=0.0}
+2025-04-14 00:49:05,215 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/state, Payload: on
+2025-04-14 00:49:05,215 DEBUG [MqttController.java:131] State updated - Device: a, Value: on
+2025-04-14 00:49:05,215 DEBUG [PlugSim.java:98] Plug a: power 170.53217524724545
+2025-04-14 00:49:05,215 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 170.532
+2025-04-14 00:49:05,216 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 170.532
+2025-04-14 00:49:05,216 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 170.532
+2025-04-14 00:49:05,217 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/a: off
+2025-04-14 00:49:05,217 DEBUG [PlugSim.java:98] Plug c: power 64.98951061048635
+2025-04-14 00:49:05,258 INFO [PlugSim.java:50] Plug c switched ON
+2025-04-14 00:49:05,258 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 64.990
+2025-04-14 00:49:05,258 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 64.990
+2025-04-14 00:49:05,259 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 64.990
+2025-04-14 00:49:05,260 DEBUG [PlugSim.java:98] Plug c: power 96.66236727528667
+2025-04-14 00:49:05,260 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/state on
+2025-04-14 00:49:05,260 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/state, Payload: on
+2025-04-14 00:49:05,261 DEBUG [MqttController.java:131] State updated - Device: c, Value: on
+2025-04-14 00:49:05,261 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 96.662
+2025-04-14 00:49:05,262 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/c: off
+2025-04-14 00:49:05,262 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 96.662
+2025-04-14 00:49:05,262 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 96.662
+2025-04-14 00:49:05,784 DEBUG [PlugSim.java:98] Plug a: power 182.20475071864814
+2025-04-14 00:49:05,787 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:05,787 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 182.205
+2025-04-14 00:49:05,787 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 182.205
+2025-04-14 00:49:05,787 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 182.205
+2025-04-14 00:49:05,788 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:05,788 DEBUG [PlugSim.java:98] Plug c: power 124.56144428990244
+2025-04-14 00:49:05,789 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:05,789 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:05,789 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 124.561
+2025-04-14 00:49:05,789 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 124.561
+2025-04-14 00:49:05,789 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 124.561
+2025-04-14 00:49:06,123 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:06,125 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:06,125 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:06,125 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:06,126 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:06,127 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:06,127 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:06,127 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:06,127 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:06,128 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:06,128 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:06,129 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:06,128 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:06,129 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:06,130 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:06,130 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:06,221 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=on, power=182.2050018310547}
+2025-04-14 00:49:06,228 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=off, power=0.0}
+2025-04-14 00:49:06,233 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=on, power=124.56099700927734}
+2025-04-14 00:49:06,241 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=off, power=0.0}
+2025-04-14 00:49:06,245 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=off, power=0.0}
+2025-04-14 00:49:06,249 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=off, power=0.0}
+2025-04-14 00:49:06,257 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=off, power=0.0}
+2025-04-14 00:49:06,261 DEBUG [GradeP4.java:87] GradeP4: getState1 1010000
+2025-04-14 00:49:06,262 INFO [Grading.java:35] testCase01 of GradeP4: success
+2025-04-14 00:49:06,266 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:06,266 WARN [MQTTCommands.java:213] Plug not found: a
+2025-04-14 00:49:06,266 DEBUG [MqttController.java:87] Action published - Device: a, Action: toggle
+2025-04-14 00:49:06,267 INFO [PlugsResource.java:39] Performed action 'toggle' on plug 'a'
+2025-04-14 00:49:06,267 INFO [PlugSim.java:59] Plug a switched OFF
+2025-04-14 00:49:06,269 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=on, power=182.2050018310547}
+2025-04-14 00:49:06,269 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:06,270 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:06,271 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/state off
+2025-04-14 00:49:06,273 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:06,273 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/a: off
+2025-04-14 00:49:06,277 WARN [MQTTCommands.java:213] Plug not found: c
+2025-04-14 00:49:06,277 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:06,278 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:06,278 INFO [PlugSim.java:59] Plug c switched OFF
+2025-04-14 00:49:06,280 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:06,280 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/state off
+2025-04-14 00:49:06,281 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:06,280 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/c: off
+2025-04-14 00:49:06,317 DEBUG [MqttController.java:87] Action published - Device: c, Action: off
+2025-04-14 00:49:06,319 INFO [PlugsResource.java:39] Performed action 'off' on plug 'c'
+2025-04-14 00:49:06,319 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:06,319 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:06,320 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=on, power=124.56099700927734}
+2025-04-14 00:49:06,320 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/state, Payload: off
+2025-04-14 00:49:06,321 DEBUG [MqttController.java:131] State updated - Device: a, Value: off
+2025-04-14 00:49:06,321 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:06,321 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:06,321 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:06,321 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:06,322 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/state, Payload: off
+2025-04-14 00:49:06,322 DEBUG [MqttController.java:131] State updated - Device: c, Value: off
+2025-04-14 00:49:06,322 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:06,322 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:06,363 DEBUG [MqttController.java:87] Action published - Device: e, Action: on
+2025-04-14 00:49:06,364 INFO [PlugsResource.java:39] Performed action 'on' on plug 'e'
+2025-04-14 00:49:06,364 WARN [MQTTCommands.java:213] Plug not found: e
+2025-04-14 00:49:06,364 DEBUG [PlugSim.java:98] Plug e: power 41.00223285321246
+2025-04-14 00:49:06,364 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=off, power=0.0}
+2025-04-14 00:49:06,365 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 41.002
+2025-04-14 00:49:06,366 INFO [PlugSim.java:50] Plug e switched ON
+2025-04-14 00:49:06,367 DEBUG [PlugSim.java:98] Plug e: power 92.45551094962059
+2025-04-14 00:49:06,367 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/state on
+2025-04-14 00:49:06,368 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 92.456
+2025-04-14 00:49:06,368 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/e: off
+2025-04-14 00:49:06,370 WARN [MQTTCommands.java:213] Plug not found: g
+2025-04-14 00:49:06,370 DEBUG [PlugSim.java:98] Plug g: power 19.65815057643142
+2025-04-14 00:49:06,371 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 19.658
+2025-04-14 00:49:06,372 INFO [PlugSim.java:50] Plug g switched ON
+2025-04-14 00:49:06,372 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/state on
+2025-04-14 00:49:06,372 DEBUG [PlugSim.java:98] Plug g: power 43.00891850205528
+2025-04-14 00:49:06,373 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 43.009
+2025-04-14 00:49:06,374 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/g: off
+2025-04-14 00:49:06,411 DEBUG [MqttController.java:87] Action published - Device: g, Action: toggle
+2025-04-14 00:49:06,412 INFO [PlugsResource.java:39] Performed action 'toggle' on plug 'g'
+2025-04-14 00:49:06,412 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 41.002
+2025-04-14 00:49:06,412 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 41.002
+2025-04-14 00:49:06,412 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=off, power=0.0}
+2025-04-14 00:49:06,413 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/state, Payload: on
+2025-04-14 00:49:06,413 DEBUG [MqttController.java:131] State updated - Device: e, Value: on
+2025-04-14 00:49:06,413 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 92.456
+2025-04-14 00:49:06,413 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 92.456
+2025-04-14 00:49:06,414 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 19.658
+2025-04-14 00:49:06,414 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 19.658
+2025-04-14 00:49:06,414 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/state, Payload: on
+2025-04-14 00:49:06,414 DEBUG [MqttController.java:131] State updated - Device: g, Value: on
+2025-04-14 00:49:06,414 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 43.009
+2025-04-14 00:49:06,414 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 43.009
+2025-04-14 00:49:06,790 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:06,793 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:06,793 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:06,793 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:06,794 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:06,794 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:06,794 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:06,795 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:06,795 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:06,796 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:06,796 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:06,796 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:07,130 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:07,132 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:07,133 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:07,132 DEBUG [PlugSim.java:98] Plug e: power 124.60867365481955
+2025-04-14 00:49:07,132 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:07,134 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:07,134 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 124.609
+2025-04-14 00:49:07,134 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 124.609
+2025-04-14 00:49:07,134 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 124.609
+2025-04-14 00:49:07,135 DEBUG [PlugSim.java:98] Plug g: power 96.81331427459571
+2025-04-14 00:49:07,136 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:07,136 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:07,136 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:07,136 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 96.813
+2025-04-14 00:49:07,136 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 96.813
+2025-04-14 00:49:07,137 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 96.813
+2025-04-14 00:49:07,420 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:07,424 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=off, power=0.0}
+2025-04-14 00:49:07,427 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=off, power=0.0}
+2025-04-14 00:49:07,430 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=off, power=0.0}
+2025-04-14 00:49:07,433 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=on, power=124.60900115966797}
+2025-04-14 00:49:07,436 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=off, power=0.0}
+2025-04-14 00:49:07,438 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=on, power=96.81300354003906}
+2025-04-14 00:49:07,440 DEBUG [GradeP4.java:87] GradeP4: getState1 0000101
+2025-04-14 00:49:07,440 INFO [Grading.java:35] testCase02 of GradeP4: success
+2025-04-14 00:49:07,443 DEBUG [MqttController.java:87] Action published - Device: a, Action: off
+2025-04-14 00:49:07,443 INFO [PlugsResource.java:39] Performed action 'off' on plug 'a'
+2025-04-14 00:49:07,443 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:07,443 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:07,443 WARN [MQTTCommands.java:213] Plug not found: a
+2025-04-14 00:49:07,444 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:07,444 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/a: off
+2025-04-14 00:49:07,447 WARN [MQTTCommands.java:213] Plug not found: b
+2025-04-14 00:49:07,447 DEBUG [PlugSim.java:98] Plug b: power 96.0001126449534
+2025-04-14 00:49:07,447 INFO [PlugSim.java:50] Plug b switched ON
+2025-04-14 00:49:07,447 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 96.000
+2025-04-14 00:49:07,448 DEBUG [PlugSim.java:98] Plug b: power 124.21276359187623
+2025-04-14 00:49:07,448 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/state on
+2025-04-14 00:49:07,448 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 124.213
+2025-04-14 00:49:07,449 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/b: off
+2025-04-14 00:49:07,487 DEBUG [MqttController.java:87] Action published - Device: b, Action: on
+2025-04-14 00:49:07,487 INFO [PlugsResource.java:39] Performed action 'on' on plug 'b'
+2025-04-14 00:49:07,487 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:07,487 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:07,487 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=off, power=0.0}
+2025-04-14 00:49:07,488 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 96.000
+2025-04-14 00:49:07,488 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 96.000
+2025-04-14 00:49:07,488 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/state, Payload: on
+2025-04-14 00:49:07,488 DEBUG [MqttController.java:131] State updated - Device: b, Value: on
+2025-04-14 00:49:07,488 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 124.213
+2025-04-14 00:49:07,488 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 124.213
+2025-04-14 00:49:07,529 DEBUG [MqttController.java:87] Action published - Device: c, Action: off
+2025-04-14 00:49:07,530 INFO [PlugsResource.java:39] Performed action 'off' on plug 'c'
+2025-04-14 00:49:07,529 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:07,529 WARN [MQTTCommands.java:213] Plug not found: c
+2025-04-14 00:49:07,530 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=off, power=0.0}
+2025-04-14 00:49:07,532 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:07,532 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/c: off
+2025-04-14 00:49:07,537 WARN [MQTTCommands.java:213] Plug not found: d
+2025-04-14 00:49:07,537 DEBUG [PlugSim.java:98] Plug d: power 15.425900624663235
+2025-04-14 00:49:07,538 INFO [PlugSim.java:50] Plug d switched ON
+2025-04-14 00:49:07,538 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 15.426
+2025-04-14 00:49:07,538 DEBUG [PlugSim.java:98] Plug d: power 91.99874031342753
+2025-04-14 00:49:07,538 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/state on
+2025-04-14 00:49:07,539 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 91.999
+2025-04-14 00:49:07,539 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/d: off
+2025-04-14 00:49:07,578 DEBUG [MqttController.java:87] Action published - Device: d, Action: toggle
+2025-04-14 00:49:07,578 INFO [PlugsResource.java:39] Performed action 'toggle' on plug 'd'
+2025-04-14 00:49:07,578 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:07,579 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:07,579 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=off, power=0.0}
+2025-04-14 00:49:07,579 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 15.426
+2025-04-14 00:49:07,579 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 15.426
+2025-04-14 00:49:07,579 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/state, Payload: on
+2025-04-14 00:49:07,579 DEBUG [MqttController.java:131] State updated - Device: d, Value: on
+2025-04-14 00:49:07,580 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 91.999
+2025-04-14 00:49:07,580 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 91.999
+2025-04-14 00:49:07,621 DEBUG [MqttController.java:87] Action published - Device: e, Action: on
+2025-04-14 00:49:07,621 INFO [PlugsResource.java:39] Performed action 'on' on plug 'e'
+2025-04-14 00:49:07,621 WARN [MQTTCommands.java:213] Plug not found: e
+2025-04-14 00:49:07,621 DEBUG [PlugSim.java:98] Plug e: power 141.52067705322833
+2025-04-14 00:49:07,621 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=on, power=124.60900115966797}
+2025-04-14 00:49:07,623 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 141.521
+2025-04-14 00:49:07,624 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/e: off
+2025-04-14 00:49:07,629 WARN [MQTTCommands.java:213] Plug not found: f
+2025-04-14 00:49:07,629 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:07,630 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:07,631 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/f: off
+2025-04-14 00:49:07,669 DEBUG [MqttController.java:87] Action published - Device: f, Action: off
+2025-04-14 00:49:07,670 INFO [PlugsResource.java:39] Performed action 'off' on plug 'f'
+2025-04-14 00:49:07,670 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 141.521
+2025-04-14 00:49:07,670 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 141.521
+2025-04-14 00:49:07,670 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=off, power=0.0}
+2025-04-14 00:49:07,671 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:07,671 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:07,713 DEBUG [MqttController.java:87] Action published - Device: g, Action: toggle
+2025-04-14 00:49:07,713 INFO [PlugsResource.java:39] Performed action 'toggle' on plug 'g'
+2025-04-14 00:49:07,713 WARN [MQTTCommands.java:213] Plug not found: g
+2025-04-14 00:49:07,713 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:07,714 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=on, power=96.81300354003906}
+2025-04-14 00:49:07,715 INFO [PlugSim.java:59] Plug g switched OFF
+2025-04-14 00:49:07,715 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:07,716 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/state off
+2025-04-14 00:49:07,716 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:07,717 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:07,718 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/g: off
+2025-04-14 00:49:07,753 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:07,754 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:07,754 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/state, Payload: off
+2025-04-14 00:49:07,754 DEBUG [MqttController.java:131] State updated - Device: g, Value: off
+2025-04-14 00:49:07,754 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:07,754 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:07,795 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:07,797 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:07,798 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:07,797 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:07,797 DEBUG [PlugSim.java:98] Plug b: power 123.8970366057921
+2025-04-14 00:49:07,800 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 123.897
+2025-04-14 00:49:07,800 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:07,800 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 123.897
+2025-04-14 00:49:07,801 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 123.897
+2025-04-14 00:49:07,801 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:07,802 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:07,802 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:08,137 DEBUG [PlugSim.java:98] Plug d: power 109.10503713215695
+2025-04-14 00:49:08,139 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 109.105
+2025-04-14 00:49:08,139 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 109.105
+2025-04-14 00:49:08,139 DEBUG [PlugSim.java:98] Plug e: power 141.3095966340287
+2025-04-14 00:49:08,139 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 109.105
+2025-04-14 00:49:08,140 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:08,140 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 141.310
+2025-04-14 00:49:08,141 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 141.310
+2025-04-14 00:49:08,141 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 141.310
+2025-04-14 00:49:08,141 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:08,141 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:08,141 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:08,141 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:08,142 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:08,142 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:08,142 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:08,723 INFO [PlugsResource.java:55] Retrieved details for all plugs: [{name=a, state=off, power=0.0}, {name=b, state=on, power=123.89700317382812}, {name=c, state=off, power=0.0}, {name=d, state=on, power=109.1050033569336}, {name=e, state=on, power=141.30999755859375}, {name=f, state=off, power=0.0}, {name=g, state=off, power=0.0}]
+2025-04-14 00:49:08,728 DEBUG [GradeP4.java:109] GradeP4: getState2 0101100
+2025-04-14 00:49:08,729 INFO [Grading.java:35] testCase03 of GradeP4: success
+2025-04-14 00:49:08,733 DEBUG [MqttController.java:87] Action published - Device: b, Action: off
+2025-04-14 00:49:08,733 INFO [PlugsResource.java:39] Performed action 'off' on plug 'b'
+2025-04-14 00:49:08,733 WARN [MQTTCommands.java:213] Plug not found: b
+2025-04-14 00:49:08,733 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:08,733 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=on, power=123.89700317382812}
+2025-04-14 00:49:08,734 INFO [PlugSim.java:59] Plug b switched OFF
+2025-04-14 00:49:08,734 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:08,734 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:08,735 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/state off
+2025-04-14 00:49:08,735 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:08,735 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/b: off
+2025-04-14 00:49:08,737 WARN [MQTTCommands.java:213] Plug not found: d
+2025-04-14 00:49:08,737 DEBUG [PlugSim.java:98] Plug d: power 113.83624640018397
+2025-04-14 00:49:08,738 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 113.836
+2025-04-14 00:49:08,738 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/d: off
+2025-04-14 00:49:08,778 DEBUG [MqttController.java:87] Action published - Device: d, Action: on
+2025-04-14 00:49:08,778 INFO [PlugsResource.java:39] Performed action 'on' on plug 'd'
+2025-04-14 00:49:08,778 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:08,778 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:08,778 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=on, power=109.1050033569336}
+2025-04-14 00:49:08,779 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/state, Payload: off
+2025-04-14 00:49:08,779 DEBUG [MqttController.java:131] State updated - Device: b, Value: off
+2025-04-14 00:49:08,779 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:08,779 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:08,779 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 113.836
+2025-04-14 00:49:08,779 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 113.836
+2025-04-14 00:49:08,802 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:08,803 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:08,803 DEBUG [PlugSim.java:98] Plug f: power 37.55181139616154
+2025-04-14 00:49:08,803 DEBUG [MqttController.java:87] Action published - Device: f, Action: on
+2025-04-14 00:49:08,804 INFO [PlugsResource.java:39] Performed action 'on' on plug 'f'
+2025-04-14 00:49:08,804 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:08,804 INFO [PlugSim.java:50] Plug f switched ON
+2025-04-14 00:49:08,804 WARN [MQTTCommands.java:213] Plug not found: f
+2025-04-14 00:49:08,804 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=off, power=0.0}
+2025-04-14 00:49:08,804 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:08,804 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:08,805 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 37.552
+2025-04-14 00:49:08,804 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:08,805 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/state on
+2025-04-14 00:49:08,804 DEBUG [PlugSim.java:98] Plug f: power 133.2969804003406
+2025-04-14 00:49:08,805 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:08,806 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:08,807 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 133.297
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 37.552
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 37.552
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/state, Payload: on
+2025-04-14 00:49:08,807 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/f: off
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:131] State updated - Device: f, Value: on
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 133.297
+2025-04-14 00:49:08,807 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 133.297
+2025-04-14 00:49:09,143 DEBUG [PlugSim.java:98] Plug d: power 127.22768761842184
+2025-04-14 00:49:09,144 DEBUG [PlugSim.java:98] Plug e: power 124.86291822605048
+2025-04-14 00:49:09,145 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 127.228
+2025-04-14 00:49:09,145 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 127.228
+2025-04-14 00:49:09,145 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 127.228
+2025-04-14 00:49:09,146 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 124.863
+2025-04-14 00:49:09,146 DEBUG [PlugSim.java:98] Plug f: power 146.8273054258176
+2025-04-14 00:49:09,146 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 124.863
+2025-04-14 00:49:09,146 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 124.863
+2025-04-14 00:49:09,146 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:09,146 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 146.827
+2025-04-14 00:49:09,147 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 146.827
+2025-04-14 00:49:09,146 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 146.827
+2025-04-14 00:49:09,147 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:09,147 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:09,147 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:09,808 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:09,809 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:09,809 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:09,810 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:09,809 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:09,811 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:09,812 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:09,812 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:09,812 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:09,812 INFO [PlugsResource.java:55] Retrieved details for all plugs: [{name=a, state=off, power=0.0}, {name=b, state=off, power=0.0}, {name=c, state=off, power=0.0}, {name=d, state=on, power=127.22799682617188}, {name=e, state=on, power=124.86299896240234}, {name=f, state=on, power=146.82699584960938}, {name=g, state=off, power=0.0}]
+2025-04-14 00:49:09,813 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:09,813 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:09,813 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:09,814 DEBUG [GradeP4.java:109] GradeP4: getState2 0001110
+2025-04-14 00:49:09,815 INFO [Grading.java:35] testCase04 of GradeP4: success
+2025-04-14 00:49:09,830 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45776 GET /b?action=on HTTP/1.1
+2025-04-14 00:49:09,830 INFO [HTTPCommands.java:30] HTTPCmd /b: {action=on}
+2025-04-14 00:49:09,830 DEBUG [PlugSim.java:98] Plug b: power 99.30897465012306
+2025-04-14 00:49:09,831 INFO [PlugSim.java:50] Plug b switched ON
+2025-04-14 00:49:09,831 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 99.309
+2025-04-14 00:49:09,831 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 99.309
+2025-04-14 00:49:09,832 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 99.309
+2025-04-14 00:49:09,832 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/state on
+2025-04-14 00:49:09,832 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/state, Payload: on
+2025-04-14 00:49:09,832 DEBUG [MqttController.java:131] State updated - Device: b, Value: on
+2025-04-14 00:49:10,148 DEBUG [PlugSim.java:98] Plug d: power 135.66838609426236
+2025-04-14 00:49:10,150 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 135.668
+2025-04-14 00:49:10,150 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 135.668
+2025-04-14 00:49:10,150 DEBUG [PlugSim.java:98] Plug e: power 127.78092363900663
+2025-04-14 00:49:10,150 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 135.668
+2025-04-14 00:49:10,152 DEBUG [PlugSim.java:98] Plug f: power 126.8420321098933
+2025-04-14 00:49:10,152 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 127.781
+2025-04-14 00:49:10,152 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 127.781
+2025-04-14 00:49:10,152 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 127.781
+2025-04-14 00:49:10,153 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:10,153 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 126.842
+2025-04-14 00:49:10,153 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 126.842
+2025-04-14 00:49:10,154 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 126.842
+2025-04-14 00:49:10,154 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:10,154 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:10,154 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:10,813 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:10,815 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:10,815 DEBUG [PlugSim.java:98] Plug b: power 122.25866224612106
+2025-04-14 00:49:10,815 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:10,815 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:10,817 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 122.259
+2025-04-14 00:49:10,817 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 122.259
+2025-04-14 00:49:10,817 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 122.259
+2025-04-14 00:49:10,817 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:10,818 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:10,819 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:10,818 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:10,839 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:10,843 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=on, power=122.25900268554688}
+2025-04-14 00:49:10,847 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=off, power=0.0}
+2025-04-14 00:49:10,850 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=on, power=135.66799926757812}
+2025-04-14 00:49:10,853 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=on, power=127.78099822998047}
+2025-04-14 00:49:10,856 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=on, power=126.84200286865234}
+2025-04-14 00:49:10,861 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=off, power=0.0}
+2025-04-14 00:49:10,863 DEBUG [GradeP4.java:87] GradeP4: getState1 0101110
+2025-04-14 00:49:10,864 INFO [PlugsResource.java:55] Retrieved details for all plugs: [{name=a, state=off, power=0.0}, {name=b, state=on, power=122.25900268554688}, {name=c, state=off, power=0.0}, {name=d, state=on, power=135.66799926757812}, {name=e, state=on, power=127.78099822998047}, {name=f, state=on, power=126.84200286865234}, {name=g, state=off, power=0.0}]
+2025-04-14 00:49:10,866 DEBUG [GradeP4.java:109] GradeP4: getState2 0101110
+2025-04-14 00:49:10,868 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45786 GET /a HTTP/1.1
+2025-04-14 00:49:10,868 INFO [HTTPCommands.java:30] HTTPCmd /a: {}
+2025-04-14 00:49:10,870 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45788 GET /b HTTP/1.1
+2025-04-14 00:49:10,870 INFO [HTTPCommands.java:30] HTTPCmd /b: {}
+2025-04-14 00:49:10,872 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:45796 GET /c HTTP/1.1
+2025-04-14 00:49:10,872 INFO [HTTPCommands.java:30] HTTPCmd /c: {}
+2025-04-14 00:49:10,874 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:34768 GET /d HTTP/1.1
+2025-04-14 00:49:10,875 INFO [HTTPCommands.java:30] HTTPCmd /d: {}
+2025-04-14 00:49:10,877 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:34774 GET /e HTTP/1.1
+2025-04-14 00:49:10,877 INFO [HTTPCommands.java:30] HTTPCmd /e: {}
+2025-04-14 00:49:10,879 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:34778 GET /f HTTP/1.1
+2025-04-14 00:49:10,879 INFO [HTTPCommands.java:30] HTTPCmd /f: {}
+2025-04-14 00:49:10,881 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:34790 GET /g HTTP/1.1
+2025-04-14 00:49:10,881 INFO [HTTPCommands.java:30] HTTPCmd /g: {}
+2025-04-14 00:49:10,882 DEBUG [GradeP4.java:140] GradeP4: getState3 0101110
+2025-04-14 00:49:10,882 DEBUG [GradeP4.java:151] GradeP4: getState4 0101110
+2025-04-14 00:49:10,883 INFO [Grading.java:35] testCase05 of GradeP4: success
+2025-04-14 00:49:10,885 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:34804 GET /d?action=off HTTP/1.1
+2025-04-14 00:49:10,885 INFO [HTTPCommands.java:30] HTTPCmd /d: {action=off}
+2025-04-14 00:49:10,885 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:10,886 INFO [PlugSim.java:59] Plug d switched OFF
+2025-04-14 00:49:10,886 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:10,886 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:10,886 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:10,887 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/state, Payload: off
+2025-04-14 00:49:10,887 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/state off
+2025-04-14 00:49:10,887 DEBUG [MqttController.java:131] State updated - Device: d, Value: off
+2025-04-14 00:49:11,155 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:11,156 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:11,156 DEBUG [PlugSim.java:98] Plug e: power 122.53339333046225
+2025-04-14 00:49:11,157 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:11,157 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:11,158 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 122.533
+2025-04-14 00:49:11,158 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 122.533
+2025-04-14 00:49:11,159 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 122.533
+2025-04-14 00:49:11,158 DEBUG [PlugSim.java:98] Plug f: power 132.5213729695717
+2025-04-14 00:49:11,160 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 132.521
+2025-04-14 00:49:11,160 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:11,160 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 132.521
+2025-04-14 00:49:11,160 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 132.521
+2025-04-14 00:49:11,161 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:11,161 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:11,161 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:11,819 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:11,821 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:11,821 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:11,822 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:11,821 DEBUG [PlugSim.java:98] Plug b: power 126.25690389416039
+2025-04-14 00:49:11,823 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:11,823 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 126.257
+2025-04-14 00:49:11,824 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 126.257
+2025-04-14 00:49:11,823 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 126.257
+2025-04-14 00:49:11,824 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:11,824 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:11,824 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:11,892 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:11,896 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=on, power=126.25700378417969}
+2025-04-14 00:49:11,900 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=off, power=0.0}
+2025-04-14 00:49:11,902 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=off, power=0.0}
+2025-04-14 00:49:11,905 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=on, power=122.53299713134766}
+2025-04-14 00:49:11,908 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=on, power=132.52099609375}
+2025-04-14 00:49:11,910 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=off, power=0.0}
+2025-04-14 00:49:11,912 DEBUG [GradeP4.java:87] GradeP4: getState1 0100110
+2025-04-14 00:49:11,913 INFO [PlugsResource.java:55] Retrieved details for all plugs: [{name=a, state=off, power=0.0}, {name=b, state=on, power=126.25700378417969}, {name=c, state=off, power=0.0}, {name=d, state=off, power=0.0}, {name=e, state=on, power=122.53299713134766}, {name=f, state=on, power=132.52099609375}, {name=g, state=off, power=0.0}]
+2025-04-14 00:49:11,915 DEBUG [GradeP4.java:109] GradeP4: getState2 0100110
+2025-04-14 00:49:11,916 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54558 GET /a HTTP/1.1
+2025-04-14 00:49:11,916 INFO [HTTPCommands.java:30] HTTPCmd /a: {}
+2025-04-14 00:49:11,918 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54572 GET /b HTTP/1.1
+2025-04-14 00:49:11,919 INFO [HTTPCommands.java:30] HTTPCmd /b: {}
+2025-04-14 00:49:11,921 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54576 GET /c HTTP/1.1
+2025-04-14 00:49:11,921 INFO [HTTPCommands.java:30] HTTPCmd /c: {}
+2025-04-14 00:49:11,923 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38822 GET /d HTTP/1.1
+2025-04-14 00:49:11,923 INFO [HTTPCommands.java:30] HTTPCmd /d: {}
+2025-04-14 00:49:11,925 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38824 GET /e HTTP/1.1
+2025-04-14 00:49:11,925 INFO [HTTPCommands.java:30] HTTPCmd /e: {}
+2025-04-14 00:49:11,928 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38832 GET /f HTTP/1.1
+2025-04-14 00:49:11,928 INFO [HTTPCommands.java:30] HTTPCmd /f: {}
+2025-04-14 00:49:11,930 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38840 GET /g HTTP/1.1
+2025-04-14 00:49:11,930 INFO [HTTPCommands.java:30] HTTPCmd /g: {}
+2025-04-14 00:49:11,931 DEBUG [GradeP4.java:140] GradeP4: getState3 0100110
+2025-04-14 00:49:11,931 DEBUG [GradeP4.java:151] GradeP4: getState4 0100110
+2025-04-14 00:49:11,931 INFO [Grading.java:35] testCase06 of GradeP4: success
+2025-04-14 00:49:11,933 WARN [MQTTCommands.java:213] Plug not found: c
+2025-04-14 00:49:11,933 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:11,933 DEBUG [PlugSim.java:98] Plug c: power 98.2197157547787
+2025-04-14 00:49:11,934 INFO [PlugSim.java:50] Plug c switched ON
+2025-04-14 00:49:11,934 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 98.220
+2025-04-14 00:49:11,934 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 98.220
+2025-04-14 00:49:11,934 DEBUG [PlugSim.java:98] Plug c: power 187.09612806428777
+2025-04-14 00:49:11,935 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/c: off
+2025-04-14 00:49:11,935 WARN [MQTTCommands.java:213] Plug not found: e
+2025-04-14 00:49:11,935 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/state, Payload: on
+2025-04-14 00:49:11,935 DEBUG [MqttController.java:131] State updated - Device: c, Value: on
+2025-04-14 00:49:11,935 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 187.096
+2025-04-14 00:49:11,935 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 187.096
+2025-04-14 00:49:11,974 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 98.220
+2025-04-14 00:49:11,974 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/state on
+2025-04-14 00:49:11,975 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 187.096
+2025-04-14 00:49:11,975 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:11,975 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:11,975 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:11,975 INFO [PlugSim.java:59] Plug e switched OFF
+2025-04-14 00:49:11,976 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:11,976 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/state off
+2025-04-14 00:49:11,976 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/state, Payload: off
+2025-04-14 00:49:11,977 DEBUG [MqttController.java:131] State updated - Device: e, Value: off
+2025-04-14 00:49:11,977 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:11,977 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:11,977 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:11,978 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/e: off
+2025-04-14 00:49:12,161 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:12,163 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:12,163 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:12,163 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:12,163 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:12,164 DEBUG [PlugSim.java:98] Plug f: power 147.04059359673244
+2025-04-14 00:49:12,164 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:12,164 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:12,164 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:12,164 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:12,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 147.041
+2025-04-14 00:49:12,165 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 147.041
+2025-04-14 00:49:12,165 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 147.041
+2025-04-14 00:49:12,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:12,165 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:12,165 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:12,824 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:12,826 DEBUG [PlugSim.java:98] Plug b: power 121.67371483482066
+2025-04-14 00:49:12,827 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:12,827 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:12,827 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:12,828 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 121.674
+2025-04-14 00:49:12,828 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 121.674
+2025-04-14 00:49:12,828 DEBUG [PlugSim.java:98] Plug c: power 192.9269979426381
+2025-04-14 00:49:12,828 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 121.674
+2025-04-14 00:49:12,829 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 192.927
+2025-04-14 00:49:12,829 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 192.927
+2025-04-14 00:49:12,829 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 192.927
+2025-04-14 00:49:12,941 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:12,945 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=on, power=121.67400360107422}
+2025-04-14 00:49:12,949 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=on, power=192.927001953125}
+2025-04-14 00:49:12,951 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=off, power=0.0}
+2025-04-14 00:49:12,955 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=off, power=0.0}
+2025-04-14 00:49:12,960 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=on, power=147.04100036621094}
+2025-04-14 00:49:12,963 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=off, power=0.0}
+2025-04-14 00:49:12,964 DEBUG [GradeP4.java:87] GradeP4: getState1 0110010
+2025-04-14 00:49:12,966 INFO [PlugsResource.java:55] Retrieved details for all plugs: [{name=a, state=off, power=0.0}, {name=b, state=on, power=121.67400360107422}, {name=c, state=on, power=192.927001953125}, {name=d, state=off, power=0.0}, {name=e, state=off, power=0.0}, {name=f, state=on, power=147.04100036621094}, {name=g, state=off, power=0.0}]
+2025-04-14 00:49:12,967 DEBUG [GradeP4.java:109] GradeP4: getState2 0110010
+2025-04-14 00:49:12,969 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54580 GET /a HTTP/1.1
+2025-04-14 00:49:12,969 INFO [HTTPCommands.java:30] HTTPCmd /a: {}
+2025-04-14 00:49:12,971 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54582 GET /b HTTP/1.1
+2025-04-14 00:49:12,971 INFO [HTTPCommands.java:30] HTTPCmd /b: {}
+2025-04-14 00:49:12,973 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54588 GET /c HTTP/1.1
+2025-04-14 00:49:12,974 INFO [HTTPCommands.java:30] HTTPCmd /c: {}
+2025-04-14 00:49:12,976 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38846 GET /d HTTP/1.1
+2025-04-14 00:49:12,976 INFO [HTTPCommands.java:30] HTTPCmd /d: {}
+2025-04-14 00:49:12,978 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38848 GET /e HTTP/1.1
+2025-04-14 00:49:12,978 INFO [HTTPCommands.java:30] HTTPCmd /e: {}
+2025-04-14 00:49:12,980 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38862 GET /f HTTP/1.1
+2025-04-14 00:49:12,980 INFO [HTTPCommands.java:30] HTTPCmd /f: {}
+2025-04-14 00:49:12,982 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38868 GET /g HTTP/1.1
+2025-04-14 00:49:12,983 INFO [HTTPCommands.java:30] HTTPCmd /g: {}
+2025-04-14 00:49:12,983 DEBUG [GradeP4.java:140] GradeP4: getState3 0110010
+2025-04-14 00:49:12,983 DEBUG [GradeP4.java:151] GradeP4: getState4 0110010
+2025-04-14 00:49:12,984 INFO [Grading.java:35] testCase07 of GradeP4: success
+2025-04-14 00:49:12,985 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54604 GET /a?action=toggle HTTP/1.1
+2025-04-14 00:49:12,986 INFO [HTTPCommands.java:30] HTTPCmd /a: {action=toggle}
+2025-04-14 00:49:12,986 DEBUG [PlugSim.java:98] Plug a: power 73.9759230138167
+2025-04-14 00:49:12,986 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 73.976
+2025-04-14 00:49:12,987 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 73.976
+2025-04-14 00:49:12,987 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 73.976
+2025-04-14 00:49:12,987 INFO [PlugSim.java:50] Plug a switched ON
+2025-04-14 00:49:12,987 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/state on
+2025-04-14 00:49:12,987 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/state, Payload: on
+2025-04-14 00:49:12,987 DEBUG [MqttController.java:131] State updated - Device: a, Value: on
+2025-04-14 00:49:13,029 WARN [MQTTCommands.java:213] Plug not found: d
+2025-04-14 00:49:13,029 DEBUG [PlugSim.java:98] Plug d: power 21.72377054190666
+2025-04-14 00:49:13,031 INFO [PlugSim.java:50] Plug d switched ON
+2025-04-14 00:49:13,031 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 21.724
+2025-04-14 00:49:13,031 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 21.724
+2025-04-14 00:49:13,032 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38884 GET /e?action=toggle HTTP/1.1
+2025-04-14 00:49:13,032 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/state, Payload: on
+2025-04-14 00:49:13,032 DEBUG [MqttController.java:131] State updated - Device: d, Value: on
+2025-04-14 00:49:13,032 DEBUG [PlugSim.java:98] Plug d: power 71.65396761329097
+2025-04-14 00:49:13,032 INFO [HTTPCommands.java:30] HTTPCmd /e: {action=toggle}
+2025-04-14 00:49:13,033 DEBUG [PlugSim.java:98] Plug e: power 9.67139646006686
+2025-04-14 00:49:13,033 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 71.654
+2025-04-14 00:49:13,033 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 71.654
+2025-04-14 00:49:13,034 INFO [PlugSim.java:50] Plug e switched ON
+2025-04-14 00:49:13,034 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 9.671
+2025-04-14 00:49:13,034 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 9.671
+2025-04-14 00:49:13,034 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/d: off
+2025-04-14 00:49:13,035 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/state, Payload: on
+2025-04-14 00:49:13,035 DEBUG [MqttController.java:131] State updated - Device: e, Value: on
+2025-04-14 00:49:13,036 WARN [MQTTCommands.java:213] Plug not found: g
+2025-04-14 00:49:13,036 DEBUG [PlugSim.java:98] Plug g: power 32.52284725911069
+2025-04-14 00:49:13,037 INFO [PlugSim.java:50] Plug g switched ON
+2025-04-14 00:49:13,037 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 32.523
+2025-04-14 00:49:13,037 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 32.523
+2025-04-14 00:49:13,038 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/state, Payload: on
+2025-04-14 00:49:13,038 DEBUG [MqttController.java:131] State updated - Device: g, Value: on
+2025-04-14 00:49:13,038 DEBUG [PlugSim.java:98] Plug g: power 63.901754736606
+2025-04-14 00:49:13,039 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 63.902
+2025-04-14 00:49:13,039 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 63.902
+2025-04-14 00:49:13,039 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/g: off
+2025-04-14 00:49:13,077 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 21.724
+2025-04-14 00:49:13,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/state on
+2025-04-14 00:49:13,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 71.654
+2025-04-14 00:49:13,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 9.671
+2025-04-14 00:49:13,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/state on
+2025-04-14 00:49:13,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 32.523
+2025-04-14 00:49:13,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/state on
+2025-04-14 00:49:13,078 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 63.902
+2025-04-14 00:49:13,166 DEBUG [PlugSim.java:98] Plug d: power 107.85134947180376
+2025-04-14 00:49:13,167 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 107.851
+2025-04-14 00:49:13,167 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 107.851
+2025-04-14 00:49:13,167 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 107.851
+2025-04-14 00:49:13,167 DEBUG [PlugSim.java:98] Plug e: power 25.83945888902359
+2025-04-14 00:49:13,168 DEBUG [PlugSim.java:98] Plug f: power 159.46342226139097
+2025-04-14 00:49:13,168 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 25.839
+2025-04-14 00:49:13,168 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 25.839
+2025-04-14 00:49:13,169 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 25.839
+2025-04-14 00:49:13,169 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 159.463
+2025-04-14 00:49:13,169 DEBUG [PlugSim.java:98] Plug g: power 154.1881659104
+2025-04-14 00:49:13,169 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 159.463
+2025-04-14 00:49:13,169 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 159.463
+2025-04-14 00:49:13,170 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 154.188
+2025-04-14 00:49:13,170 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 154.188
+2025-04-14 00:49:13,170 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 154.188
+2025-04-14 00:49:13,829 DEBUG [PlugSim.java:98] Plug a: power 171.42668661046167
+2025-04-14 00:49:13,831 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 171.427
+2025-04-14 00:49:13,832 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 171.427
+2025-04-14 00:49:13,832 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 171.427
+2025-04-14 00:49:13,831 DEBUG [PlugSim.java:98] Plug b: power 109.58087913171806
+2025-04-14 00:49:13,833 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 109.581
+2025-04-14 00:49:13,834 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 109.581
+2025-04-14 00:49:13,834 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 109.581
+2025-04-14 00:49:13,834 DEBUG [PlugSim.java:98] Plug c: power 183.2865267785482
+2025-04-14 00:49:13,835 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 183.287
+2025-04-14 00:49:13,835 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 183.287
+2025-04-14 00:49:13,835 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 183.287
+2025-04-14 00:49:14,083 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=on, power=171.427001953125}
+2025-04-14 00:49:14,088 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=on, power=109.58100128173828}
+2025-04-14 00:49:14,091 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=on, power=183.28700256347656}
+2025-04-14 00:49:14,093 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=on, power=107.85099792480469}
+2025-04-14 00:49:14,096 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=on, power=25.839000701904297}
+2025-04-14 00:49:14,098 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=on, power=159.46299743652344}
+2025-04-14 00:49:14,101 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=on, power=154.18800354003906}
+2025-04-14 00:49:14,102 DEBUG [GradeP4.java:87] GradeP4: getState1 1111111
+2025-04-14 00:49:14,104 INFO [PlugsResource.java:55] Retrieved details for all plugs: [{name=a, state=on, power=171.427001953125}, {name=b, state=on, power=109.58100128173828}, {name=c, state=on, power=183.28700256347656}, {name=d, state=on, power=107.85099792480469}, {name=e, state=on, power=25.839000701904297}, {name=f, state=on, power=159.46299743652344}, {name=g, state=on, power=154.18800354003906}]
+2025-04-14 00:49:14,105 DEBUG [GradeP4.java:109] GradeP4: getState2 1111111
+2025-04-14 00:49:14,107 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54614 GET /a HTTP/1.1
+2025-04-14 00:49:14,107 INFO [HTTPCommands.java:30] HTTPCmd /a: {}
+2025-04-14 00:49:14,109 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54618 GET /b HTTP/1.1
+2025-04-14 00:49:14,110 INFO [HTTPCommands.java:30] HTTPCmd /b: {}
+2025-04-14 00:49:14,112 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54628 GET /c HTTP/1.1
+2025-04-14 00:49:14,112 INFO [HTTPCommands.java:30] HTTPCmd /c: {}
+2025-04-14 00:49:14,114 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38886 GET /d HTTP/1.1
+2025-04-14 00:49:14,114 INFO [HTTPCommands.java:30] HTTPCmd /d: {}
+2025-04-14 00:49:14,116 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38900 GET /e HTTP/1.1
+2025-04-14 00:49:14,116 INFO [HTTPCommands.java:30] HTTPCmd /e: {}
+2025-04-14 00:49:14,118 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38910 GET /f HTTP/1.1
+2025-04-14 00:49:14,118 INFO [HTTPCommands.java:30] HTTPCmd /f: {}
+2025-04-14 00:49:14,120 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38918 GET /g HTTP/1.1
+2025-04-14 00:49:14,121 INFO [HTTPCommands.java:30] HTTPCmd /g: {}
+2025-04-14 00:49:14,121 DEBUG [GradeP4.java:140] GradeP4: getState3 1111111
+2025-04-14 00:49:14,121 DEBUG [GradeP4.java:151] GradeP4: getState4 1111111
+2025-04-14 00:49:14,122 INFO [Grading.java:35] testCase08 of GradeP4: success
+2025-04-14 00:49:14,124 DEBUG [MqttController.java:87] Action published - Device: a, Action: off
+2025-04-14 00:49:14,124 INFO [PlugsResource.java:39] Performed action 'off' on plug 'a'
+2025-04-14 00:49:14,124 WARN [MQTTCommands.java:213] Plug not found: a
+2025-04-14 00:49:14,124 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:14,124 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=on, power=171.427001953125}
+2025-04-14 00:49:14,124 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:14,125 INFO [PlugSim.java:59] Plug a switched OFF
+2025-04-14 00:49:14,125 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:14,125 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/state off
+2025-04-14 00:49:14,125 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/a: off
+2025-04-14 00:49:14,126 WARN [MQTTCommands.java:213] Plug not found: b
+2025-04-14 00:49:14,126 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:14,126 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:14,126 INFO [PlugSim.java:59] Plug b switched OFF
+2025-04-14 00:49:14,127 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:14,127 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:14,127 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54638 GET /c?action=off HTTP/1.1
+2025-04-14 00:49:14,128 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/state off
+2025-04-14 00:49:14,128 INFO [HTTPCommands.java:30] HTTPCmd /c: {action=off}
+2025-04-14 00:49:14,128 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:14,128 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:14,128 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/b: off
+2025-04-14 00:49:14,128 INFO [PlugSim.java:59] Plug c switched OFF
+2025-04-14 00:49:14,128 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/state, Payload: off
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:131] State updated - Device: a, Value: off
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/state, Payload: off
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:131] State updated - Device: b, Value: off
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:14,165 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:14,169 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/state, Payload: off
+2025-04-14 00:49:14,169 DEBUG [MqttController.java:131] State updated - Device: c, Value: off
+2025-04-14 00:49:14,169 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/state off
+2025-04-14 00:49:14,170 DEBUG [PlugSim.java:98] Plug d: power 100.5081878296888
+2025-04-14 00:49:14,170 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 100.508
+2025-04-14 00:49:14,170 DEBUG [PlugSim.java:98] Plug e: power 113.58408234237848
+2025-04-14 00:49:14,171 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 100.508
+2025-04-14 00:49:14,171 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 100.508
+2025-04-14 00:49:14,171 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38920 GET /d?action=toggle HTTP/1.1
+2025-04-14 00:49:14,171 INFO [HTTPCommands.java:30] HTTPCmd /d: {action=toggle}
+2025-04-14 00:49:14,171 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:14,171 DEBUG [PlugSim.java:98] Plug f: power 165.70040166820002
+2025-04-14 00:49:14,171 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 113.584
+2025-04-14 00:49:14,171 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 113.584
+2025-04-14 00:49:14,171 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 113.584
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:14,172 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:14,172 INFO [PlugSim.java:59] Plug d switched OFF
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 165.700
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 165.700
+2025-04-14 00:49:14,172 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 165.700
+2025-04-14 00:49:14,172 DEBUG [PlugSim.java:98] Plug g: power 144.128092741597
+2025-04-14 00:49:14,172 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/state off
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/state, Payload: off
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:131] State updated - Device: d, Value: off
+2025-04-14 00:49:14,172 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 144.128
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 144.128
+2025-04-14 00:49:14,172 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 144.128
+2025-04-14 00:49:14,214 WARN [MQTTCommands.java:213] Plug not found: e
+2025-04-14 00:49:14,214 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:14,214 DEBUG [MqttController.java:87] Action published - Device: e, Action: toggle
+2025-04-14 00:49:14,215 INFO [PlugsResource.java:39] Performed action 'toggle' on plug 'e'
+2025-04-14 00:49:14,215 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=on, power=113.58399963378906}
+2025-04-14 00:49:14,215 INFO [PlugSim.java:59] Plug e switched OFF
+2025-04-14 00:49:14,216 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:14,216 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:14,216 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/state off
+2025-04-14 00:49:14,217 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:14,217 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/e: off
+2025-04-14 00:49:14,255 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:14,255 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:14,256 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/state, Payload: off
+2025-04-14 00:49:14,256 DEBUG [MqttController.java:131] State updated - Device: e, Value: off
+2025-04-14 00:49:14,256 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:14,256 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:14,258 WARN [MQTTCommands.java:213] Plug not found: f
+2025-04-14 00:49:14,258 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:14,260 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:14,260 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:14,261 INFO [PlugSim.java:59] Plug f switched OFF
+2025-04-14 00:49:14,260 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38926 GET /g?action=off HTTP/1.1
+2025-04-14 00:49:14,261 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:14,262 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/state, Payload: off
+2025-04-14 00:49:14,262 DEBUG [MqttController.java:131] State updated - Device: f, Value: off
+2025-04-14 00:49:14,262 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:14,263 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:14,262 INFO [HTTPCommands.java:30] HTTPCmd /g: {action=off}
+2025-04-14 00:49:14,263 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:14,263 INFO [MQTTCommands.java:254] Published state to 1744609740997/grade_p4/iot_ece448/state/f: off
+2025-04-14 00:49:14,263 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:14,263 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:14,263 INFO [PlugSim.java:59] Plug g switched OFF
+2025-04-14 00:49:14,299 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:14,300 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/state off
+2025-04-14 00:49:14,300 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:14,300 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:14,304 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/state off
+2025-04-14 00:49:14,304 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/state, Payload: off
+2025-04-14 00:49:14,305 DEBUG [MqttController.java:131] State updated - Device: g, Value: off
+2025-04-14 00:49:14,835 DEBUG [PlugSim.java:98] Plug a: power 0.0
+2025-04-14 00:49:14,837 DEBUG [PlugSim.java:98] Plug b: power 0.0
+2025-04-14 00:49:14,838 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/a/power, Payload: 0.000
+2025-04-14 00:49:14,838 DEBUG [MqttController.java:135] Power updated - Device: a, Value: 0.000
+2025-04-14 00:49:14,837 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/a/power 0.000
+2025-04-14 00:49:14,839 DEBUG [PlugSim.java:98] Plug c: power 0.0
+2025-04-14 00:49:14,839 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/b/power, Payload: 0.000
+2025-04-14 00:49:14,839 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/b/power 0.000
+2025-04-14 00:49:14,839 DEBUG [MqttController.java:135] Power updated - Device: b, Value: 0.000
+2025-04-14 00:49:14,840 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/c/power 0.000
+2025-04-14 00:49:14,840 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/c/power, Payload: 0.000
+2025-04-14 00:49:14,840 DEBUG [MqttController.java:135] Power updated - Device: c, Value: 0.000
+2025-04-14 00:49:15,173 DEBUG [PlugSim.java:98] Plug d: power 0.0
+2025-04-14 00:49:15,174 DEBUG [PlugSim.java:98] Plug e: power 0.0
+2025-04-14 00:49:15,174 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/d/power 0.000
+2025-04-14 00:49:15,174 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/d/power, Payload: 0.000
+2025-04-14 00:49:15,175 DEBUG [MqttController.java:135] Power updated - Device: d, Value: 0.000
+2025-04-14 00:49:15,175 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/e/power 0.000
+2025-04-14 00:49:15,175 DEBUG [PlugSim.java:98] Plug f: power 0.0
+2025-04-14 00:49:15,176 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/e/power, Payload: 0.000
+2025-04-14 00:49:15,176 DEBUG [MqttController.java:135] Power updated - Device: e, Value: 0.000
+2025-04-14 00:49:15,177 DEBUG [PlugSim.java:98] Plug g: power 0.0
+2025-04-14 00:49:15,177 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/f/power, Payload: 0.000
+2025-04-14 00:49:15,177 DEBUG [MqttController.java:135] Power updated - Device: f, Value: 0.000
+2025-04-14 00:49:15,177 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/f/power 0.000
+2025-04-14 00:49:15,178 DEBUG [MqttController.java:115] Received message - Topic: 1744609740997/grade_p4/iot_ece448/update/g/power, Payload: 0.000
+2025-04-14 00:49:15,178 DEBUG [MqttController.java:135] Power updated - Device: g, Value: 0.000
+2025-04-14 00:49:15,178 DEBUG [GradeP3.java:84] MqttCtl grader/iot_hub: 1744609740997/grade_p4/iot_ece448/update/g/power 0.000
+2025-04-14 00:49:15,311 INFO [PlugsResource.java:43] Retrieved details for plug 'a': {name=a, state=off, power=0.0}
+2025-04-14 00:49:15,314 INFO [PlugsResource.java:43] Retrieved details for plug 'b': {name=b, state=off, power=0.0}
+2025-04-14 00:49:15,317 INFO [PlugsResource.java:43] Retrieved details for plug 'c': {name=c, state=off, power=0.0}
+2025-04-14 00:49:15,320 INFO [PlugsResource.java:43] Retrieved details for plug 'd': {name=d, state=off, power=0.0}
+2025-04-14 00:49:15,323 INFO [PlugsResource.java:43] Retrieved details for plug 'e': {name=e, state=off, power=0.0}
+2025-04-14 00:49:15,325 INFO [PlugsResource.java:43] Retrieved details for plug 'f': {name=f, state=off, power=0.0}
+2025-04-14 00:49:15,328 INFO [PlugsResource.java:43] Retrieved details for plug 'g': {name=g, state=off, power=0.0}
+2025-04-14 00:49:15,329 DEBUG [GradeP4.java:87] GradeP4: getState1 0000000
+2025-04-14 00:49:15,330 INFO [PlugsResource.java:55] Retrieved details for all plugs: [{name=a, state=off, power=0.0}, {name=b, state=off, power=0.0}, {name=c, state=off, power=0.0}, {name=d, state=off, power=0.0}, {name=e, state=off, power=0.0}, {name=f, state=off, power=0.0}, {name=g, state=off, power=0.0}]
+2025-04-14 00:49:15,331 DEBUG [GradeP4.java:109] GradeP4: getState2 0000000
+2025-04-14 00:49:15,333 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54642 GET /a HTTP/1.1
+2025-04-14 00:49:15,333 INFO [HTTPCommands.java:30] HTTPCmd /a: {}
+2025-04-14 00:49:15,335 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54648 GET /b HTTP/1.1
+2025-04-14 00:49:15,335 INFO [HTTPCommands.java:30] HTTPCmd /b: {}
+2025-04-14 00:49:15,338 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:54656 GET /c HTTP/1.1
+2025-04-14 00:49:15,338 INFO [HTTPCommands.java:30] HTTPCmd /c: {}
+2025-04-14 00:49:15,340 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38938 GET /d HTTP/1.1
+2025-04-14 00:49:15,341 INFO [HTTPCommands.java:30] HTTPCmd /d: {}
+2025-04-14 00:49:15,342 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38942 GET /e HTTP/1.1
+2025-04-14 00:49:15,342 INFO [HTTPCommands.java:30] HTTPCmd /e: {}
+2025-04-14 00:49:15,344 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38952 GET /f HTTP/1.1
+2025-04-14 00:49:15,344 INFO [HTTPCommands.java:30] HTTPCmd /f: {}
+2025-04-14 00:49:15,346 INFO [RequestProcessor.java:43] JHTTP: /127.0.0.1:38964 GET /g HTTP/1.1
+2025-04-14 00:49:15,346 INFO [HTTPCommands.java:30] HTTPCmd /g: {}
+2025-04-14 00:49:15,346 DEBUG [GradeP4.java:140] GradeP4: getState3 0000000
+2025-04-14 00:49:15,346 DEBUG [GradeP4.java:151] GradeP4: getState4 0000000
+2025-04-14 00:49:15,347 INFO [Grading.java:35] testCase09 of GradeP4: success
+2025-04-14 00:49:15,347 INFO [AbstractApplicationContext.java:985] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ca30bc1: startup date [Mon Apr 14 00:49:02 CDT 2025]; root of context hierarchy
+2025-04-14 00:49:15,348 INFO [MBeanExporter.java:449] Unregistering JMX-exposed beans on shutdown
+2025-04-14 00:49:15,354 INFO [MqttController.java:70] Disconnected from MQTT broker
+2025-04-14 00:49:15,395 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-04-14 00:49:15,402 INFO [JHTTP.java:53] JHTTP: disconnnected Socket closed
+2025-04-14 00:49:15,405 INFO [GradeP3.java:52] MqttCtl grader/iot_hub: disconnected

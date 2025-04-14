@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_sim.HTTPCommandsTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-14T05:02:17" hostname="iit" time="0.018">
+<testsuite name="ece448.iot_sim.HTTPCommandsTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-14T05:48:59" hostname="iit" time="0.01">
   <properties/>
-  <testcase name="testSwitchOnPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.004"/>
-  <testcase name="testTogglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.002"/>
-  <testcase name="testReportAfterSwitchOn" classname="ece448.iot_sim.HTTPCommandsTests" time="0.002"/>
-  <testcase name="testReportAfterToggle" classname="ece448.iot_sim.HTTPCommandsTests" time="0.002"/>
+  <testcase name="testSwitchOnPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.003"/>
+  <testcase name="testTogglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <testcase name="testReportAfterSwitchOn" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <testcase name="testReportAfterToggle" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
   <testcase name="testListPlugs" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
-  <testcase name="testTogglePlugTwice" classname="ece448.iot_sim.HTTPCommandsTests" time="0.002"/>
-  <testcase name="testInvalidAction" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <testcase name="testTogglePlugTwice" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <testcase name="testInvalidAction" classname="ece448.iot_sim.HTTPCommandsTests" time="0.0"/>
   <testcase name="testNonExistingPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
-  <testcase name="testReportSinglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
-  <testcase name="testSwitchOffPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.002"/>
-  <system-out><![CDATA[2025-04-14 00:02:17,514 INFO HTTPCmd /testPlug: {action=on}
-2025-04-14 00:02:17,515 INFO Plug testPlug switched ON
-2025-04-14 00:02:17,516 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:02:17,517 INFO Plug testPlug switched ON
-2025-04-14 00:02:17,518 INFO HTTPCmd /testPlug: {action=on}
-2025-04-14 00:02:17,518 INFO Plug testPlug switched ON
-2025-04-14 00:02:17,519 INFO HTTPCmd /testPlug: {}
-2025-04-14 00:02:17,520 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:02:17,520 INFO Plug testPlug switched ON
-2025-04-14 00:02:17,521 INFO HTTPCmd /testPlug: {}
-2025-04-14 00:02:17,522 INFO HTTPCmd /: {}
-2025-04-14 00:02:17,523 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:02:17,523 INFO Plug testPlug switched ON
-2025-04-14 00:02:17,524 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:02:17,524 INFO Plug testPlug switched OFF
-2025-04-14 00:02:17,525 INFO HTTPCmd /testPlug: {action=invalidAction}
-2025-04-14 00:02:17,526 INFO HTTPCmd /unknownPlug: {}
-2025-04-14 00:02:17,527 INFO HTTPCmd /testPlug: {}
-2025-04-14 00:02:17,528 INFO Plug testPlug switched ON
-2025-04-14 00:02:17,528 INFO HTTPCmd /testPlug: {action=off}
-2025-04-14 00:02:17,529 INFO Plug testPlug switched OFF
+  <testcase name="testReportSinglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.0"/>
+  <testcase name="testSwitchOffPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <system-out><![CDATA[2025-04-14 00:48:59,923 INFO HTTPCmd /testPlug: {action=on}
+2025-04-14 00:48:59,924 INFO Plug testPlug switched ON
+2025-04-14 00:48:59,925 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,925 INFO Plug testPlug switched ON
+2025-04-14 00:48:59,926 INFO HTTPCmd /testPlug: {action=on}
+2025-04-14 00:48:59,926 INFO Plug testPlug switched ON
+2025-04-14 00:48:59,926 INFO HTTPCmd /testPlug: {}
+2025-04-14 00:48:59,927 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,927 INFO Plug testPlug switched ON
+2025-04-14 00:48:59,927 INFO HTTPCmd /testPlug: {}
+2025-04-14 00:48:59,928 INFO HTTPCmd /: {}
+2025-04-14 00:48:59,929 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,929 INFO Plug testPlug switched ON
+2025-04-14 00:48:59,929 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:48:59,929 INFO Plug testPlug switched OFF
+2025-04-14 00:48:59,930 INFO HTTPCmd /testPlug: {action=invalidAction}
+2025-04-14 00:48:59,930 INFO HTTPCmd /unknownPlug: {}
+2025-04-14 00:48:59,931 INFO HTTPCmd /testPlug: {}
+2025-04-14 00:48:59,931 INFO Plug testPlug switched ON
+2025-04-14 00:48:59,932 INFO HTTPCmd /testPlug: {action=off}
+2025-04-14 00:48:59,932 INFO Plug testPlug switched OFF
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
