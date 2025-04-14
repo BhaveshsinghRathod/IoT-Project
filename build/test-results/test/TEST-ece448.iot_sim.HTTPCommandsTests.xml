@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_sim.HTTPCommandsTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-14T05:48:59" hostname="iit" time="0.01">
+<testsuite name="ece448.iot_sim.HTTPCommandsTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-04-14T05:59:32" hostname="iit" time="0.011">
   <properties/>
   <testcase name="testSwitchOnPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.003"/>
   <testcase name="testTogglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
@@ -7,31 +7,31 @@
   <testcase name="testReportAfterToggle" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
   <testcase name="testListPlugs" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
   <testcase name="testTogglePlugTwice" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
-  <testcase name="testInvalidAction" classname="ece448.iot_sim.HTTPCommandsTests" time="0.0"/>
-  <testcase name="testNonExistingPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
-  <testcase name="testReportSinglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.0"/>
+  <testcase name="testInvalidAction" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
+  <testcase name="testNonExistingPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.0"/>
+  <testcase name="testReportSinglePlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
   <testcase name="testSwitchOffPlug" classname="ece448.iot_sim.HTTPCommandsTests" time="0.001"/>
-  <system-out><![CDATA[2025-04-14 00:48:59,923 INFO HTTPCmd /testPlug: {action=on}
-2025-04-14 00:48:59,924 INFO Plug testPlug switched ON
-2025-04-14 00:48:59,925 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:48:59,925 INFO Plug testPlug switched ON
-2025-04-14 00:48:59,926 INFO HTTPCmd /testPlug: {action=on}
-2025-04-14 00:48:59,926 INFO Plug testPlug switched ON
-2025-04-14 00:48:59,926 INFO HTTPCmd /testPlug: {}
-2025-04-14 00:48:59,927 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:48:59,927 INFO Plug testPlug switched ON
-2025-04-14 00:48:59,927 INFO HTTPCmd /testPlug: {}
-2025-04-14 00:48:59,928 INFO HTTPCmd /: {}
-2025-04-14 00:48:59,929 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:48:59,929 INFO Plug testPlug switched ON
-2025-04-14 00:48:59,929 INFO HTTPCmd /testPlug: {action=toggle}
-2025-04-14 00:48:59,929 INFO Plug testPlug switched OFF
-2025-04-14 00:48:59,930 INFO HTTPCmd /testPlug: {action=invalidAction}
-2025-04-14 00:48:59,930 INFO HTTPCmd /unknownPlug: {}
-2025-04-14 00:48:59,931 INFO HTTPCmd /testPlug: {}
-2025-04-14 00:48:59,931 INFO Plug testPlug switched ON
-2025-04-14 00:48:59,932 INFO HTTPCmd /testPlug: {action=off}
-2025-04-14 00:48:59,932 INFO Plug testPlug switched OFF
+  <system-out><![CDATA[2025-04-14 00:59:32,178 INFO HTTPCmd /testPlug: {action=on}
+2025-04-14 00:59:32,178 INFO Plug testPlug switched ON
+2025-04-14 00:59:32,179 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:59:32,179 INFO Plug testPlug switched ON
+2025-04-14 00:59:32,180 INFO HTTPCmd /testPlug: {action=on}
+2025-04-14 00:59:32,180 INFO Plug testPlug switched ON
+2025-04-14 00:59:32,180 INFO HTTPCmd /testPlug: {}
+2025-04-14 00:59:32,181 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:59:32,181 INFO Plug testPlug switched ON
+2025-04-14 00:59:32,181 INFO HTTPCmd /testPlug: {}
+2025-04-14 00:59:32,182 INFO HTTPCmd /: {}
+2025-04-14 00:59:32,183 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:59:32,183 INFO Plug testPlug switched ON
+2025-04-14 00:59:32,183 INFO HTTPCmd /testPlug: {action=toggle}
+2025-04-14 00:59:32,184 INFO Plug testPlug switched OFF
+2025-04-14 00:59:32,184 INFO HTTPCmd /testPlug: {action=invalidAction}
+2025-04-14 00:59:32,185 INFO HTTPCmd /unknownPlug: {}
+2025-04-14 00:59:32,185 INFO HTTPCmd /testPlug: {}
+2025-04-14 00:59:32,186 INFO Plug testPlug switched ON
+2025-04-14 00:59:32,186 INFO HTTPCmd /testPlug: {action=off}
+2025-04-14 00:59:32,186 INFO Plug testPlug switched OFF
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
