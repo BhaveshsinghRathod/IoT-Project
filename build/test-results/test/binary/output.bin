@@ -1,247 +1,277 @@
-D2025-04-14 00:59:30,127 WARN Invalid plug name format: plug.invalid
-;2025-04-14 00:59:30,130 INFO Plug plug.invalid switched ON
-D2025-04-14 00:59:30,131 WARN Invalid plug name format: plug.invalid
-72025-04-14 00:59:30,133 INFO Plug test.200 switched ON
-02025-04-14 00:59:30,135 INFO Plug a switched ON
-	32025-04-14 00:59:30,135 INFO Plug plug switched ON
-02025-04-14 00:59:30,137 INFO Plug a switched ON
-12025-04-14 00:59:30,137 INFO Plug a switched OFF
-02025-04-14 00:59:30,138 INFO Plug a switched ON
-A2025-04-14 00:59:31,855 WARN Invalid topic format: invalid/topic
-92025-04-14 00:59:32,170 WARN Plug not found: nonexistent
-<2025-04-14 00:59:32,178 INFO HTTPCmd /testPlug: {action=on}
-72025-04-14 00:59:32,178 INFO Plug testPlug switched ON
-@2025-04-14 00:59:32,179 INFO HTTPCmd /testPlug: {action=toggle}
-72025-04-14 00:59:32,179 INFO Plug testPlug switched ON
-<2025-04-14 00:59:32,180 INFO HTTPCmd /testPlug: {action=on}
-72025-04-14 00:59:32,180 INFO Plug testPlug switched ON
-32025-04-14 00:59:32,180 INFO HTTPCmd /testPlug: {}
-@2025-04-14 00:59:32,181 INFO HTTPCmd /testPlug: {action=toggle}
-72025-04-14 00:59:32,181 INFO Plug testPlug switched ON
-32025-04-14 00:59:32,181 INFO HTTPCmd /testPlug: {}
-+2025-04-14 00:59:32,182 INFO HTTPCmd /: {}
-@2025-04-14 00:59:32,183 INFO HTTPCmd /testPlug: {action=toggle}
-72025-04-14 00:59:32,183 INFO Plug testPlug switched ON
-@2025-04-14 00:59:32,183 INFO HTTPCmd /testPlug: {action=toggle}
-82025-04-14 00:59:32,184 INFO Plug testPlug switched OFF
-G2025-04-14 00:59:32,184 INFO HTTPCmd /testPlug: {action=invalidAction}
-62025-04-14 00:59:32,185 INFO HTTPCmd /unknownPlug: {}
-32025-04-14 00:59:32,185 INFO HTTPCmd /testPlug: {}
-72025-04-14 00:59:32,186 INFO Plug testPlug switched ON
-=2025-04-14 00:59:32,186 INFO HTTPCmd /testPlug: {action=off}
-82025-04-14 00:59:32,186 INFO Plug testPlug switched OFF
- Œ2025-04-14 00:59:32,194 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- Œ2025-04-14 00:59:32,195 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- Y2025-04-14 00:59:32,196 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- !Œ2025-04-14 00:59:32,196 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- "Œ2025-04-14 00:59:32,197 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- #Œ2025-04-14 00:59:32,198 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- #Y2025-04-14 00:59:32,198 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- #;2025-04-14 00:59:32,199 INFO Disconnected from MQTT broker
- $Œ2025-04-14 00:59:32,199 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- $Y2025-04-14 00:59:32,199 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- $;2025-04-14 00:59:32,200 INFO Disconnected from MQTT broker
- %Œ2025-04-14 00:59:32,200 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- %Y2025-04-14 00:59:32,200 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- &Œ2025-04-14 00:59:32,201 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 'Œ2025-04-14 00:59:32,202 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- (Œ2025-04-14 00:59:32,202 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- )Œ2025-04-14 00:59:32,204 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- )Y2025-04-14 00:59:32,207 ERROR Connection failure to tcp://localhost:1883: Test exception
- )+java.lang.RuntimeException: Test exception
- )T	at ece448.iot_hub.MqttControllerTest.testStartFailure(MqttControllerTest.java:165)
- )S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- )e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- )m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- )?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- )Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
- )X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
- )W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
- )V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
- )R	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
- )E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
- )Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
- )B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
- )W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
- )V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
- )@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
- )D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
- )F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
- )D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
- )E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
- )E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
- )>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
- )u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
- )o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
- )o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
- )Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
- )t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
- )S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- )e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- )m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- )?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- )Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
- )Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- )i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
- )x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
- );	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
- )b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
- )S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- )e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- )m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- )?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- )Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
- )Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- )‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
- )‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
- )X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
- )k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
- )Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
- )^	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- )^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- )j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
- )4	at java.base/java.lang.Thread.run(Thread.java:829)
- *Œ2025-04-14 00:59:32,209 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- *Y2025-04-14 00:59:32,210 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- +Œ2025-04-14 00:59:32,210 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- +Y2025-04-14 00:59:32,211 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- +H2025-04-14 00:59:32,211 WARN Publish failed - MQTT client not connected
- ,Œ2025-04-14 00:59:32,211 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- -Œ2025-04-14 00:59:32,211 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- .Œ2025-04-14 00:59:32,212 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- .H2025-04-14 00:59:32,212 WARN Publish failed - MQTT client not connected
- /Œ2025-04-14 00:59:32,213 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 0Œ2025-04-14 00:59:32,213 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 0Y2025-04-14 00:59:32,214 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- 0H2025-04-14 00:59:32,216 ERROR Publish error - Device: plug1, Action: on
- 0<org.eclipse.paho.client.mqttv3.MqttException: MqttException
- 0^	at ece448.iot_hub.MqttControllerTest.testPublishActionException(MqttControllerTest.java:243)
- 0S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- 0e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- 0m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 0?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- 0Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
- 0X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
- 0W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
- 0V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
- 0R	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
- 0E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
- 0Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
- 0B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
- 0W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
- 0V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
- 0@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
- 0D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
- 0F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
- 0D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
- 0E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
- 0E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
- 0>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
- 0u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
- 0o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
- 0o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
- 0Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
- 0t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
- 0S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- 0e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- 0m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 0?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- 0Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
- 0Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- 0i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
- 0x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
- 0;	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
- 0b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
- 0S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- 0e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- 0m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 0?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- 0Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
- 0Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- 0‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
- 0‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
- 0X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
- 0k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
- 0Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
- 0^	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- 0^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- 0j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
- 04	at java.base/java.lang.Thread.run(Thread.java:829)
- 1Œ2025-04-14 00:59:32,218 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 2Œ2025-04-14 00:59:32,219 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 3Œ2025-04-14 00:59:32,220 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 3Œ2025-04-14 00:59:32,220 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 3Y2025-04-14 00:59:32,221 INFO Successfully connected to MQTT broker: tcp://localhost:1883
- 3A2025-04-14 00:59:32,221 ERROR Disconnection error: MqttException
- 3<org.eclipse.paho.client.mqttv3.MqttException: MqttException
- 3P	at ece448.iot_hub.MqttControllerTest$2.disconnect(MqttControllerTest.java:509)
- 3@	at ece448.iot_hub.MqttController.close(MqttController.java:69)
- 3d	at ece448.iot_hub.MqttControllerTest.testCloseWithDisconnectException(MqttControllerTest.java:514)
- 3S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- 3e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- 3m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 3?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- 3Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
- 3X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
- 3W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
- 3V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
- 3R	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
- 3E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
- 3Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
- 3B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
- 3W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
- 3V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
- 3@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
- 3D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
- 3F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
- 3D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
- 3E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
- 3E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
- 3>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
- 3u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
- 3o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
- 3o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
- 3Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
- 3t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
- 3S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- 3e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- 3m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 3?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- 3Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
- 3Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- 3i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
- 3x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
- 3;	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
- 3b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
- 3S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
- 3e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
- 3m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
- 3?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
- 3Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
- 3Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
- 3‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
- 3‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
- 3X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
- 3k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
- 3Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
- 3^	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
- 3^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
- 3j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
- 34	at java.base/java.lang.Thread.run(Thread.java:829)
- 4Œ2025-04-14 00:59:32,223 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 5Œ2025-04-14 00:59:32,224 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 6Œ2025-04-14 00:59:32,224 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 7Œ2025-04-14 00:59:32,225 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 8Œ2025-04-14 00:59:32,225 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
- 8v2025-04-14 00:59:32,225 INFO Initializing MQTT Controller - Broker: broker, Client ID: clientId, Topic Prefix: prefix
- 8K2025-04-14 00:59:32,226 INFO Successfully connected to MQTT broker: broker
-:9Œ2025-04-14 00:59:32,230 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:;Œ2025-04-14 00:59:32,231 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:<Œ2025-04-14 00:59:32,232 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:=Œ2025-04-14 00:59:32,233 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:>Œ2025-04-14 00:59:32,233 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:?Œ2025-04-14 00:59:32,233 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:@Œ2025-04-14 00:59:32,234 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:AŒ2025-04-14 00:59:32,234 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:BŒ2025-04-14 00:59:32,234 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-:CŒ2025-04-14 00:59:32,236 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+D2025-04-18 15:09:35,984 WARN Invalid plug name format: plug.invalid
+;2025-04-18 15:09:35,988 INFO Plug plug.invalid switched ON
+D2025-04-18 15:09:35,989 WARN Invalid plug name format: plug.invalid
+72025-04-18 15:09:35,992 INFO Plug test.200 switched ON
+02025-04-18 15:09:35,995 INFO Plug a switched ON
+	32025-04-18 15:09:35,997 INFO Plug plug switched ON
+02025-04-18 15:09:36,001 INFO Plug a switched ON
+12025-04-18 15:09:36,001 INFO Plug a switched OFF
+02025-04-18 15:09:36,002 INFO Plug a switched ON
+A2025-04-18 15:09:37,806 WARN Invalid topic format: invalid/topic
+92025-04-18 15:09:38,118 WARN Plug not found: nonexistent
+<2025-04-18 15:09:38,129 INFO HTTPCmd /testPlug: {action=on}
+72025-04-18 15:09:38,130 INFO Plug testPlug switched ON
+@2025-04-18 15:09:38,132 INFO HTTPCmd /testPlug: {action=toggle}
+72025-04-18 15:09:38,134 INFO Plug testPlug switched ON
+<2025-04-18 15:09:38,137 INFO HTTPCmd /testPlug: {action=on}
+72025-04-18 15:09:38,137 INFO Plug testPlug switched ON
+32025-04-18 15:09:38,138 INFO HTTPCmd /testPlug: {}
+@2025-04-18 15:09:38,139 INFO HTTPCmd /testPlug: {action=toggle}
+72025-04-18 15:09:38,140 INFO Plug testPlug switched ON
+32025-04-18 15:09:38,141 INFO HTTPCmd /testPlug: {}
++2025-04-18 15:09:38,142 INFO HTTPCmd /: {}
+@2025-04-18 15:09:38,144 INFO HTTPCmd /testPlug: {action=toggle}
+72025-04-18 15:09:38,144 INFO Plug testPlug switched ON
+@2025-04-18 15:09:38,145 INFO HTTPCmd /testPlug: {action=toggle}
+82025-04-18 15:09:38,145 INFO Plug testPlug switched OFF
+G2025-04-18 15:09:38,147 INFO HTTPCmd /testPlug: {action=invalidAction}
+62025-04-18 15:09:38,148 INFO HTTPCmd /unknownPlug: {}
+32025-04-18 15:09:38,149 INFO HTTPCmd /testPlug: {}
+72025-04-18 15:09:38,150 INFO Plug testPlug switched ON
+=2025-04-18 15:09:38,150 INFO HTTPCmd /testPlug: {action=off}
+82025-04-18 15:09:38,151 INFO Plug testPlug switched OFF
+ ?2025-04-18 15:09:38,158 INFO Group management module activated
+ A2025-04-18 15:09:38,159 INFO GroupsResource has been initialized
+ N2025-04-18 15:09:38,160 INFO Group 'g1' created or updated with plugs [plug1]
+ N2025-04-18 15:09:38,160 INFO Group 'g2' created or updated with plugs [plug2]
+ ¤2025-04-18 15:09:38,161 INFO Fetched all groups: [{name=g1, members=[{name=plug1, state=on, power=10.0}]}, {name=g2, members=[{name=plug2, state=on, power=10.0}]}]
+ !?2025-04-18 15:09:38,162 INFO Group management module activated
+ !A2025-04-18 15:09:38,163 INFO GroupsResource has been initialized
+ !V2025-04-18 15:09:38,163 INFO Group 'grp' created or updated with plugs [plug1, plug2]
+ "?2025-04-18 15:09:38,164 INFO Group management module activated
+ "A2025-04-18 15:09:38,164 INFO GroupsResource has been initialized
+ "O2025-04-18 15:09:38,164 INFO Group 'tbd' created or updated with plugs [plug1]
+ ":2025-04-18 15:09:38,164 INFO Group 'tbd' has been removed
+ #?2025-04-18 15:09:38,165 INFO Group management module activated
+ #A2025-04-18 15:09:38,165 INFO GroupsResource has been initialized
+ #O2025-04-18 15:09:38,165 INFO Group 'grp' created or updated with plugs [plug1]
+ #x2025-04-18 15:09:38,165 INFO Group 'grp' fetched with response {name=grp, members=[{name=plug1, state=on, power=10.0}]}
+ $?2025-04-18 15:09:38,166 INFO Group management module activated
+ $A2025-04-18 15:09:38,166 INFO GroupsResource has been initialized
+ $W2025-04-18 15:09:38,166 INFO Group 'controlTest' created or updated with plugs [plug1]
+ $N2025-04-18 15:09:38,167 INFO Action 'toggle' triggered on group 'controlTest'
+ $ˆ2025-04-18 15:09:38,167 INFO Group 'controlTest' fetched with response {name=controlTest, members=[{name=plug1, state=on, power=10.0}]}
+&%?2025-04-18 15:09:38,172 INFO Group management module activated
+&'?2025-04-18 15:09:38,173 INFO Group management module activated
+&(?2025-04-18 15:09:38,276 INFO Group management module activated
+&)?2025-04-18 15:09:38,278 INFO Group management module activated
+&*?2025-04-18 15:09:38,279 INFO Group management module activated
+&+?2025-04-18 15:09:38,280 INFO Group management module activated
+&,?2025-04-18 15:09:38,281 INFO Group management module activated
+&-?2025-04-18 15:09:38,282 INFO Group management module activated
+&.?2025-04-18 15:09:38,288 INFO Group management module activated
+0/Œ2025-04-18 15:09:38,302 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0/Œ2025-04-18 15:09:38,303 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0/Y2025-04-18 15:09:38,304 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+01Œ2025-04-18 15:09:38,305 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+02Œ2025-04-18 15:09:38,307 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+03Œ2025-04-18 15:09:38,308 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+03Y2025-04-18 15:09:38,310 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+03;2025-04-18 15:09:38,310 INFO Disconnected from MQTT broker
+04Œ2025-04-18 15:09:38,311 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+04Y2025-04-18 15:09:38,312 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+04;2025-04-18 15:09:38,312 INFO Disconnected from MQTT broker
+05Œ2025-04-18 15:09:38,313 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+05Y2025-04-18 15:09:38,314 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+06Œ2025-04-18 15:09:38,315 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+07Œ2025-04-18 15:09:38,317 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+08Œ2025-04-18 15:09:38,318 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+09Œ2025-04-18 15:09:38,320 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+09Y2025-04-18 15:09:38,327 ERROR Connection failure to tcp://localhost:1883: Test exception
+09+java.lang.RuntimeException: Test exception
+09T	at ece448.iot_hub.MqttControllerTest.testStartFailure(MqttControllerTest.java:165)
+09S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+09e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+09m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+09?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+09Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+09X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+09W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+09V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+09R	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+09E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+09B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+09W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+09V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+09@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+09D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+09F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+09D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+09E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+09E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+09u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+09o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+09o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+09Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+09t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+09S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+09e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+09m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+09?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+09Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+09Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+09i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+09x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+09;	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+09b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+09S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+09e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+09m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+09?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+09Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+09Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+09‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+09‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+09X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+09k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+09Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+09^	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+09^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+09j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+094	at java.base/java.lang.Thread.run(Thread.java:829)
+0:Œ2025-04-18 15:09:38,331 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0:Y2025-04-18 15:09:38,332 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0;Œ2025-04-18 15:09:38,334 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0;Y2025-04-18 15:09:38,335 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0;H2025-04-18 15:09:38,335 WARN Publish failed - MQTT client not connected
+0<Œ2025-04-18 15:09:38,336 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0=Œ2025-04-18 15:09:38,337 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0>Œ2025-04-18 15:09:38,338 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0>H2025-04-18 15:09:38,338 WARN Publish failed - MQTT client not connected
+0?Œ2025-04-18 15:09:38,340 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0@Œ2025-04-18 15:09:38,341 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0@Y2025-04-18 15:09:38,341 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0@H2025-04-18 15:09:38,347 ERROR Publish error - Device: plug1, Action: on
+0@<org.eclipse.paho.client.mqttv3.MqttException: MqttException
+0@^	at ece448.iot_hub.MqttControllerTest.testPublishActionException(MqttControllerTest.java:243)
+0@S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+0@e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+0@m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+0@?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+0@Y	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+0@X	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+0@W	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+0@V	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+0@R	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+0@E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+0@Y	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+0@B	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+0@W	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+0@V	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+0@@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+0@D	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+0@F	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+0@D	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+0@E	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+0@E	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+0@>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+0@u	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+0@o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+0@o	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+0@Š	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+0@t	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+0@S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+0@e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+0@m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+0@?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+0@Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+0@Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+0@i	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+0@x	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0@;	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+0@b	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+0@S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+0@e	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+0@m	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+0@?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+0@Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+0@Y	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+0@‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+0@‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+0@X	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+0@k	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+0@Z	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+0@^	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+0@^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+0@j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+0@4	at java.base/java.lang.Thread.run(Thread.java:829)
+0AŒ2025-04-18 15:09:38,353 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0BŒ2025-04-18 15:09:38,354 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0CŒ2025-04-18 15:09:38,356 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0CŒ2025-04-18 15:09:38,356 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0CY2025-04-18 15:09:38,357 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0CA2025-04-18 15:09:38,358 ERROR Disconnection error: MqttException
+0C<org.eclipse.paho.client.mqttv3.MqttException: MqttException
+0CP	at ece448.iot_hub.MqttControllerTest$2.disconnect(MqttControllerTest.java:509)
+0C@	at ece448.iot_hub.MqttController.close(MqttController.java:69)
+0Cd	at ece448.iot_hub.MqttControllerTest.testCloseWithDisconnectException(MqttControllerTest.java:514)
+0CS	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+0Ce	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+0Cm	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+0C?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+0CY	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+0CX	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+0CW	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+0CV	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+0CR	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+0CE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+0CY	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+0CB	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+0CW	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+0CV	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+0C@	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+0CD	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+0CF	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+0CD	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+0CE	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+0CE	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+0C>	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+0Cu	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+0Co	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+0Co	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+0CŠ	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+0Ct	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+0CS	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+0Ce	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+0Cm	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+0C?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+0CY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+0CY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+0Ci	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+0Cx	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+0C;	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+0Cb	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+0CS	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+0Ce	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+0Cm	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+0C?	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+0CY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+0CY	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+0C‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+0C‘	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+0CX	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+0Ck	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+0CZ	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+0C^	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+0C^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+0Cj	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+0C4	at java.base/java.lang.Thread.run(Thread.java:829)
+0DŒ2025-04-18 15:09:38,362 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0EŒ2025-04-18 15:09:38,363 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0FŒ2025-04-18 15:09:38,364 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0GŒ2025-04-18 15:09:38,365 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0HŒ2025-04-18 15:09:38,366 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0Hv2025-04-18 15:09:38,367 INFO Initializing MQTT Controller - Broker: broker, Client ID: clientId, Topic Prefix: prefix
+0HK2025-04-18 15:09:38,367 INFO Successfully connected to MQTT broker: broker
+JIŒ2025-04-18 15:09:38,373 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JKŒ2025-04-18 15:09:38,374 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JLŒ2025-04-18 15:09:38,375 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JMŒ2025-04-18 15:09:38,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JNŒ2025-04-18 15:09:38,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JOŒ2025-04-18 15:09:38,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JPŒ2025-04-18 15:09:38,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JQŒ2025-04-18 15:09:38,377 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JRŒ2025-04-18 15:09:38,377 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JSŒ2025-04-18 15:09:38,378 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix

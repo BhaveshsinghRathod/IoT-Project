@@ -1,6 +1,12 @@
 ece448/iot_hub/PlugsModelTest.java
  ece448.iot_hub.PlugsModelTest
  ece448.iot_hub.PlugsModelTest$MockMqttController
+ece448/iot_hub/GroupsModelTest.java
+ ece448.iot_hub.GroupsModelTest
+ ece448.iot_hub.GroupsModelTest$MockPlugRegistry
+ece448/iot_hub/GroupsResourceTest.java
+ ece448.iot_hub.GroupsResourceTest
+ ece448.iot_hub.GroupsResourceTest$SimulatedGroupManager
 ece448/iot_sim/PlugSimTests.java
  ece448.iot_sim.PlugSimTests
 ece448/iot_hub/PlugsResourceTest.java
