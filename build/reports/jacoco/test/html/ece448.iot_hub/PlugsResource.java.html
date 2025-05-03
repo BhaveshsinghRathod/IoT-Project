@@ -9,20 +9,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin
 @RestController
 public class PlugsResource {
 
-<span class="fc" id="L16">    private static final Logger LOGGER = LoggerFactory.getLogger(PlugsResource.class);</span>
+<span class="fc" id="L18">    private static final Logger LOGGER = LoggerFactory.getLogger(PlugsResource.class);</span>
     private final PlugsModel plugsModel;
 
-<span class="fc" id="L19">    public PlugsResource(PlugsModel plugsModel) {</span>
-<span class="fc" id="L20">        this.plugsModel = plugsModel;</span>
-<span class="fc" id="L21">    }</span>
+<span class="fc" id="L21">    public PlugsResource(PlugsModel plugsModel) {</span>
+<span class="fc" id="L22">        this.plugsModel = plugsModel;</span>
+<span class="fc" id="L23">    }</span>
 
     /**
      * Handles requests to retrieve a single plug's details.
-     * Optionally performs an action (e.g., &quot;on&quot;, &quot;off&quot;) on the plug.
+     * Optionally performs an action (e.g., &quot;on&quot;, &quot;off&quot;, &quot;toggle&quot;) on the plug.
      *
      * @param plug   The name of the plug.
      * @param action The optional action to perform on the plug.
@@ -33,15 +35,15 @@ public class PlugsResource {
         @PathVariable(&quot;plug&quot;) String plug,
         @RequestParam(value = &quot;action&quot;, required = false) String action) {
 
-<span class="nc bnc" id="L36" title="All 2 branches missed.">        if (action != null) {</span>
-            // Perform the specified action on the plug
-<span class="nc" id="L38">            plugsModel.controlPlug(plug, action);</span>
-<span class="nc" id="L39">            LOGGER.info(&quot;Performed action '{}' on plug '{}'&quot;, action, plug);</span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        if (action != null) {</span>
+            // Perform the specified action on the plug (e.g., &quot;on&quot;, &quot;off&quot;, &quot;toggle&quot;)
+<span class="nc" id="L40">            plugsModel.controlPlug(plug, action);</span>
+<span class="nc" id="L41">            LOGGER.info(&quot;Performed action '{}' on plug '{}'&quot;, action, plug);</span>
         }
 
-<span class="nc" id="L42">        Map&lt;String, Object&gt; plugDetails = plugsModel.createPlug(plug);</span>
-<span class="nc" id="L43">        LOGGER.info(&quot;Retrieved details for plug '{}': {}&quot;, plug, plugDetails);</span>
-<span class="nc" id="L44">        return plugDetails;</span>
+<span class="nc" id="L44">        Map&lt;String, Object&gt; plugDetails = plugsModel.createPlug(plug);</span>
+<span class="nc" id="L45">        LOGGER.info(&quot;Retrieved details for plug '{}': {}&quot;, plug, plugDetails);</span>
+<span class="nc" id="L46">        return plugDetails;</span>
     }
 
     /**
@@ -51,9 +53,9 @@ public class PlugsResource {
      */
     @GetMapping(&quot;/api/plugs&quot;)
     public Object getAllPlugs() {
-<span class="nc" id="L54">        List&lt;Map&lt;String, Object&gt;&gt; allPlugs = plugsModel.getAllPlugs();</span>
-<span class="nc" id="L55">        LOGGER.info(&quot;Retrieved details for all plugs: {}&quot;, allPlugs);</span>
-<span class="nc" id="L56">        return allPlugs;</span>
+<span class="nc" id="L56">        List&lt;Map&lt;String, Object&gt;&gt; allPlugs = plugsModel.getAllPlugs();</span>
+<span class="nc" id="L57">        LOGGER.info(&quot;Retrieved details for all plugs: {}&quot;, allPlugs);</span>
+<span class="nc" id="L58">        return allPlugs;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

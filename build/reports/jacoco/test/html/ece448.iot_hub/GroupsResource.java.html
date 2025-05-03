@@ -7,31 +7,32 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin
 @RestController
 public class GroupsResource {
 
     private final GroupsModel modelRef;
 
-<span class="fc" id="L15">    public GroupsResource(GroupsModel modelRef) {</span>
-<span class="fc" id="L16">        this.modelRef = modelRef;</span>
-<span class="fc" id="L17">        LOGGER.info(&quot;GroupsResource has been initialized&quot;);</span>
-<span class="fc" id="L18">    }</span>
+<span class="fc" id="L16">    public GroupsResource(GroupsModel modelRef) {</span>
+<span class="fc" id="L17">        this.modelRef = modelRef;</span>
+<span class="fc" id="L18">        LOGGER.info(&quot;GroupsResource has been initialized&quot;);</span>
+<span class="fc" id="L19">    }</span>
 
     @PostMapping(&quot;/api/groups/{group:.+}&quot;)
     public Object createGroup(
             @PathVariable(&quot;group&quot;) String group,
             @RequestBody List&lt;String&gt; plugs) {
 
-<span class="fc" id="L25">        modelRef.createOrUpdateGroup(group, plugs);</span>
-<span class="fc" id="L26">        LOGGER.info(&quot;Group '{}' created or updated with plugs {}&quot;, group, plugs);</span>
-<span class="fc" id="L27">        return modelRef.getGroup(group);</span>
+<span class="fc" id="L26">        modelRef.createOrUpdateGroup(group, plugs);</span>
+<span class="fc" id="L27">        LOGGER.info(&quot;Group '{}' created or updated with plugs {}&quot;, group, plugs);</span>
+<span class="fc" id="L28">        return modelRef.getGroup(group);</span>
     }
 
     @DeleteMapping(&quot;/api/groups/{group:.+}&quot;)
     public Object removeGroup(@PathVariable(&quot;group&quot;) String group) {
-<span class="fc" id="L32">        modelRef.removeGroup(group);</span>
-<span class="fc" id="L33">        LOGGER.info(&quot;Group '{}' has been removed&quot;, group);</span>
-<span class="fc" id="L34">        return &quot;{}&quot;;</span>
+<span class="fc" id="L33">        modelRef.removeGroup(group);</span>
+<span class="fc" id="L34">        LOGGER.info(&quot;Group '{}' has been removed&quot;, group);</span>
+<span class="fc" id="L35">        return &quot;{}&quot;;</span>
     }
 
     @GetMapping(&quot;/api/groups/{group:.+}&quot;)
@@ -39,23 +40,23 @@ public class GroupsResource {
             @PathVariable(&quot;group&quot;) String group,
             @RequestParam(value = &quot;action&quot;, required = false) String action) {
 
-<span class="fc bfc" id="L42" title="All 2 branches covered.">        if (action != null) {</span>
-<span class="fc" id="L43">            modelRef.controlGroup(group, action);</span>
-<span class="fc" id="L44">            LOGGER.info(&quot;Action '{}' triggered on group '{}'&quot;, action, group);</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        if (action != null) {</span>
+<span class="fc" id="L44">            modelRef.controlGroup(group, action);</span>
+<span class="fc" id="L45">            LOGGER.info(&quot;Action '{}' triggered on group '{}'&quot;, action, group);</span>
         }
 
-<span class="fc" id="L47">        Map&lt;String, Object&gt; response = modelRef.getGroup(group);</span>
-<span class="fc" id="L48">        LOGGER.info(&quot;Group '{}' fetched with response {}&quot;, group, response);</span>
-<span class="fc" id="L49">        return response;</span>
+<span class="fc" id="L48">        Map&lt;String, Object&gt; response = modelRef.getGroup(group);</span>
+<span class="fc" id="L49">        LOGGER.info(&quot;Group '{}' fetched with response {}&quot;, group, response);</span>
+<span class="fc" id="L50">        return response;</span>
     }
 
     @GetMapping(&quot;/api/groups&quot;)
     public Object getAllGroups() {
-<span class="fc" id="L54">        List&lt;Map&lt;String, Object&gt;&gt; all = modelRef.getAllGroups();</span>
-<span class="fc" id="L55">        LOGGER.info(&quot;Fetched all groups: {}&quot;, all);</span>
-<span class="fc" id="L56">        return all;</span>
+<span class="fc" id="L55">        List&lt;Map&lt;String, Object&gt;&gt; all = modelRef.getAllGroups();</span>
+<span class="fc" id="L56">        LOGGER.info(&quot;Fetched all groups: {}&quot;, all);</span>
+<span class="fc" id="L57">        return all;</span>
     }
 
-<span class="fc" id="L59">    private static final Logger LOGGER = LoggerFactory.getLogger(GroupsResource.class);</span>
+<span class="fc" id="L60">    private static final Logger LOGGER = LoggerFactory.getLogger(GroupsResource.class);</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin
 @RestController
 public class PlugsResource {
 
@@ -22,7 +24,7 @@ public class PlugsResource {
 
     /**
      * Handles requests to retrieve a single plug's details.
-     * Optionally performs an action (e.g., "on", "off") on the plug.
+     * Optionally performs an action (e.g., "on", "off", "toggle") on the plug.
      *
      * @param plug   The name of the plug.
      * @param action The optional action to perform on the plug.
@@ -34,7 +36,7 @@ public class PlugsResource {
         @RequestParam(value = "action", required = false) String action) {
 
         if (action != null) {
-            // Perform the specified action on the plug
+            // Perform the specified action on the plug (e.g., "on", "off", "toggle")
             plugsModel.controlPlug(plug, action);
             LOGGER.info("Performed action '{}' on plug '{}'", action, plug);
         }
