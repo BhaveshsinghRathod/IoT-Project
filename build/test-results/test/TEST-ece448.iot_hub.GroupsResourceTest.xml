@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_hub.GroupsResourceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-05-03T04:33:53" hostname="iit" time="0.017">
+<testsuite name="ece448.iot_hub.GroupsResourceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-05-05T03:45:14" hostname="iit" time="0.008">
   <properties/>
-  <testcase name="testGetAllMultipleGroups" classname="ece448.iot_hub.GroupsResourceTest" time="0.006"/>
-  <testcase name="testPostCreatesGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.002"/>
-  <testcase name="testDeleteGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.002"/>
-  <testcase name="testGetReturnsGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.004"/>
-  <testcase name="testGroupControlThroughGet" classname="ece448.iot_hub.GroupsResourceTest" time="0.001"/>
-  <system-out><![CDATA[2025-05-02 23:33:53,804 INFO Group management module activated
-2025-05-02 23:33:53,805 INFO GroupsResource has been initialized
-2025-05-02 23:33:53,806 INFO Group 'g1' created or updated with plugs [plug1]
-2025-05-02 23:33:53,806 INFO Group 'g2' created or updated with plugs [plug2]
-2025-05-02 23:33:53,808 INFO Fetched all groups: [{name=g1, members=[{state=on, power=10.0, name=plug1}]}, {name=g2, members=[{state=on, power=10.0, name=plug2}]}]
-2025-05-02 23:33:53,810 INFO Group management module activated
-2025-05-02 23:33:53,810 INFO GroupsResource has been initialized
-2025-05-02 23:33:53,812 INFO Group 'grp' created or updated with plugs [plug1, plug2]
-2025-05-02 23:33:53,812 INFO Group management module activated
-2025-05-02 23:33:53,814 INFO GroupsResource has been initialized
-2025-05-02 23:33:53,814 INFO Group 'tbd' created or updated with plugs [plug1]
-2025-05-02 23:33:53,815 INFO Group 'tbd' has been removed
-2025-05-02 23:33:53,815 INFO Group management module activated
-2025-05-02 23:33:53,816 INFO GroupsResource has been initialized
-2025-05-02 23:33:53,817 INFO Group 'grp' created or updated with plugs [plug1]
-2025-05-02 23:33:53,818 INFO Group 'grp' fetched with response {name=grp, members=[{state=on, power=10.0, name=plug1}]}
-2025-05-02 23:33:53,819 INFO Group management module activated
-2025-05-02 23:33:53,819 INFO GroupsResource has been initialized
-2025-05-02 23:33:53,819 INFO Group 'controlTest' created or updated with plugs [plug1]
-2025-05-02 23:33:53,820 INFO Action 'toggle' triggered on group 'controlTest'
-2025-05-02 23:33:53,820 INFO Group 'controlTest' fetched with response {name=controlTest, members=[{state=on, power=10.0, name=plug1}]}
+  <testcase name="testGetAllMultipleGroups" classname="ece448.iot_hub.GroupsResourceTest" time="0.005"/>
+  <testcase name="testPostCreatesGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.001"/>
+  <testcase name="testDeleteGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.0"/>
+  <testcase name="testGetReturnsGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.002"/>
+  <testcase name="testGroupControlThroughGet" classname="ece448.iot_hub.GroupsResourceTest" time="0.0"/>
+  <system-out><![CDATA[2025-05-04 22:45:14,212 INFO Group management module activated
+2025-05-04 22:45:14,213 INFO GroupsResource has been initialized
+2025-05-04 22:45:14,213 INFO Group 'g1' created or updated with plugs [plug1]
+2025-05-04 22:45:14,214 INFO Group 'g2' created or updated with plugs [plug2]
+2025-05-04 22:45:14,216 INFO Fetched all groups: [{name=g1, members=[{name=plug1, state=on, power=10.0}]}, {name=g2, members=[{name=plug2, state=on, power=10.0}]}]
+2025-05-04 22:45:14,216 INFO Group management module activated
+2025-05-04 22:45:14,217 INFO GroupsResource has been initialized
+2025-05-04 22:45:14,217 INFO Group 'grp' created or updated with plugs [plug1, plug2]
+2025-05-04 22:45:14,217 INFO Group management module activated
+2025-05-04 22:45:14,217 INFO GroupsResource has been initialized
+2025-05-04 22:45:14,217 INFO Group 'tbd' created or updated with plugs [plug1]
+2025-05-04 22:45:14,217 INFO Group 'tbd' has been removed
+2025-05-04 22:45:14,218 INFO Group management module activated
+2025-05-04 22:45:14,218 INFO GroupsResource has been initialized
+2025-05-04 22:45:14,218 INFO Group 'grp' created or updated with plugs [plug1]
+2025-05-04 22:45:14,219 INFO Group 'grp' fetched with response {name=grp, members=[{name=plug1, state=on, power=10.0}]}
+2025-05-04 22:45:14,219 INFO Group management module activated
+2025-05-04 22:45:14,219 INFO GroupsResource has been initialized
+2025-05-04 22:45:14,219 INFO Group 'controlTest' created or updated with plugs [plug1]
+2025-05-04 22:45:14,219 INFO Action 'toggle' triggered on group 'controlTest'
+2025-05-04 22:45:14,220 INFO Group 'controlTest' fetched with response {name=controlTest, members=[{name=plug1, state=on, power=10.0}]}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

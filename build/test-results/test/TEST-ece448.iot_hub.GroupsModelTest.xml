@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_hub.GroupsModelTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-05-03T04:33:53" hostname="iit" time="0.126">
+<testsuite name="ece448.iot_hub.GroupsModelTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-05-05T03:45:14" hostname="iit" time="0.114">
   <properties/>
-  <testcase name="supportsGroupUpdates" classname="ece448.iot_hub.GroupsModelTest" time="0.006"/>
-  <testcase name="groupActionsAreSentToPlugs" classname="ece448.iot_hub.GroupsModelTest" time="0.104"/>
-  <testcase name="handlesMissingGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.002"/>
-  <testcase name="handlesEmptyGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.0"/>
-  <testcase name="ignoresMissingControlGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.0"/>
+  <testcase name="supportsGroupUpdates" classname="ece448.iot_hub.GroupsModelTest" time="0.003"/>
+  <testcase name="groupActionsAreSentToPlugs" classname="ece448.iot_hub.GroupsModelTest" time="0.103"/>
+  <testcase name="handlesMissingGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
+  <testcase name="handlesEmptyGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
+  <testcase name="ignoresMissingControlGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
   <testcase name="canDeleteGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
-  <testcase name="enumeratesAllGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.0"/>
-  <testcase name="canCreateGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.002"/>
-  <testcase name="preventsDuplicates" classname="ece448.iot_hub.GroupsModelTest" time="0.01"/>
-  <system-out><![CDATA[2025-05-02 23:33:53,826 INFO Group management module activated
-2025-05-02 23:33:53,832 INFO Group management module activated
-2025-05-02 23:33:53,938 INFO Group management module activated
-2025-05-02 23:33:53,939 INFO Group management module activated
-2025-05-02 23:33:53,939 INFO Group management module activated
-2025-05-02 23:33:53,939 INFO Group management module activated
-2025-05-02 23:33:53,940 INFO Group management module activated
-2025-05-02 23:33:53,940 INFO Group management module activated
-2025-05-02 23:33:53,942 INFO Group management module activated
+  <testcase name="enumeratesAllGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
+  <testcase name="canCreateGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
+  <testcase name="preventsDuplicates" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
+  <system-out><![CDATA[2025-05-04 22:45:14,224 INFO Group management module activated
+2025-05-04 22:45:14,225 INFO Group management module activated
+2025-05-04 22:45:14,329 INFO Group management module activated
+2025-05-04 22:45:14,330 INFO Group management module activated
+2025-05-04 22:45:14,331 INFO Group management module activated
+2025-05-04 22:45:14,331 INFO Group management module activated
+2025-05-04 22:45:14,332 INFO Group management module activated
+2025-05-04 22:45:14,333 INFO Group management module activated
+2025-05-04 22:45:14,335 INFO Group management module activated
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

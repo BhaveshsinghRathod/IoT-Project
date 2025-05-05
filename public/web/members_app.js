@@ -1,7 +1,3 @@
-/**
- * The App class is a controller holding the global state.
- * It creates all children controllers in render().
- */
 class MembersApp extends React.Component {
     constructor(props) {
         super(props);
@@ -42,7 +38,7 @@ class MembersApp extends React.Component {
             body: JSON.stringify([])  // create an empty group
         })
         .then(() => {
-            // Clear input and refresh data
+            // For clearing input and refresh data
             this.setState({ newGroupName: "" });
             this.fetchData();
         })
@@ -83,7 +79,7 @@ class MembersApp extends React.Component {
             body: JSON.stringify(newMembersList)
         })
         .catch(err => console.debug("MembersApp: toggleMember error " + JSON.stringify(err)));
-        // Optimistically update local state for immediate UI feedback:
+  
         const updatedMembership = { ...membersData.membership, [groupName]: new Set(currentMembers) };
         const updatedData = new MembersData(membersData.groupList, membersData.plugList, membersData.plugStates, updatedMembership);
         this.setState({ members: updatedData });
@@ -95,7 +91,7 @@ class MembersApp extends React.Component {
         const groupsToUpdate = membersData.get_group_names().filter(groupName =>
             membersData.is_member_in_group(plugName, groupName)
         );
-        // Remove plug from each of those groups
+        // It will remove plug from each of those groups
         groupsToUpdate.forEach(groupName => {
             let newMembers = new Set(membersData.membership[groupName]);
             newMembers.delete(plugName);
@@ -106,7 +102,7 @@ class MembersApp extends React.Component {
             })
             .catch(err => console.debug("MembersApp: removeMemberFromAll error " + JSON.stringify(err)));
         });
-        // Update local state immediately
+        // This will update local state immediately
         const newMembership = {};
         for (let groupName of membersData.get_group_names()) {
             newMembership[groupName] = new Set(membersData.membership[groupName]);
@@ -155,7 +151,7 @@ class MembersData {
         this.plugList = [];
         this.plugStates = {};
         if (Array.isArray(groupsData)) {
-            // Initialize from fetched group data
+            
             for (let group of groupsData) {
                 if (!group.name) continue;
                 this.groupList.push(group.name);
@@ -167,7 +163,7 @@ class MembersData {
                 }
             }
         } else {
-            // Clone from existing data (when doing local updates)
+           
             this.groupList = Array.isArray(groupsData) ? groupsData.slice() : [];
             for (let g of this.groupList) {
                 this.membership[g] = membershipMap && membershipMap[g] ? new Set(membershipMap[g]) : new Set();
@@ -179,7 +175,7 @@ class MembersData {
                 this.plugStates[plug.name] = plug.state;
             }
         } else {
-            // Clone plug list and states from existing data
+           
             this.plugList = Array.isArray(plugsData) ? plugsData.slice() : [];
             if (plugStates) {
                 this.plugStates = { ...plugStates };
@@ -189,7 +185,7 @@ class MembersData {
                 }
             }
         }
-        // Sort lists for consistent order
+       
         this.groupList.sort();
         this.plugList.sort();
     }
@@ -204,5 +200,5 @@ class MembersData {
     }
 }
 
-// export
+
 window.MembersApp = MembersApp;

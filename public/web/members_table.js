@@ -1,13 +1,11 @@
 const btnClassAdd = "btn btn-primary btn-block";
 const btnClassDel = "btn btn-danger btn-block";
 
-/**
- * This is a stateless view showing the table header.
- */
+
 function Header(props) {
     var ths = [];
     for (var groupName of props.members.get_group_names()) {
-        // Determine group state (any plug in group is ON?)
+        
         let anyOn = false;
         if (props.members.membership[groupName]) {
             for (let plug of props.members.membership[groupName]) {
@@ -44,12 +42,10 @@ function Header(props) {
     );
 }
 
-/**
- * This is a stateless view showing one row of the table.
- */
+
 function Row(props) {
     var members = props.members;
-    // One checkbox cell per group:
+ 
     var tds = members.get_group_names().map(groupName => (
         <td key={groupName}>
             <input type="checkbox"
@@ -58,7 +54,7 @@ function Row(props) {
         </td>
     ));
 
-    // Color the plug name button based on its state (on=warning, off=default)
+   
     let plugState = members.plugStates[props.memberName] || "off";
     let nameBtnClass = (plugState === "on") ? "btn-block btn-warning" : "btn-block btn-default";
 
@@ -77,9 +73,7 @@ function Row(props) {
     );
 }
 
-/**
- * This is a stateless view showing the table body (all plug rows).
- */
+
 function Body(props) {
     var rows = props.members.get_member_names().map(memberName => (
         <Row key={memberName}
@@ -91,9 +85,7 @@ function Body(props) {
     return <tbody>{rows}</tbody>;
 }
 
-/**
- * This is a stateless view for the entire members table.
- */
+
 function MembersTable(props) {
     if (props.members.get_group_names().length === 0) {
         return (<div>There are no groups.</div>);
@@ -110,5 +102,4 @@ function MembersTable(props) {
     );
 }
 
-// export
 window.MembersTable = MembersTable;
