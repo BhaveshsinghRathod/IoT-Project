@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_hub.GroupsModelTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-05-05T03:45:14" hostname="iit" time="0.114">
+<testsuite name="ece448.iot_hub.GroupsModelTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-05-08T03:59:13" hostname="iit" time="0.172">
   <properties/>
-  <testcase name="supportsGroupUpdates" classname="ece448.iot_hub.GroupsModelTest" time="0.003"/>
-  <testcase name="groupActionsAreSentToPlugs" classname="ece448.iot_hub.GroupsModelTest" time="0.103"/>
-  <testcase name="handlesMissingGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
-  <testcase name="handlesEmptyGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
+  <testcase name="supportsGroupUpdates" classname="ece448.iot_hub.GroupsModelTest" time="0.033"/>
+  <testcase name="groupActionsAreSentToPlugs" classname="ece448.iot_hub.GroupsModelTest" time="0.105"/>
+  <testcase name="handlesMissingGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.002"/>
+  <testcase name="handlesEmptyGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.003"/>
   <testcase name="ignoresMissingControlGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
-  <testcase name="canDeleteGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
-  <testcase name="enumeratesAllGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
-  <testcase name="canCreateGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
-  <testcase name="preventsDuplicates" classname="ece448.iot_hub.GroupsModelTest" time="0.001"/>
-  <system-out><![CDATA[2025-05-04 22:45:14,224 INFO Group management module activated
-2025-05-04 22:45:14,225 INFO Group management module activated
-2025-05-04 22:45:14,329 INFO Group management module activated
-2025-05-04 22:45:14,330 INFO Group management module activated
-2025-05-04 22:45:14,331 INFO Group management module activated
-2025-05-04 22:45:14,331 INFO Group management module activated
-2025-05-04 22:45:14,332 INFO Group management module activated
-2025-05-04 22:45:14,333 INFO Group management module activated
-2025-05-04 22:45:14,335 INFO Group management module activated
+  <testcase name="canDeleteGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.004"/>
+  <testcase name="enumeratesAllGroups" classname="ece448.iot_hub.GroupsModelTest" time="0.008"/>
+  <testcase name="canCreateGroup" classname="ece448.iot_hub.GroupsModelTest" time="0.01"/>
+  <testcase name="preventsDuplicates" classname="ece448.iot_hub.GroupsModelTest" time="0.004"/>
+  <system-out><![CDATA[2025-05-07 22:59:13,628 INFO Using persistence file: group.json
+2025-05-07 22:59:13,658 INFO Persisted 1 groups to group.json
+2025-05-07 22:59:13,660 INFO Persisted 1 groups to group.json
+2025-05-07 22:59:13,661 INFO Using persistence file: group.json
+2025-05-07 22:59:13,663 INFO Persisted 1 groups to group.json
+2025-05-07 22:59:13,767 INFO Using persistence file: group.json
+2025-05-07 22:59:13,769 INFO Using persistence file: group.json
+2025-05-07 22:59:13,771 INFO Persisted 1 groups to group.json
+2025-05-07 22:59:13,772 INFO Using persistence file: group.json
+2025-05-07 22:59:13,773 INFO Using persistence file: group.json
+2025-05-07 22:59:13,774 INFO Persisted 1 groups to group.json
+2025-05-07 22:59:13,776 INFO Persisted 0 groups to group.json
+2025-05-07 22:59:13,777 INFO Using persistence file: group.json
+2025-05-07 22:59:13,779 INFO Persisted 1 groups to group.json
+2025-05-07 22:59:13,780 INFO Persisted 2 groups to group.json
+2025-05-07 22:59:13,785 INFO Using persistence file: group.json
+2025-05-07 22:59:13,790 INFO Persisted 1 groups to group.json
+2025-05-07 22:59:13,796 INFO Using persistence file: group.json
+2025-05-07 22:59:13,798 INFO Persisted 1 groups to group.json
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

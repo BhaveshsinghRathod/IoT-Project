@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ece448.iot_hub.GroupsResourceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-05-05T03:45:14" hostname="iit" time="0.008">
+<testsuite name="ece448.iot_hub.GroupsResourceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-05-08T03:59:13" hostname="iit" time="0.345">
   <properties/>
-  <testcase name="testGetAllMultipleGroups" classname="ece448.iot_hub.GroupsResourceTest" time="0.005"/>
+  <testcase name="testGetAllMultipleGroups" classname="ece448.iot_hub.GroupsResourceTest" time="0.341"/>
   <testcase name="testPostCreatesGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.001"/>
-  <testcase name="testDeleteGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.0"/>
-  <testcase name="testGetReturnsGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.002"/>
-  <testcase name="testGroupControlThroughGet" classname="ece448.iot_hub.GroupsResourceTest" time="0.0"/>
-  <system-out><![CDATA[2025-05-04 22:45:14,212 INFO Group management module activated
-2025-05-04 22:45:14,213 INFO GroupsResource has been initialized
-2025-05-04 22:45:14,213 INFO Group 'g1' created or updated with plugs [plug1]
-2025-05-04 22:45:14,214 INFO Group 'g2' created or updated with plugs [plug2]
-2025-05-04 22:45:14,216 INFO Fetched all groups: [{name=g1, members=[{name=plug1, state=on, power=10.0}]}, {name=g2, members=[{name=plug2, state=on, power=10.0}]}]
-2025-05-04 22:45:14,216 INFO Group management module activated
-2025-05-04 22:45:14,217 INFO GroupsResource has been initialized
-2025-05-04 22:45:14,217 INFO Group 'grp' created or updated with plugs [plug1, plug2]
-2025-05-04 22:45:14,217 INFO Group management module activated
-2025-05-04 22:45:14,217 INFO GroupsResource has been initialized
-2025-05-04 22:45:14,217 INFO Group 'tbd' created or updated with plugs [plug1]
-2025-05-04 22:45:14,217 INFO Group 'tbd' has been removed
-2025-05-04 22:45:14,218 INFO Group management module activated
-2025-05-04 22:45:14,218 INFO GroupsResource has been initialized
-2025-05-04 22:45:14,218 INFO Group 'grp' created or updated with plugs [plug1]
-2025-05-04 22:45:14,219 INFO Group 'grp' fetched with response {name=grp, members=[{name=plug1, state=on, power=10.0}]}
-2025-05-04 22:45:14,219 INFO Group management module activated
-2025-05-04 22:45:14,219 INFO GroupsResource has been initialized
-2025-05-04 22:45:14,219 INFO Group 'controlTest' created or updated with plugs [plug1]
-2025-05-04 22:45:14,219 INFO Action 'toggle' triggered on group 'controlTest'
-2025-05-04 22:45:14,220 INFO Group 'controlTest' fetched with response {name=controlTest, members=[{name=plug1, state=on, power=10.0}]}
+  <testcase name="testDeleteGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.001"/>
+  <testcase name="testGetReturnsGroup" classname="ece448.iot_hub.GroupsResourceTest" time="0.001"/>
+  <testcase name="testGroupControlThroughGet" classname="ece448.iot_hub.GroupsResourceTest" time="0.001"/>
+  <system-out><![CDATA[2025-05-07 22:59:13,615 INFO Using persistence file: group.json
+2025-05-07 22:59:13,616 INFO GroupsResource has been initialized
+2025-05-07 22:59:13,616 INFO Group 'g1' created or updated with plugs [plug1]
+2025-05-07 22:59:13,617 INFO Group 'g2' created or updated with plugs [plug2]
+2025-05-07 22:59:13,618 INFO Fetched all groups: [{name=g1, members=[{power=10.0, state=on, name=plug1}]}, {name=g2, members=[{power=10.0, state=on, name=plug2}]}]
+2025-05-07 22:59:13,619 INFO Using persistence file: group.json
+2025-05-07 22:59:13,620 INFO GroupsResource has been initialized
+2025-05-07 22:59:13,620 INFO Group 'grp' created or updated with plugs [plug1, plug2]
+2025-05-07 22:59:13,620 INFO Using persistence file: group.json
+2025-05-07 22:59:13,620 INFO GroupsResource has been initialized
+2025-05-07 22:59:13,621 INFO Group 'tbd' created or updated with plugs [plug1]
+2025-05-07 22:59:13,621 INFO Group 'tbd' has been removed
+2025-05-07 22:59:13,621 INFO Using persistence file: group.json
+2025-05-07 22:59:13,621 INFO GroupsResource has been initialized
+2025-05-07 22:59:13,622 INFO Group 'grp' created or updated with plugs [plug1]
+2025-05-07 22:59:13,622 INFO Group 'grp' fetched with response {name=grp, members=[{power=10.0, state=on, name=plug1}]}
+2025-05-07 22:59:13,622 INFO Using persistence file: group.json
+2025-05-07 22:59:13,623 INFO GroupsResource has been initialized
+2025-05-07 22:59:13,623 INFO Group 'controlTest' created or updated with plugs [plug1]
+2025-05-07 22:59:13,623 INFO Action 'toggle' triggered on group 'controlTest'
+2025-05-07 22:59:13,623 INFO Group 'controlTest' fetched with response {name=controlTest, members=[{power=10.0, state=on, name=plug1}]}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

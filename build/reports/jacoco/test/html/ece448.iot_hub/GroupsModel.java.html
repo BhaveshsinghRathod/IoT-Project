@@ -1,74 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GroupsModel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">iot_ece448</a> &gt; <a href="index.source.html" class="el_package">ece448.iot_hub</a> &gt; <span class="el_source">GroupsModel.java</span></div><h1>GroupsModel.java</h1><pre class="source lang-java linenums">package ece448.iot_hub;
 
-import java.util.*;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Component
 public class GroupsModel {
+<span class="fc" id="L21">    private static final Logger LOGGER = LoggerFactory.getLogger(GroupsModel.class);</span>
 
     private final PlugsModel plugManager;
-<span class="fc" id="L12">    private final Map&lt;String, Set&lt;String&gt;&gt; groupStore = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L24">    private final Map&lt;String, Set&lt;String&gt;&gt; groupStore = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L25">    private final ObjectMapper mapper = new ObjectMapper();</span>
+    private final Path persistencePath;
 
-<span class="fc" id="L14">    public GroupsModel(PlugsModel plugManager) {</span>
-<span class="fc" id="L15">        this.plugManager = plugManager;</span>
-<span class="fc" id="L16">        LOGGER.info(&quot;Group management module activated&quot;);</span>
-<span class="fc" id="L17">    }</span>
+    /** 
+     * Constructor used by Spring: autowires both PlugsModel and the JSON filename.
+     */
+    @Autowired
+    public GroupsModel(PlugsModel plugManager,
+<span class="fc" id="L33">                       @Value(&quot;${persistence.file:group.json}&quot;) String fileName) {</span>
+<span class="fc" id="L34">        this.plugManager    = plugManager;</span>
+<span class="fc" id="L35">        this.persistencePath = Paths.get(fileName);</span>
+<span class="fc" id="L36">        LOGGER.info(&quot;Using persistence file: {}&quot;, persistencePath);</span>
+<span class="fc" id="L37">    }</span>
 
-    synchronized public void createOrUpdateGroup(String groupKey, List&lt;String&gt; plugIds) {
-<span class="fc" id="L20">        groupStore.put(groupKey, new HashSet&lt;&gt;(plugIds));</span>
-<span class="fc" id="L21">        LOGGER.debug(&quot;Group '{}' assigned {} plug(s)&quot;, groupKey, plugIds.size());</span>
-<span class="fc" id="L22">    }</span>
+    /**
+     * Legacy constructor for existing tests—they’ll still work and default to &quot;group.json&quot;.
+     */
+    public GroupsModel(PlugsModel plugManager) {
+<span class="fc" id="L43">        this(plugManager, &quot;group.json&quot;);</span>
+<span class="fc" id="L44">    }</span>
 
-    synchronized public void removeGroup(String groupKey) {
-<span class="fc" id="L25">        groupStore.remove(groupKey);</span>
-<span class="fc" id="L26">        LOGGER.debug(&quot;Group '{}' removed&quot;, groupKey);</span>
-<span class="fc" id="L27">    }</span>
+    @PostConstruct
+    private void loadFromDisk() {
+<span class="nc" id="L48">        File file = persistencePath.toFile();</span>
+<span class="nc bnc" id="L49" title="All 2 branches missed.">        if (!file.exists()) {</span>
+<span class="nc" id="L50">            LOGGER.info(&quot;No existing persistence file {}, starting fresh&quot;, persistencePath);</span>
+<span class="nc" id="L51">            return;</span>
+        }
+        try {
+<span class="nc" id="L54">            Map&lt;String, Set&lt;String&gt;&gt; loaded = mapper.readValue(</span>
+<span class="nc" id="L55">                file, new TypeReference&lt;Map&lt;String, Set&lt;String&gt;&gt;&gt;() {}</span>
+            );
+<span class="nc" id="L57">            groupStore.clear();</span>
+<span class="nc" id="L58">            groupStore.putAll(loaded);</span>
+<span class="nc" id="L59">            LOGGER.info(&quot;Loaded {} groups from {}&quot;, groupStore.size(), persistencePath);</span>
+<span class="nc" id="L60">        } catch (IOException e) {</span>
+<span class="nc" id="L61">            LOGGER.error(&quot;Failed to load groups from {}&quot;, persistencePath, e);</span>
+<span class="nc" id="L62">        }</span>
+<span class="nc" id="L63">    }</span>
 
-    synchronized public Map&lt;String, Object&gt; getGroup(String groupKey) {
-<span class="fc" id="L30">        Map&lt;String, Object&gt; output = new HashMap&lt;&gt;();</span>
-<span class="fc" id="L31">        output.put(&quot;name&quot;, groupKey);</span>
+    public synchronized void createOrUpdateGroup(String groupKey, List&lt;String&gt; plugIds) {
+<span class="fc" id="L66">        groupStore.put(groupKey, new HashSet&lt;&gt;(plugIds));</span>
+<span class="fc" id="L67">        LOGGER.debug(&quot;Group '{}' assigned {} plug(s)&quot;, groupKey, plugIds.size());</span>
+<span class="fc" id="L68">        saveToDisk();</span>
+<span class="fc" id="L69">    }</span>
 
-<span class="fc" id="L33">        Set&lt;String&gt; plugs = groupStore.get(groupKey);</span>
-<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (plugs == null) {</span>
-<span class="fc" id="L35">            output.put(&quot;members&quot;, new ArrayList&lt;&gt;());</span>
-<span class="fc" id="L36">            return output;</span>
+    public synchronized void removeGroup(String groupKey) {
+<span class="fc" id="L72">        groupStore.remove(groupKey);</span>
+<span class="fc" id="L73">        LOGGER.debug(&quot;Group '{}' removed&quot;, groupKey);</span>
+<span class="fc" id="L74">        saveToDisk();</span>
+<span class="fc" id="L75">    }</span>
+
+    public synchronized Map&lt;String, Object&gt; getGroup(String groupKey) {
+<span class="fc" id="L78">        Map&lt;String, Object&gt; output = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L79">        output.put(&quot;name&quot;, groupKey);</span>
+
+<span class="fc" id="L81">        Set&lt;String&gt; plugs = groupStore.get(groupKey);</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        if (plugs == null) {</span>
+<span class="fc" id="L83">            output.put(&quot;members&quot;, Collections.emptyList());</span>
+<span class="fc" id="L84">            return output;</span>
         }
 
-<span class="fc" id="L39">        List&lt;Map&lt;String, Object&gt;&gt; plugDetails = new ArrayList&lt;&gt;();</span>
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        for (String plug : plugs) {</span>
-<span class="fc" id="L41">            plugDetails.add(plugManager.createPlug(plug));</span>
-<span class="fc" id="L42">        }</span>
-
-<span class="fc" id="L44">        output.put(&quot;members&quot;, plugDetails);</span>
-<span class="fc" id="L45">        return output;</span>
+<span class="fc" id="L87">        List&lt;Map&lt;String, Object&gt;&gt; plugDetails = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L88" title="All 2 branches covered.">        for (String plug : plugs) {</span>
+<span class="fc" id="L89">            plugDetails.add(plugManager.createPlug(plug));</span>
+<span class="fc" id="L90">        }</span>
+<span class="fc" id="L91">        output.put(&quot;members&quot;, plugDetails);</span>
+<span class="fc" id="L92">        return output;</span>
     }
 
-    synchronized public List&lt;Map&lt;String, Object&gt;&gt; getAllGroups() {
-<span class="fc" id="L49">        List&lt;Map&lt;String, Object&gt;&gt; allGroups = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L50">        Map&lt;String, Set&lt;String&gt;&gt; sortedGroups = new TreeMap&lt;&gt;(groupStore);</span>
-<span class="fc bfc" id="L51" title="All 2 branches covered.">        for (String groupKey : sortedGroups.keySet()) {</span>
-<span class="fc" id="L52">            allGroups.add(getGroup(groupKey));</span>
-<span class="fc" id="L53">        }</span>
-<span class="fc" id="L54">        return allGroups;</span>
+    public synchronized List&lt;Map&lt;String, Object&gt;&gt; getAllGroups() {
+<span class="fc" id="L96">        return groupStore.keySet().stream()</span>
+<span class="fc" id="L97">                         .sorted()</span>
+<span class="fc" id="L98">                         .map(this::getGroup)</span>
+<span class="fc" id="L99">                         .collect(Collectors.toList());</span>
     }
 
-    synchronized public void controlGroup(String groupKey, String command) {
-<span class="fc" id="L58">        Set&lt;String&gt; plugs = groupStore.get(groupKey);</span>
-<span class="fc bfc" id="L59" title="All 2 branches covered.">        if (plugs != null) {</span>
-<span class="fc bfc" id="L60" title="All 2 branches covered.">            for (String plug : plugs) {</span>
-<span class="fc" id="L61">                plugManager.controlPlug(plug, command);</span>
-<span class="fc" id="L62">                LOGGER.debug(&quot;Command '{}' sent to plug '{}' in group '{}'&quot;, command, plug, groupKey);</span>
+    public synchronized void controlGroup(String groupKey, String command) {
+<span class="fc" id="L103">        Set&lt;String&gt; plugs = groupStore.get(groupKey);</span>
+<span class="fc bfc" id="L104" title="All 2 branches covered.">        if (plugs != null) {</span>
+<span class="fc bfc" id="L105" title="All 2 branches covered.">            for (String plug : plugs) {</span>
+<span class="fc" id="L106">                plugManager.controlPlug(plug, command);</span>
+<span class="fc" id="L107">                LOGGER.debug(&quot;Command '{}' sent to plug '{}' in group '{}'&quot;,</span>
+                             command, plug, groupKey);
                 try {
-<span class="fc" id="L64">                    Thread.sleep(50); // Added delay to prevent MQTT publish overload</span>
-<span class="nc" id="L65">                } catch (InterruptedException e) {</span>
-<span class="nc" id="L66">                    Thread.currentThread().interrupt();</span>
-<span class="fc" id="L67">                }</span>
-<span class="fc" id="L68">            }</span>
+<span class="fc" id="L110">                    Thread.sleep(50); // throttle to avoid MQTT overload</span>
+<span class="nc" id="L111">                } catch (InterruptedException e) {</span>
+<span class="nc" id="L112">                    Thread.currentThread().interrupt();</span>
+<span class="fc" id="L113">                }</span>
+<span class="fc" id="L114">            }</span>
         }
-<span class="fc" id="L70">    }</span>
+<span class="fc" id="L116">    }</span>
 
-<span class="fc" id="L72">    private static final Logger LOGGER = LoggerFactory.getLogger(GroupsModel.class);</span>
+    private void saveToDisk() {
+        try {
+<span class="fc" id="L120">            mapper.writerWithDefaultPrettyPrinter()</span>
+<span class="fc" id="L121">                  .writeValue(persistencePath.toFile(), groupStore);</span>
+<span class="fc" id="L122">            LOGGER.info(&quot;Persisted {} groups to {}&quot;, groupStore.size(), persistencePath);</span>
+<span class="nc" id="L123">        } catch (IOException e) {</span>
+<span class="nc" id="L124">            LOGGER.error(&quot;Failed to write groups to {}&quot;, persistencePath, e);</span>
+<span class="fc" id="L125">        }</span>
+<span class="fc" id="L126">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -1,83 +1,93 @@
-D2025-05-04 22:45:12,129 WARN Invalid plug name format: plug.invalid
-;2025-05-04 22:45:12,136 INFO Plug plug.invalid switched ON
-D2025-05-04 22:45:12,136 WARN Invalid plug name format: plug.invalid
-72025-05-04 22:45:12,139 INFO Plug test.200 switched ON
-02025-05-04 22:45:12,142 INFO Plug a switched ON
-	32025-05-04 22:45:12,142 INFO Plug plug switched ON
-02025-05-04 22:45:12,143 INFO Plug a switched ON
-12025-05-04 22:45:12,144 INFO Plug a switched OFF
-02025-05-04 22:45:12,144 INFO Plug a switched ON
-A2025-05-04 22:45:13,872 WARN Invalid topic format: invalid/topic
-92025-05-04 22:45:14,188 WARN Plug not found: nonexistent
-<2025-05-04 22:45:14,195 INFO HTTPCmd /testPlug: {action=on}
-72025-05-04 22:45:14,196 INFO Plug testPlug switched ON
-@2025-05-04 22:45:14,196 INFO HTTPCmd /testPlug: {action=toggle}
-72025-05-04 22:45:14,197 INFO Plug testPlug switched ON
-<2025-05-04 22:45:14,197 INFO HTTPCmd /testPlug: {action=on}
-72025-05-04 22:45:14,197 INFO Plug testPlug switched ON
-32025-05-04 22:45:14,198 INFO HTTPCmd /testPlug: {}
-@2025-05-04 22:45:14,199 INFO HTTPCmd /testPlug: {action=toggle}
-72025-05-04 22:45:14,200 INFO Plug testPlug switched ON
-32025-05-04 22:45:14,200 INFO HTTPCmd /testPlug: {}
-+2025-05-04 22:45:14,201 INFO HTTPCmd /: {}
-@2025-05-04 22:45:14,202 INFO HTTPCmd /testPlug: {action=toggle}
-72025-05-04 22:45:14,203 INFO Plug testPlug switched ON
-@2025-05-04 22:45:14,203 INFO HTTPCmd /testPlug: {action=toggle}
-82025-05-04 22:45:14,203 INFO Plug testPlug switched OFF
-G2025-05-04 22:45:14,203 INFO HTTPCmd /testPlug: {action=invalidAction}
-62025-05-04 22:45:14,204 INFO HTTPCmd /unknownPlug: {}
-32025-05-04 22:45:14,204 INFO HTTPCmd /testPlug: {}
-72025-05-04 22:45:14,206 INFO Plug testPlug switched ON
-=2025-05-04 22:45:14,206 INFO HTTPCmd /testPlug: {action=off}
-82025-05-04 22:45:14,206 INFO Plug testPlug switched OFF
- ?2025-05-04 22:45:14,212 INFO Group management module activated
- A2025-05-04 22:45:14,213 INFO GroupsResource has been initialized
- N2025-05-04 22:45:14,213 INFO Group 'g1' created or updated with plugs [plug1]
- N2025-05-04 22:45:14,214 INFO Group 'g2' created or updated with plugs [plug2]
- ¤2025-05-04 22:45:14,216 INFO Fetched all groups: [{name=g1, members=[{name=plug1, state=on, power=10.0}]}, {name=g2, members=[{name=plug2, state=on, power=10.0}]}]
- !?2025-05-04 22:45:14,216 INFO Group management module activated
- !A2025-05-04 22:45:14,217 INFO GroupsResource has been initialized
- !V2025-05-04 22:45:14,217 INFO Group 'grp' created or updated with plugs [plug1, plug2]
- "?2025-05-04 22:45:14,217 INFO Group management module activated
- "A2025-05-04 22:45:14,217 INFO GroupsResource has been initialized
- "O2025-05-04 22:45:14,217 INFO Group 'tbd' created or updated with plugs [plug1]
- ":2025-05-04 22:45:14,217 INFO Group 'tbd' has been removed
- #?2025-05-04 22:45:14,218 INFO Group management module activated
- #A2025-05-04 22:45:14,218 INFO GroupsResource has been initialized
- #O2025-05-04 22:45:14,218 INFO Group 'grp' created or updated with plugs [plug1]
- #x2025-05-04 22:45:14,219 INFO Group 'grp' fetched with response {name=grp, members=[{name=plug1, state=on, power=10.0}]}
- $?2025-05-04 22:45:14,219 INFO Group management module activated
- $A2025-05-04 22:45:14,219 INFO GroupsResource has been initialized
- $W2025-05-04 22:45:14,219 INFO Group 'controlTest' created or updated with plugs [plug1]
- $N2025-05-04 22:45:14,219 INFO Action 'toggle' triggered on group 'controlTest'
- $ˆ2025-05-04 22:45:14,220 INFO Group 'controlTest' fetched with response {name=controlTest, members=[{name=plug1, state=on, power=10.0}]}
-&%?2025-05-04 22:45:14,224 INFO Group management module activated
-&'?2025-05-04 22:45:14,225 INFO Group management module activated
-&(?2025-05-04 22:45:14,329 INFO Group management module activated
-&)?2025-05-04 22:45:14,330 INFO Group management module activated
-&*?2025-05-04 22:45:14,331 INFO Group management module activated
-&+?2025-05-04 22:45:14,331 INFO Group management module activated
-&,?2025-05-04 22:45:14,332 INFO Group management module activated
-&-?2025-05-04 22:45:14,333 INFO Group management module activated
-&.?2025-05-04 22:45:14,335 INFO Group management module activated
-0/Œ2025-05-04 22:45:14,343 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0/Œ2025-05-04 22:45:14,343 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0/Y2025-05-04 22:45:14,344 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-01Œ2025-05-04 22:45:14,344 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-02Œ2025-05-04 22:45:14,346 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-03Œ2025-05-04 22:45:14,347 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-03Y2025-05-04 22:45:14,348 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-03;2025-05-04 22:45:14,348 INFO Disconnected from MQTT broker
-04Œ2025-05-04 22:45:14,348 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-04Y2025-05-04 22:45:14,348 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-04;2025-05-04 22:45:14,348 INFO Disconnected from MQTT broker
-05Œ2025-05-04 22:45:14,350 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-05Y2025-05-04 22:45:14,351 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-06Œ2025-05-04 22:45:14,351 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-07Œ2025-05-04 22:45:14,351 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-08Œ2025-05-04 22:45:14,352 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-09Œ2025-05-04 22:45:14,355 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-09Y2025-05-04 22:45:14,358 ERROR Connection failure to tcp://localhost:1883: Test exception
+D2025-05-07 22:59:11,187 WARN Invalid plug name format: plug.invalid
+;2025-05-07 22:59:11,192 INFO Plug plug.invalid switched ON
+D2025-05-07 22:59:11,193 WARN Invalid plug name format: plug.invalid
+72025-05-07 22:59:11,195 INFO Plug test.200 switched ON
+02025-05-07 22:59:11,198 INFO Plug a switched ON
+	32025-05-07 22:59:11,199 INFO Plug plug switched ON
+02025-05-07 22:59:11,201 INFO Plug a switched ON
+12025-05-07 22:59:11,202 INFO Plug a switched OFF
+02025-05-07 22:59:11,202 INFO Plug a switched ON
+A2025-05-07 22:59:12,893 WARN Invalid topic format: invalid/topic
+92025-05-07 22:59:13,219 WARN Plug not found: nonexistent
+<2025-05-07 22:59:13,239 INFO HTTPCmd /testPlug: {action=on}
+72025-05-07 22:59:13,241 INFO Plug testPlug switched ON
+@2025-05-07 22:59:13,244 INFO HTTPCmd /testPlug: {action=toggle}
+72025-05-07 22:59:13,245 INFO Plug testPlug switched ON
+<2025-05-07 22:59:13,248 INFO HTTPCmd /testPlug: {action=on}
+72025-05-07 22:59:13,250 INFO Plug testPlug switched ON
+32025-05-07 22:59:13,251 INFO HTTPCmd /testPlug: {}
+@2025-05-07 22:59:13,254 INFO HTTPCmd /testPlug: {action=toggle}
+72025-05-07 22:59:13,255 INFO Plug testPlug switched ON
+32025-05-07 22:59:13,256 INFO HTTPCmd /testPlug: {}
++2025-05-07 22:59:13,259 INFO HTTPCmd /: {}
+@2025-05-07 22:59:13,261 INFO HTTPCmd /testPlug: {action=toggle}
+72025-05-07 22:59:13,262 INFO Plug testPlug switched ON
+@2025-05-07 22:59:13,263 INFO HTTPCmd /testPlug: {action=toggle}
+82025-05-07 22:59:13,264 INFO Plug testPlug switched OFF
+G2025-05-07 22:59:13,266 INFO HTTPCmd /testPlug: {action=invalidAction}
+62025-05-07 22:59:13,267 INFO HTTPCmd /unknownPlug: {}
+32025-05-07 22:59:13,269 INFO HTTPCmd /testPlug: {}
+72025-05-07 22:59:13,271 INFO Plug testPlug switched ON
+=2025-05-07 22:59:13,271 INFO HTTPCmd /testPlug: {action=off}
+82025-05-07 22:59:13,272 INFO Plug testPlug switched OFF
+ @2025-05-07 22:59:13,615 INFO Using persistence file: group.json
+ A2025-05-07 22:59:13,616 INFO GroupsResource has been initialized
+ N2025-05-07 22:59:13,616 INFO Group 'g1' created or updated with plugs [plug1]
+ N2025-05-07 22:59:13,617 INFO Group 'g2' created or updated with plugs [plug2]
+ ¤2025-05-07 22:59:13,618 INFO Fetched all groups: [{name=g1, members=[{power=10.0, state=on, name=plug1}]}, {name=g2, members=[{power=10.0, state=on, name=plug2}]}]
+ !@2025-05-07 22:59:13,619 INFO Using persistence file: group.json
+ !A2025-05-07 22:59:13,620 INFO GroupsResource has been initialized
+ !V2025-05-07 22:59:13,620 INFO Group 'grp' created or updated with plugs [plug1, plug2]
+ "@2025-05-07 22:59:13,620 INFO Using persistence file: group.json
+ "A2025-05-07 22:59:13,620 INFO GroupsResource has been initialized
+ "O2025-05-07 22:59:13,621 INFO Group 'tbd' created or updated with plugs [plug1]
+ ":2025-05-07 22:59:13,621 INFO Group 'tbd' has been removed
+ #@2025-05-07 22:59:13,621 INFO Using persistence file: group.json
+ #A2025-05-07 22:59:13,621 INFO GroupsResource has been initialized
+ #O2025-05-07 22:59:13,622 INFO Group 'grp' created or updated with plugs [plug1]
+ #x2025-05-07 22:59:13,622 INFO Group 'grp' fetched with response {name=grp, members=[{power=10.0, state=on, name=plug1}]}
+ $@2025-05-07 22:59:13,622 INFO Using persistence file: group.json
+ $A2025-05-07 22:59:13,623 INFO GroupsResource has been initialized
+ $W2025-05-07 22:59:13,623 INFO Group 'controlTest' created or updated with plugs [plug1]
+ $N2025-05-07 22:59:13,623 INFO Action 'toggle' triggered on group 'controlTest'
+ $ˆ2025-05-07 22:59:13,623 INFO Group 'controlTest' fetched with response {name=controlTest, members=[{power=10.0, state=on, name=plug1}]}
+&%@2025-05-07 22:59:13,628 INFO Using persistence file: group.json
+&%>2025-05-07 22:59:13,658 INFO Persisted 1 groups to group.json
+&%>2025-05-07 22:59:13,660 INFO Persisted 1 groups to group.json
+&'@2025-05-07 22:59:13,661 INFO Using persistence file: group.json
+&'>2025-05-07 22:59:13,663 INFO Persisted 1 groups to group.json
+&(@2025-05-07 22:59:13,767 INFO Using persistence file: group.json
+&)@2025-05-07 22:59:13,769 INFO Using persistence file: group.json
+&)>2025-05-07 22:59:13,771 INFO Persisted 1 groups to group.json
+&*@2025-05-07 22:59:13,772 INFO Using persistence file: group.json
+&+@2025-05-07 22:59:13,773 INFO Using persistence file: group.json
+&+>2025-05-07 22:59:13,774 INFO Persisted 1 groups to group.json
+&+>2025-05-07 22:59:13,776 INFO Persisted 0 groups to group.json
+&,@2025-05-07 22:59:13,777 INFO Using persistence file: group.json
+&,>2025-05-07 22:59:13,779 INFO Persisted 1 groups to group.json
+&,>2025-05-07 22:59:13,780 INFO Persisted 2 groups to group.json
+&-@2025-05-07 22:59:13,785 INFO Using persistence file: group.json
+&->2025-05-07 22:59:13,790 INFO Persisted 1 groups to group.json
+&.@2025-05-07 22:59:13,796 INFO Using persistence file: group.json
+&.>2025-05-07 22:59:13,798 INFO Persisted 1 groups to group.json
+0/Œ2025-05-07 22:59:13,807 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0/Œ2025-05-07 22:59:13,807 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0/Y2025-05-07 22:59:13,808 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+01Œ2025-05-07 22:59:13,809 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+02Œ2025-05-07 22:59:13,809 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+03Œ2025-05-07 22:59:13,810 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+03Y2025-05-07 22:59:13,811 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+03;2025-05-07 22:59:13,811 INFO Disconnected from MQTT broker
+04Œ2025-05-07 22:59:13,811 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+04Y2025-05-07 22:59:13,812 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+04;2025-05-07 22:59:13,812 INFO Disconnected from MQTT broker
+05Œ2025-05-07 22:59:13,812 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+05Y2025-05-07 22:59:13,813 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+06Œ2025-05-07 22:59:13,814 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+07Œ2025-05-07 22:59:13,815 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+08Œ2025-05-07 22:59:13,816 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+09Œ2025-05-07 22:59:13,819 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+09Y2025-05-07 22:59:13,823 ERROR Connection failure to tcp://localhost:1883: Test exception
 09+java.lang.RuntimeException: Test exception
 09T	at ece448.iot_hub.MqttControllerTest.testStartFailure(MqttControllerTest.java:165)
 09S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -131,19 +141,19 @@
 09^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 09j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 094	at java.base/java.lang.Thread.run(Thread.java:829)
-0:Œ2025-05-04 22:45:14,363 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0:Y2025-05-04 22:45:14,364 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-0;Œ2025-05-04 22:45:14,364 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0;Y2025-05-04 22:45:14,364 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-0;H2025-05-04 22:45:14,365 WARN Publish failed - MQTT client not connected
-0<Œ2025-05-04 22:45:14,365 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0=Œ2025-05-04 22:45:14,365 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0>Œ2025-05-04 22:45:14,365 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0>H2025-05-04 22:45:14,365 WARN Publish failed - MQTT client not connected
-0?Œ2025-05-04 22:45:14,367 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0@Œ2025-05-04 22:45:14,369 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0@Y2025-05-04 22:45:14,369 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-0@H2025-05-04 22:45:14,373 ERROR Publish error - Device: plug1, Action: on
+0:Œ2025-05-07 22:59:13,825 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0:Y2025-05-07 22:59:13,826 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0;Œ2025-05-07 22:59:13,826 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0;Y2025-05-07 22:59:13,827 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0;H2025-05-07 22:59:13,827 WARN Publish failed - MQTT client not connected
+0<Œ2025-05-07 22:59:13,827 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0=Œ2025-05-07 22:59:13,828 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0>Œ2025-05-07 22:59:13,828 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0>H2025-05-07 22:59:13,829 WARN Publish failed - MQTT client not connected
+0?Œ2025-05-07 22:59:13,830 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0@Œ2025-05-07 22:59:13,831 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0@Y2025-05-07 22:59:13,831 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0@H2025-05-07 22:59:13,835 ERROR Publish error - Device: plug1, Action: on
 0@<org.eclipse.paho.client.mqttv3.MqttException: MqttException
 0@^	at ece448.iot_hub.MqttControllerTest.testPublishActionException(MqttControllerTest.java:243)
 0@S	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -197,12 +207,12 @@
 0@^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 0@j	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 0@4	at java.base/java.lang.Thread.run(Thread.java:829)
-0AŒ2025-05-04 22:45:14,375 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0BŒ2025-05-04 22:45:14,375 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0CŒ2025-05-04 22:45:14,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0CŒ2025-05-04 22:45:14,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0CY2025-05-04 22:45:14,376 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-0CA2025-05-04 22:45:14,377 ERROR Disconnection error: MqttException
+0AŒ2025-05-07 22:59:13,838 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0BŒ2025-05-07 22:59:13,840 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0CŒ2025-05-07 22:59:13,841 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0CŒ2025-05-07 22:59:13,842 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0CY2025-05-07 22:59:13,842 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+0CA2025-05-07 22:59:13,843 ERROR Disconnection error: MqttException
 0C<org.eclipse.paho.client.mqttv3.MqttException: MqttException
 0CP	at ece448.iot_hub.MqttControllerTest$2.disconnect(MqttControllerTest.java:509)
 0C@	at ece448.iot_hub.MqttController.close(MqttController.java:69)
@@ -258,20 +268,20 @@
 0C^	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 0Cj	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 0C4	at java.base/java.lang.Thread.run(Thread.java:829)
-0DŒ2025-05-04 22:45:14,379 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0EŒ2025-05-04 22:45:14,380 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0FŒ2025-05-04 22:45:14,380 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0GŒ2025-05-04 22:45:14,380 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0HŒ2025-05-04 22:45:14,381 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-0Hv2025-05-04 22:45:14,381 INFO Initializing MQTT Controller - Broker: broker, Client ID: clientId, Topic Prefix: prefix
-0HK2025-05-04 22:45:14,381 INFO Successfully connected to MQTT broker: broker
-JIŒ2025-05-04 22:45:14,387 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JKŒ2025-05-04 22:45:14,388 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JLŒ2025-05-04 22:45:14,388 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JMŒ2025-05-04 22:45:14,388 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JNŒ2025-05-04 22:45:14,389 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JOŒ2025-05-04 22:45:14,389 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JPŒ2025-05-04 22:45:14,389 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JQŒ2025-05-04 22:45:14,390 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JRŒ2025-05-04 22:45:14,390 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-JSŒ2025-05-04 22:45:14,391 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0DŒ2025-05-07 22:59:13,845 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0EŒ2025-05-07 22:59:13,847 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0FŒ2025-05-07 22:59:13,847 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0GŒ2025-05-07 22:59:13,848 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0HŒ2025-05-07 22:59:13,849 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+0Hv2025-05-07 22:59:13,849 INFO Initializing MQTT Controller - Broker: broker, Client ID: clientId, Topic Prefix: prefix
+0HK2025-05-07 22:59:13,849 INFO Successfully connected to MQTT broker: broker
+JIŒ2025-05-07 22:59:13,853 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JKŒ2025-05-07 22:59:13,855 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JLŒ2025-05-07 22:59:13,855 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JMŒ2025-05-07 22:59:13,856 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JNŒ2025-05-07 22:59:13,856 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JOŒ2025-05-07 22:59:13,856 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JPŒ2025-05-07 22:59:13,857 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JQŒ2025-05-07 22:59:13,857 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JRŒ2025-05-07 22:59:13,857 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+JSŒ2025-05-07 22:59:13,858 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix

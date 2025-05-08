@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.035s</div>
+<div class="counter">0.042s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,17 +84,17 @@
 </tr>
 <tr>
 <td class="success">testCloseWithDisconnectException</td>
-<td class="success">0.002s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testCloseWithException</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testCloseWithNullClient</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -109,12 +109,12 @@
 </tr>
 <tr>
 <td class="success">testGetPowers</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetState</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@
 </tr>
 <tr>
 <td class="success">testProcessIncomingMessageMalformedTopic</td>
-<td class="success">0.003s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -134,12 +134,12 @@
 </tr>
 <tr>
 <td class="success">testProcessIncomingMessageState</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testProcessIncomingMessageUnknownType</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -154,37 +154,37 @@
 </tr>
 <tr>
 <td class="success">testProcessIncomingMessageWithPrefixEdgeCases</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testProcessIncomingMessageWrongAction</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testPublishActionDisconnected</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testPublishActionException</td>
-<td class="success">0.006s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testPublishActionNullClient</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testPublishActionSuccess</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testPublishActionException</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPublishActionNullClient</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPublishActionSuccess</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testStartFailure</td>
-<td class="success">0.008s</td>
+<td class="success">0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -194,12 +194,12 @@
 </tr>
 <tr>
 <td class="success">testTransmitMqttMessageDirectly</td>
-<td class="success">0.001s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testprocessIncomingMessageMalformedTopic</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -207,24 +207,24 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2025-05-04 22:45:14,343 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,343 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,344 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,344 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,346 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,347 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,348 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,348 INFO Disconnected from MQTT broker
-2025-05-04 22:45:14,348 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,348 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,348 INFO Disconnected from MQTT broker
-2025-05-04 22:45:14,350 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,351 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,351 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,351 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,352 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,355 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,358 ERROR Connection failure to tcp://localhost:1883: Test exception
+<pre>2025-05-07 22:59:13,807 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,807 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,808 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,809 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,809 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,810 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,811 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,811 INFO Disconnected from MQTT broker
+2025-05-07 22:59:13,811 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,812 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,812 INFO Disconnected from MQTT broker
+2025-05-07 22:59:13,812 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,813 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,814 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,815 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,816 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,819 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,823 ERROR Connection failure to tcp://localhost:1883: Test exception
 java.lang.RuntimeException: Test exception
 	at ece448.iot_hub.MqttControllerTest.testStartFailure(MqttControllerTest.java:165)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -278,19 +278,19 @@ java.lang.RuntimeException: Test exception
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-2025-05-04 22:45:14,363 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,364 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,364 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,364 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,365 WARN Publish failed - MQTT client not connected
-2025-05-04 22:45:14,365 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,365 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,365 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,365 WARN Publish failed - MQTT client not connected
-2025-05-04 22:45:14,367 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,369 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,369 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,373 ERROR Publish error - Device: plug1, Action: on
+2025-05-07 22:59:13,825 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,826 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,826 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,827 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,827 WARN Publish failed - MQTT client not connected
+2025-05-07 22:59:13,827 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,828 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,828 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,829 WARN Publish failed - MQTT client not connected
+2025-05-07 22:59:13,830 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,831 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,831 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,835 ERROR Publish error - Device: plug1, Action: on
 org.eclipse.paho.client.mqttv3.MqttException: MqttException
 	at ece448.iot_hub.MqttControllerTest.testPublishActionException(MqttControllerTest.java:243)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -344,12 +344,12 @@ org.eclipse.paho.client.mqttv3.MqttException: MqttException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-2025-05-04 22:45:14,375 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,375 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,376 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,376 INFO Successfully connected to MQTT broker: tcp://localhost:1883
-2025-05-04 22:45:14,377 ERROR Disconnection error: MqttException
+2025-05-07 22:59:13,838 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,840 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,841 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,842 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,842 INFO Successfully connected to MQTT broker: tcp://localhost:1883
+2025-05-07 22:59:13,843 ERROR Disconnection error: MqttException
 org.eclipse.paho.client.mqttv3.MqttException: MqttException
 	at ece448.iot_hub.MqttControllerTest$2.disconnect(MqttControllerTest.java:509)
 	at ece448.iot_hub.MqttController.close(MqttController.java:69)
@@ -405,13 +405,13 @@ org.eclipse.paho.client.mqttv3.MqttException: MqttException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-2025-05-04 22:45:14,379 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,380 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,380 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,380 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,381 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
-2025-05-04 22:45:14,381 INFO Initializing MQTT Controller - Broker: broker, Client ID: clientId, Topic Prefix: prefix
-2025-05-04 22:45:14,381 INFO Successfully connected to MQTT broker: broker
+2025-05-07 22:59:13,845 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,847 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,847 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,848 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,849 INFO Initializing MQTT Controller - Broker: tcp://localhost:1883, Client ID: test_client, Topic Prefix: test_prefix
+2025-05-07 22:59:13,849 INFO Initializing MQTT Controller - Broker: broker, Client ID: clientId, Topic Prefix: prefix
+2025-05-07 22:59:13,849 INFO Successfully connected to MQTT broker: broker
 </pre>
 </span>
 </div>
@@ -423,7 +423,7 @@ org.eclipse.paho.client.mqttv3.MqttException: MqttException
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.9.3</a> at May 4, 2025, 10:45:14 PM</p>
+<a href="http://www.gradle.org">Gradle 6.9.3</a> at May 7, 2025, 10:59:14 PM</p>
 </div>
 </div>
 </body>
